@@ -1,15 +1,16 @@
+import torch
+import torch.nn.functional as F
 
-def train(args, model, device, train_loader, optimizer, epoch, data_loader):
+
+def train(args, model, device, train_loader, optimizer, epoch):
     model.train()
-    for batch_idx, (data, target) in enumerate(data_loader): # <-- now it is a distributed dataset
-        model.send(data.location) # <-- NEW: send the model to the right location
+    for batch_idx, (data, target) in enumerate(train_loader): # <-- now it is a distributed dataset
         data, target = data.to(device), target.to(device)
         optimizer.zero_grad()
         output = model(data)
         loss = F.nll_loss(output, target)
         loss.backward()
         optimizer.step()
-        model.get() # <-- NEW: get the model back
         if batch_idx % args.log_interval == 0:
             loss = loss.get() # <-- NEW: get the loss back
             print('Train Epoch: {} [{}/{} ({:.0f}%)]\tLoss: {:.6f}'.format(

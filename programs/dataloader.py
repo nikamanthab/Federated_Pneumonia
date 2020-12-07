@@ -46,12 +46,12 @@ class XDataset(Dataset):
 
 def getDataLoaders(args, sy):
     hook = sy.TorchHook(torch)
-
     number_of_nodes = args.number_of_nodes
     df = pd.read_csv(os.path.join(args.csv_location+'train.csv'))
     df = df.sample(frac=1)
     df_len = len(df)
     data_distribution = [int(df_len*ratio) for ratio in args.data_distribution]
+    datasample_count = data_distribution
     for idx in range(1,len(data_distribution)):
         data_distribution[idx] = data_distribution[idx]+data_distribution[idx-1]
     data_distribution.insert(0, 0)
@@ -60,9 +60,11 @@ def getDataLoaders(args, sy):
         df_list.append(df[data_distribution[cuts-1]: data_distribution[cuts]])
     
     dataloader_list = []
+    node_list = []
     node_counter = 0
     for frame in df_list:
         node = sy.VirtualWorker(hook, id="node"+str(node_counter))
+        node_list.append(node)
         dataset = XDataset(frame, os.path.join(args.data_location, 'train'), transform=transforms.Compose(
             [transforms.Resize((28,28)),
             transforms.ToTensor(),
@@ -72,7 +74,7 @@ def getDataLoaders(args, sy):
             batch_size=args.batch_size, shuffle=True)
         dataloader_list.append(data_loader)
         node_counter+=1
-    return dataloader_list
+    return dataloader_list, datasample_count, node_list
 
 def getTestLoader(args):
     df_test = pd.read_csv(os.path.join(args.csv_location,'test.csv'))

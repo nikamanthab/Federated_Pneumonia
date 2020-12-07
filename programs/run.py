@@ -13,7 +13,7 @@ import config
 args = config.Arguments()
 
 # Load and simulate distribution of data
-FLdataloaders = dataloader.getDataLoaders(args,sy)
+FLdataloaders, datasample_count, nodelist = dataloader.getDataLoaders(args,sy)
 testloader = dataloader.getTestLoader(args)
 
 model = None
@@ -22,7 +22,7 @@ if os.path.exists(args.agg_model_path) == True:
 else:
     model = models.CNN_basic.TwoLayerNet()
 
-
+parallel_run.runTrainParallel(nodelist, model, datasample_count, args, FLdataloaders, testloader)
 
 
 
