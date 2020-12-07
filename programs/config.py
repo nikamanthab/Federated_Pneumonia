@@ -7,9 +7,9 @@ class Arguments():
         self.agg_epochs = 4
         self.lr = 0.01
         self.momentum = 0.5
-        self.no_cuda = "cuda" if torch.cuda.is_available() else "cpu"
+        self.device = "cuda" if torch.cuda.is_available() else "cpu"
         self.seed = 1
-        self.log_interval = 10
+        self.log_interval = 1
         self.save_model = False
 
         # data distribution ratios and node details
@@ -19,4 +19,4 @@ class Arguments():
         # data location details
         self.csv_location = '../csv/'
         self.data_location = '../x-ray/'
-        self.agg_model_path = '../aggregated_model/agg_model.pt'
+        self.agg_model_path = '../aggregated_model/'

@@ -3,8 +3,11 @@ import torch.nn.functional as F
 
 
 def train(args, model, device, train_loader, optimizer, epoch):
+    print("hi4")
     model.train()
+    print("hi5")
     for batch_idx, (data, target) in enumerate(train_loader): # <-- now it is a distributed dataset
+        print(batch_idx)
         data, target = data.to(device), target.to(device)
         optimizer.zero_grad()
         output = model(data)
