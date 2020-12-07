@@ -2,13 +2,11 @@ import torch
 import torch.nn.functional as F
 
 
-def train(args, model, device, train_loader, optimizer, epoch):
-    print("hi4")
+def train(args, model, train_loader, optimizer, epoch):
     model.train()
-    print("hi5")
     for batch_idx, (data, target) in enumerate(train_loader): # <-- now it is a distributed dataset
-        print(batch_idx)
-        data, target = data.to(device), target.to(device)
+        data, target = data.to(args.device), target.to(args.device)
+        print(data.shape)
         optimizer.zero_grad()
         output = model(data)
         loss = F.nll_loss(output, target)

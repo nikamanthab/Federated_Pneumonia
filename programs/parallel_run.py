@@ -1,5 +1,4 @@
 
-import multiprocessing 
 import torch.optim as optim
 import time
 import train
@@ -10,71 +9,44 @@ import torch
 import aggregator
 import syft as sy
 import copy
-import torch.multiprocessing as mp
-mp.set_start_method('spawn')
-# class RunNode(Process): 
-#     def __init__(self, node, args, model, train_loader): 
-#         super(RunNode, self).__init__() 
-#         self.node = node
-#         self.args = args
-#         self.model = model
-#         print("sending...")
-#         self.model.send(self.node)
-#         print("sent...")
-#         self.train_loader = train_loader
-                 
-#     def run(self): 
-#         optimizer = optim.SGD(self.model.parameters(), lr=self.args.lr)
-#         print("hi2")
-#         for epoch in range(1, self.args.epochs + 1):
-#             print("h3")
-#             train.train(args = self.args, model = self.model, device = self.args.device, 
-#             train_loader = self.train_loader, optimizer = optimizer, epoch = epoch)
-#         self.model.get()
-#         torch.save(self.model, os.path.join(self.args.agg_model_path, self.node.id + '.pt'))
+import asyncio
+loop = asyncio.get_event_loop()
 
-def runOnNode(node, args, model, train_loader): 
+async def runOnNode(node, args, model, train_loader): 
     optimizer = optim.SGD(model.parameters(), lr=args.lr)
-    print("hi2")
+    x_model = copy.deepcopy(model)
+    x_model.send(node)
     for epoch in range(1, args.epochs + 1):
-        print("h3")
-        train.train(args = args, model = model, device = args.device, 
-        train_loader = train_loader, optimizer = optimizer, epoch = epoch)
-    model.get()
-    torch.save(model, os.path.join(args.agg_model_path, node.id + '.pt'))
+        train.train(args = args, model = model, train_loader = train_loader, optimizer = optimizer, epoch = epoch)
+    x_model.get()
+    return x_model
+
+async def collectModels(nodelist, args, model, FLdataloaders):
+    task_list = []
+    for idx, dataloader in enumerate(FLdataloaders):
+        task_list.append(loop.create_task(runOnNode(nodelist[idx], args, model, dataloader)))
+    await asyncio.wait(task_list)
+    return task_list
+
   
 def runTrainParallel(nodelist, datasample_count, args, FLdataloaders, test_loader):
     for agg_epoch in range(1,args.agg_epochs+1):
         model = None
         if os.path.exists(os.path.join(args.agg_model_path, 'agg_model.pt')) == True:
-            model = torch.load(os.path.join(args.agg_model_path, 'agg_model.pt'))
+            model = torch.load(os.path.join(args.agg_model_path, 'agg_model.pt')).to(args.device)
         else:
-            model = models.CNN_basic.TwoLayerNet()
+            model = models.CNN_basic.TwoLayerNet().to(args.device)
 
         # Disttributed training
         print("Aggregation Epoch Number:", agg_epoch)
-        node_processes = []
-        print(nodelist)
-        for idx, dataloader in enumerate(FLdataloaders):
-            # process = RunNode(nodelist[idx], args, model, dataloader)
-            x_model = copy.deepcopy(model)
-            print("sending...")
-            x_model.send(nodelist[idx])
-            print("sent...")
-            proc = mp.Process(target=runOnNode, args=(nodelist[idx], args, x_model, dataloader))
-            proc.start()
-            node_processes.append(proc)
-            print(node_processes)
-        print(node_processes)
-        for idx in range(len(FLdataloaders)):
-            print("h6...")
-            print(node_processes)
-            node_processes[idx].join()
         
+        node_model_list = loop.run_until_complete(collectModels(nodelist, args, model, FLdataloaders))
+                
         # Aggregation
         model_tuple_array = []
         for idx in range(len(FLdataloaders)):
-            node_model = torch.load(os.path.join(args.agg_model_path, nodelist[idx].id + '.pt'))
+            # node_model = torch.load(os.path.join(args.agg_model_path, nodelist[idx].id + '.pt'))
+            node_model = node_model_list[idx]
             model_tuple_array.append((node_model, datasample_count[idx]))
         agg_model = aggregator.fed_avg_aggregator(model_tuple_array)
         torch.save(agg_model, os.path.join(args.agg_model_path, 'agg_model.pt'))
