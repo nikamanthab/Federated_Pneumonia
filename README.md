@@ -1,5 +1,6 @@
 # Federated Learning Strategies for Image Classification
 Exploring FL aggregation and robustness on distributed model training.
+
 Data-set: https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
 
 ## Instructions to run:
