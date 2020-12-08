@@ -10,7 +10,7 @@ Data-set: https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
 - CNN Architecture can be altered in the models/CNN_basic.py
 - Execute the run.py file in the program folder
 
-
+### Command to run:
     python program/run.py
 
 ## Scores
