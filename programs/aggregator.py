@@ -14,7 +14,7 @@ def weights_to_array(model):
         model_weights.append(param) # check without .data
     return model_weights
 
-def fed_avg_aggregator(model_data):
+def fed_avg_aggregator(model_data, args):
     '''
         input: array of tuples containing model 
         and the number of samples from each respective node
@@ -34,7 +34,7 @@ def fed_avg_aggregator(model_data):
     
     aggregated_weights = []
     for layer_idx in range(len(node_weights[0])):
-        temp = torch.zeros(node_weights[0][layer_idx].shape)
+        temp = torch.zeros(node_weights[0][layer_idx].shape).to(args.device)
         for node_idx in range(len(node_weights)):
             temp+= (node_samples[node_idx]/total_no_samples)*node_weights[node_idx][layer_idx]
         aggregated_weights.append(temp)
@@ -43,4 +43,4 @@ def fed_avg_aggregator(model_data):
         param.data = aggregated_weights[idx]
     return agg_model
 
-x = fed_avg_aggregator([(model1,60),(model2,40)])
+# x = fed_avg_aggregator([(model1,60),(model2,40)])

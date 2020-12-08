@@ -6,7 +6,6 @@ def train(args, model, train_loader, optimizer, epoch):
     model.train()
     for batch_idx, (data, target) in enumerate(train_loader): # <-- now it is a distributed dataset
         data, target = data.to(args.device), target.to(args.device)
-        print(data.shape)
         optimizer.zero_grad()
         output = model(data)
         loss = F.nll_loss(output, target)
