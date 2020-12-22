@@ -7,7 +7,7 @@ Data-set: https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
 - Install the requirements - torch==1.4, syft==0.2.9, pandas
 - Download the dataset and form the following folder structure: x-ray/(train or test)/(NORMAL or PNEUMONIA)
 - Change the necessary parameters in program/config.py file
-- CNN Architecture can be altered in the models/CNN_basic.py
+- CNN Architecture can be altered in the models.py
 - Execute the run.py file in the program folder
 
 ### Command to run:
