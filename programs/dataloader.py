@@ -48,7 +48,7 @@ class XDataset(Dataset):
 def getDataLoaders(args, sy):
     hook = sy.TorchHook(torch)
     number_of_nodes = args.number_of_nodes
-    df = pd.read_csv(os.path.join(args.csv_location+'train.csv'))
+    df = pd.read_csv(os.path.join(args.csv_location+'train.csv'))#[:20]
     df = df.sample(frac=1)
     df_len = len(df)
     data_distribution = [int(df_len*ratio) for ratio in args.data_distribution]

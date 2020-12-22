@@ -36,21 +36,22 @@ def runTrainParallel(nodelist, datasample_count, args, FLdataloaders, test_loade
         if os.path.exists(os.path.join(args.agg_model_path, 'agg_model.pt')) == True:
             model = torch.load(os.path.join(args.agg_model_path, 'agg_model.pt')).to(args.device)
         else:
-            model = models.CNN_basic.TwoLayerNet().to(args.device)
+            model = args.model(args.device).to(args.device)
 
         # Disttributed training
         print("Aggregation Epoch Number:", agg_epoch)
         
         node_model_list = loop.run_until_complete(collectModels(nodelist, args, model, FLdataloaders))
-        print(node_model_list)
-        print(datasample_count)
+        # print(node_model_list)
+        # print(datasample_count)
+        
         # Aggregation
         model_tuple_array = []
         for idx in range(len(FLdataloaders)):
             # node_model = torch.load(os.path.join(args.agg_model_path, nodelist[idx].id + '.pt'))
             node_model = node_model_list[idx]
             model_tuple_array.append((node_model, datasample_count[idx]))
-        print(model_tuple_array)
+        # print(model_tuple_array)
         agg_model = aggregator.fed_avg_aggregator(model_data=model_tuple_array, args=args)
         torch.save(agg_model, os.path.join(args.agg_model_path, 'agg_model.pt'))
         print("Saving to: "+ os.path.join(args.agg_model_path, 'agg_model.pt'))

@@ -1,15 +1,17 @@
 import torch
+import models
 class Arguments():
     def __init__(self):
         self.batch_size = 2
         self.test_batch_size = 1000
         self.epochs = 4
         self.agg_epochs = 5
-        self.lr = 0.01
+        self.lr = 0.001
         self.momentum = 0.5
-        self.device = "cuda:0"
+        self.device = "cpu"
         self.seed = 1
         self.log_interval = 50
+        self.model = models.ResNeXt50
 
         # data distribution ratios and node details
         self.number_of_nodes = 2
