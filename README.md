@@ -16,4 +16,4 @@ Data-set: https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
 ## Scores
 | Model  | Number of nodes | Distribution | Epochs before aggregation | Aggregation_iter | Accuracy |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-| Two layer CNN  | 2 nodes | 0.5, 0.5 | 4 epochs | 5 iters | 0.80 |
+| Two layer CNN  | 2 nodes | 0.5, 0.5 | 4 epochs | 5 iters | 0.8477 |
