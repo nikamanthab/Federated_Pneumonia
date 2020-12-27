@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "logger.py", line 9, in <module>
+    w = initialize_wandb(models.TwoLayerNet)
+  File "logger.py", line 6, in initialize_wandb
+    wandb.watch(model)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/wandb/sdk/wandb_watch.py", line 66, in watch
+    + str(type(model))
+ValueError: Expected a pytorch model (torch.nn.Module). Received <class 'type'>

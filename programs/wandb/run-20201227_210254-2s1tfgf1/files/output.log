@@ -1,0 +1,49 @@
+-------------------------------------------------------------------
+> /home/nikamanth/Documents/fyp/programs/parallel_run.py(25)runOnNode()
+-> logger = log.initialize_wandb(x_model, node)
+(Pdb) Traceback (most recent call last):
+  File "run.py", line 20, in <module>
+    parallel_run.runTrainParallel(nodelist, datasample_count, args, FLdataloaders, testloader)
+  File "/home/nikamanth/Documents/fyp/programs/parallel_run.py", line 54, in runTrainParallel
+    node_model_list = loop.run_until_complete(collectModels(nodelist, args, model, FLdataloaders))
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/asyncio/base_events.py", line 587, in run_until_complete
+    return future.result()
+  File "/home/nikamanth/Documents/fyp/programs/parallel_run.py", line 40, in collectModels
+    return [m.result() for m in task_list]
+  File "/home/nikamanth/Documents/fyp/programs/parallel_run.py", line 40, in <listcomp>
+    return [m.result() for m in task_list]
+  File "/home/nikamanth/Documents/fyp/programs/parallel_run.py", line 25, in runOnNode
+    logger = log.initialize_wandb(x_model, node)
+  File "/home/nikamanth/Documents/fyp/programs/log.py", line 6, in initialize_wandb
+    wandb.watch(model)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/wandb/sdk/wandb_watch.py", line 86, in watch
+    jupyter_run=wandb.run if in_jupyter else None,
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/wandb/wandb_torch.py", line 136, in add_log_hooks_to_pytorch_module
+    parameter, "gradients/" + prefix + name, log_track_grad
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/wandb/wandb_torch.py", line 285, in _hook_variable_gradient_stats
+    handle = var.register_hook(lambda grad: _callback(grad, log_track))
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/syft/generic/frameworks/hook/hook.py", line 209, in overloaded_native_method
+    response = method(*new_args, **new_kwargs)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/syft/generic/frameworks/hook/pointers.py", line 84, in overloaded_pointer_method
+    response = owner.send_command(location, attr, self, args, kwargs)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/syft/workers/base.py", line 525, in send_command
+    ret_val = self.send_msg(message, location=recipient)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/syft/workers/base.py", line 313, in send_msg
+    bin_message = sy.serde.serialize(message, worker=self)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/syft/serde/serde.py", line 47, in serialize
+    return strategy(obj, worker, simplified, force_full_simplification)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/syft/serde/msgpack/serde.py", line 343, in serialize
+    return _serialize_msgpack_binary(simple_objects)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/syft/serde/msgpack/serde.py", line 297, in _serialize_msgpack_binary
+    binary = msgpack_lib.dumps(simple_objects)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/msgpack/__init__.py", line 35, in packb
+    return Packer(**kwargs).pack(o)
+  File "msgpack/_packer.pyx", line 292, in msgpack._cmsgpack.Packer.pack
+  File "msgpack/_packer.pyx", line 298, in msgpack._cmsgpack.Packer.pack
+  File "msgpack/_packer.pyx", line 295, in msgpack._cmsgpack.Packer.pack
+  File "msgpack/_packer.pyx", line 264, in msgpack._cmsgpack.Packer._pack
+  File "msgpack/_packer.pyx", line 264, in msgpack._cmsgpack.Packer._pack
+  File "msgpack/_packer.pyx", line 264, in msgpack._cmsgpack.Packer._pack
+  [Previous line repeated 3 more times]
+  File "msgpack/_packer.pyx", line 289, in msgpack._cmsgpack.Packer._pack
+TypeError: can not serialize 'function' object

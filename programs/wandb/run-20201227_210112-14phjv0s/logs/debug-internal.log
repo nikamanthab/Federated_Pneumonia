@@ -1,0 +1,61 @@
+2020-12-27 21:01:12,853 INFO    MainThread:11762 [internal.py:wandb_internal():63] W&B internal server running at pid: 11762
+2020-12-27 21:01:12,855 INFO    WriterThread:11762 [datastore.py:open_for_write():76] open: /home/nikamanth/Documents/fyp/programs/wandb/run-20201227_210112-14phjv0s/run-14phjv0s.wandb
+2020-12-27 21:01:12,855 DEBUG   HandlerThread:11762 [handler.py:handle_request():55] handle_request: check_version
+2020-12-27 21:01:12,856 DEBUG   SenderThread:11762 [sender.py:send():90] send: header
+2020-12-27 21:01:12,856 DEBUG   SenderThread:11762 [sender.py:send():90] send: request
+2020-12-27 21:01:12,856 DEBUG   SenderThread:11762 [sender.py:send_request():99] send_request: check_version
+2020-12-27 21:01:12,860 DEBUG   Thread-4  :11762 [connectionpool.py:_new_conn():941] Starting new HTTPS connection (1): pypi.org:443
+2020-12-27 21:01:12,964 DEBUG   Thread-4  :11762 [connectionpool.py:_make_request():442] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 52216
+2020-12-27 21:01:12,998 DEBUG   SenderThread:11762 [sender.py:send():90] send: run
+2020-12-27 21:01:13,001 DEBUG   SenderThread:11762 [cmd.py:execute():719] Popen(['git', 'cat-file', '--batch-check'], cwd=/home/nikamanth/Documents/fyp, universal_newlines=False, shell=None, istream=<valid stream>)
+2020-12-27 21:01:13,014 DEBUG   SenderThread:11762 [connectionpool.py:_new_conn():941] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-27 21:01:13,286 DEBUG   SenderThread:11762 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 400 None
+2020-12-27 21:01:13,290 ERROR   SenderThread:11762 [internal_api.py:execute():133] 400 response executing GraphQL.
+2020-12-27 21:01:13,291 ERROR   SenderThread:11762 [internal_api.py:execute():134] {"errors":[{"message":"invalid project name fed-learning\u003cVirtualWorker id:node0 #objects:10\u003e, cannot contain character \":\"","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2020-12-27 21:01:13,999 INFO    HandlerThread:11762 [handler.py:finish():271] shutting down handler
+2020-12-27 21:01:13,999 INFO    WriterThread:11762 [datastore.py:close():257] close: /home/nikamanth/Documents/fyp/programs/wandb/run-20201227_210112-14phjv0s/run-14phjv0s.wandb
+2020-12-27 21:01:14,000 ERROR   MainThread:11762 [internal.py:wandb_internal():129] Thread SenderThread:
+Traceback (most recent call last):
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/wandb/apis/normalize.py", line 24, in wrapper
+    return func(*args, **kwargs)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/wandb/sdk/internal/internal_api.py", line 976, in upsert_run
+    response = self.gql(mutation, variable_values=variable_values, **kwargs)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/wandb/old/retry.py", line 96, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/wandb/sdk/internal/internal_api.py", line 136, in execute
+    six.reraise(*sys.exc_info())
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/six.py", line 703, in reraise
+    raise value
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/wandb/sdk/internal/internal_api.py", line 130, in execute
+    return self.client.execute(*args, **kwargs)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/wandb/vendor/gql-0.2.0/gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/wandb/vendor/gql-0.2.0/gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/wandb/vendor/gql-0.2.0/gql/transport/requests.py", line 39, in execute
+    request.raise_for_status()
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/wandb/sdk/internal/internal_util.py", line 33, in run
+    self._run()
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/wandb/sdk/internal/internal_util.py", line 60, in _run
+    self._process(record)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/wandb/sdk/internal/internal.py", line 233, in _process
+    self._sm.send(record)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/wandb/sdk/internal/sender.py", line 92, in send
+    send_handler(record)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/wandb/sdk/internal/sender.py", line 379, in send_run
+    self._init_run(run, config_dict)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/wandb/sdk/internal/sender.py", line 415, in _init_run
+    commit=repo.last_commit,
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/wandb/apis/normalize.py", line 26, in wrapper
+    raise CommError(err.response, err)
+wandb.errors.error.CommError: <Response [400]>
+2020-12-27 21:01:14,054 DEBUG   raven-sentry.BackgroundWorker:11762 [connectionpool.py:_new_conn():941] Starting new HTTPS connection (1): o151352.ingest.sentry.io:443
+2020-12-27 21:01:15,037 DEBUG   raven-sentry.BackgroundWorker:11762 [connectionpool.py:_make_request():442] https://o151352.ingest.sentry.io:443 "POST /api/5288891/store/ HTTP/1.1" 200 41
+2020-12-27 21:01:16,051 INFO    MainThread:11762 [internal.py:handle_exit():138] Internal process exited

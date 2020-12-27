@@ -1,0 +1,45 @@
+Aggregation Epoch Number: 1
+Train Epoch: 1 [0/24 (0%)]	Loss: 0.698382
+Train Epoch: 2 [0/24 (0%)]	Loss: 0.691400
+Train Epoch: 3 [0/24 (0%)]	Loss: 0.685999
+Train Epoch: 4 [0/24 (0%)]	Loss: 0.680346
+Saving to: ../aggregated_model/agg_model.pt
+
+Test set: Average loss: 0.6926, Accuracy: 243/624 (39%)
+
+Aggregation Epoch Number: 2
+Train Epoch: 1 [0/24 (0%)]	Loss: 0.676162
+Train Epoch: 2 [0/24 (0%)]	Loss: 0.671588
+Train Epoch: 3 [0/24 (0%)]	Loss: 0.667226
+Train Epoch: 4 [0/24 (0%)]	Loss: 0.659515
+Saving to: ../aggregated_model/agg_model.pt
+
+Test set: Average loss: 0.6975, Accuracy: 234/624 (38%)
+
+Aggregation Epoch Number: 3
+Train Epoch: 1 [0/24 (0%)]	Loss: 0.653568
+Train Epoch: 2 [0/24 (0%)]	Loss: 0.648153
+Train Epoch: 3 [0/24 (0%)]	Loss: 0.639436
+Train Epoch: 4 [0/24 (0%)]	Loss: 0.637692
+Saving to: ../aggregated_model/agg_model.pt
+
+Test set: Average loss: 0.7030, Accuracy: 234/624 (38%)
+
+Aggregation Epoch Number: 4
+Train Epoch: 1 [0/24 (0%)]	Loss: 0.632702
+Train Epoch: 2 [0/24 (0%)]	Loss: 0.625154
+Train Epoch: 3 [0/24 (0%)]	Loss: 0.623038
+Train Epoch: 4 [0/24 (0%)]	Loss: 0.617444
+Saving to: ../aggregated_model/agg_model.pt
+
+Test set: Average loss: 0.7091, Accuracy: 234/624 (38%)
+
+Aggregation Epoch Number: 5
+Train Epoch: 1 [0/24 (0%)]	Loss: 0.609221
+Train Epoch: 2 [0/24 (0%)]	Loss: 0.605304
+Train Epoch: 3 [0/24 (0%)]	Loss: 0.600993
+Train Epoch: 4 [0/24 (0%)]	Loss: 0.593242
+Saving to: ../aggregated_model/agg_model.pt
+
+Test set: Average loss: 0.7158, Accuracy: 234/624 (38%)
+

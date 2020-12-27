@@ -4,7 +4,7 @@ import torch.nn.functional as F
 import torchvision
 
 class TwoLayerNet(nn.Module):
-    def __init__(self, device):
+    def __init__(self):
         super(TwoLayerNet, self).__init__()
         self.conv1 = nn.Conv2d(1, 20, 5, 1)
         self.conv2 = nn.Conv2d(20, 50, 5, 1)
@@ -21,14 +21,14 @@ class TwoLayerNet(nn.Module):
         x = self.fc2(x)
         return F.log_softmax(x, dim=1)
 
-class AddLayer(nn.Module):
-    def __init__(self, device):
-        super(AddLayer, self).__init__()
-        self.fc1 = nn.Linear(1000, 2)
+# class AddLayer(nn.Module):
+#     def __init__(self, device):
+#         super(AddLayer, self).__init__()
+#         self.fc1 = nn.Linear(1000, 2)
 
-    def forward(self, x):
-        x = self.fc1(x)
-        return F.log_softmax(x, dim=1)
+#     def forward(self, x):
+#         x = self.fc1(x)
+#         return F.log_softmax(x, dim=1)
 
 # def ResNeXt50(device):
 #     resnext = torchvision.models.resnext50_32x4d(pretrained=False, progress=True)
@@ -39,11 +39,20 @@ class AddLayer(nn.Module):
 #     )
 #     return model
 
+class Alex(nn.Module):
+    def __init__(self):
+        super(Alex, self).__init__()
+        self.model = torchvision.models.AlexNet(num_classes=2)
+        self.model.features[0] = nn.Conv2d(1, 64, kernel_size=(11, 11), stride=(4, 4), padding=(2, 2))
+
+    def forward(self, x):
+        x = self.model(x)
+        return F.log_softmax(x, dim=1)
 
 class ResNeXt50(nn.Module):
-    def __init__(self, device):
+    def __init__(self):
         super(ResNeXt50, self).__init__()
-        self.model = torchvision.models.resnext50_32x4d(pretrained=False, progress=True).to(device=device)
+        self.model = torchvision.models.resnext50_32x4d(pretrained=False, progress=True)
         self.model.conv1 = nn.Conv2d(1, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
         self.fc1 = nn.Linear(1000, 2)
 

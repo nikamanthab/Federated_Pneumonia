@@ -1,0 +1,25 @@
+2020-12-27 21:01:48,107 INFO    MainThread:11708 [wandb_setup.py:_flush():70] setting env: {}
+2020-12-27 21:01:48,107 INFO    MainThread:11708 [wandb_setup.py:_flush():70] multiprocessing start_methods=fork,spawn,forkserver
+2020-12-27 21:01:48,107 INFO    MainThread:11708 [wandb_setup.py:_flush():70] setting login settings: {}
+2020-12-27 21:01:48,107 INFO    MainThread:11708 [wandb_init.py:_log_setup():303] Logging user logs to /home/nikamanth/Documents/fyp/programs/wandb/run-20201227_210148-2027e9a1/logs/debug.log
+2020-12-27 21:01:48,108 INFO    MainThread:11708 [wandb_init.py:_log_setup():304] Logging internal logs to /home/nikamanth/Documents/fyp/programs/wandb/run-20201227_210148-2027e9a1/logs/debug-internal.log
+2020-12-27 21:02:05,349 WARNING MainThread:11708 [wandb_init.py:init():595] interrupted
+Traceback (most recent call last):
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/wandb/sdk/wandb_init.py", line 575, in init
+    run = wi.init()
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/wandb/sdk/wandb_init.py", line 411, in init
+    ret = backend.interface.communicate_run(run, timeout=30)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/wandb/sdk/interface/interface.py", line 542, in communicate_run
+    return self._communicate_run(run, timeout=timeout)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/wandb/sdk/interface/interface.py", line 533, in _communicate_run
+    resp = self._communicate(req, timeout=timeout)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/wandb/sdk/interface/interface.py", line 447, in _communicate
+    return future.get(timeout)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/wandb/sdk/interface/interface.py", line 63, in get
+    is_set = self._object_ready.wait(timeout)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/threading.py", line 552, in wait
+    signaled = self._cond.wait(timeout)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/threading.py", line 300, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt
+2020-12-27 21:02:05,356 INFO    MainThread:11708 [internal.py:handle_exit():138] Internal process exited

@@ -34,7 +34,7 @@ def fed_avg_aggregator(model_data, args):
         for node_idx in range(len(node_weights)):
             temp+= (node_samples[node_idx]/total_no_samples)*node_weights[node_idx][layer_idx]
         aggregated_weights.append(temp)
-    agg_model = args.model(args.device)
+    agg_model = args.model().to(args.device)
     for idx, param in enumerate(agg_model.parameters()):
         param.data = aggregated_weights[idx]
     return agg_model

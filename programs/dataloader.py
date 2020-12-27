@@ -67,7 +67,7 @@ def getDataLoaders(args, sy):
         node = sy.VirtualWorker(hook, id="node"+str(node_counter))
         node_list.append(node)
         dataset = XDataset(frame, os.path.join(args.data_location, 'train'), transform=transforms.Compose(
-            [transforms.Resize((28,28)),
+            [transforms.Resize(args.image_dim),
             transforms.ToTensor(),
             transforms.Normalize((0.5,), (0.5,))]))
         data_loader = sy.FederatedDataLoader(
@@ -81,7 +81,7 @@ def getTestLoader(args):
     df_test = pd.read_csv(os.path.join(args.csv_location,'test.csv'))
     df_test = df_test.sample(frac=1)
     testdataset = XDataset(df_test,os.path.join(args.data_location,'test'), transform=transforms.Compose(
-        [transforms.Resize((28,28)),
+        [transforms.Resize(args.image_dim),
         transforms.ToTensor(),
         transforms.Normalize((0.5,), (0.5,))]))
 

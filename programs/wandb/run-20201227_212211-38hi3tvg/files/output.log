@@ -1,0 +1,493 @@
+Aggregation Epoch Number: 1
+Train Epoch: 1 [0/5216 (0%)]	Loss: 0.730354
+Train Epoch: 1 [400/5216 (8%)]	Loss: 0.693993
+Train Epoch: 1 [800/5216 (15%)]	Loss: 0.692886
+Train Epoch: 1 [1200/5216 (23%)]	Loss: 0.665936
+Train Epoch: 1 [1600/5216 (31%)]	Loss: 0.695793
+Train Epoch: 1 [2000/5216 (38%)]	Loss: 0.582603
+Train Epoch: 1 [2400/5216 (46%)]	Loss: 0.627489
+Train Epoch: 1 [2800/5216 (54%)]	Loss: 0.570541
+Train Epoch: 1 [3200/5216 (61%)]	Loss: 0.608571
+Train Epoch: 1 [3600/5216 (69%)]	Loss: 0.477157
+Train Epoch: 1 [4000/5216 (77%)]	Loss: 0.527014
+Train Epoch: 1 [4400/5216 (84%)]	Loss: 0.585551
+Train Epoch: 1 [4800/5216 (92%)]	Loss: 0.502968
+Train Epoch: 1 [5200/5216 (100%)]	Loss: 0.590644
+Train Epoch: 2 [0/5216 (0%)]	Loss: 0.392330
+Train Epoch: 2 [400/5216 (8%)]	Loss: 0.661976
+Train Epoch: 2 [800/5216 (15%)]	Loss: 0.573806
+Train Epoch: 2 [1200/5216 (23%)]	Loss: 0.463778
+Train Epoch: 2 [1600/5216 (31%)]	Loss: 0.760241
+Train Epoch: 2 [2000/5216 (38%)]	Loss: 0.463786
+Train Epoch: 2 [2400/5216 (46%)]	Loss: 0.342004
+Train Epoch: 2 [2800/5216 (54%)]	Loss: 0.436254
+Train Epoch: 2 [3200/5216 (61%)]	Loss: 0.562534
+Train Epoch: 2 [3600/5216 (69%)]	Loss: 0.555074
+Train Epoch: 2 [4000/5216 (77%)]	Loss: 0.567532
+Train Epoch: 2 [4400/5216 (84%)]	Loss: 0.335392
+Train Epoch: 2 [4800/5216 (92%)]	Loss: 0.549547
+Train Epoch: 2 [5200/5216 (100%)]	Loss: 0.412643
+Train Epoch: 3 [0/5216 (0%)]	Loss: 0.675342
+Train Epoch: 3 [400/5216 (8%)]	Loss: 0.430313
+Train Epoch: 3 [800/5216 (15%)]	Loss: 0.420773
+Train Epoch: 3 [1200/5216 (23%)]	Loss: 0.554137
+Train Epoch: 3 [1600/5216 (31%)]	Loss: 0.666455
+Train Epoch: 3 [2000/5216 (38%)]	Loss: 0.642977
+Train Epoch: 3 [2400/5216 (46%)]	Loss: 0.781382
+Train Epoch: 3 [2800/5216 (54%)]	Loss: 0.698381
+Train Epoch: 3 [3200/5216 (61%)]	Loss: 0.416783
+Train Epoch: 3 [3600/5216 (69%)]	Loss: 0.641085
+Train Epoch: 3 [4000/5216 (77%)]	Loss: 0.551099
+Train Epoch: 3 [4400/5216 (84%)]	Loss: 0.685094
+Train Epoch: 3 [4800/5216 (92%)]	Loss: 0.546006
+Train Epoch: 3 [5200/5216 (100%)]	Loss: 0.783924
+Train Epoch: 4 [0/5216 (0%)]	Loss: 0.530609
+Train Epoch: 4 [400/5216 (8%)]	Loss: 0.428273
+Train Epoch: 4 [800/5216 (15%)]	Loss: 0.675710
+Train Epoch: 4 [1200/5216 (23%)]	Loss: 0.419437
+Train Epoch: 4 [1600/5216 (31%)]	Loss: 0.518326
+Train Epoch: 4 [2000/5216 (38%)]	Loss: 0.378656
+Train Epoch: 4 [2400/5216 (46%)]	Loss: 0.521871
+Train Epoch: 4 [2800/5216 (54%)]	Loss: 0.993238
+Train Epoch: 4 [3200/5216 (61%)]	Loss: 0.503840
+Train Epoch: 4 [3600/5216 (69%)]	Loss: 0.477841
+Train Epoch: 4 [4000/5216 (77%)]	Loss: 0.566266
+Train Epoch: 4 [4400/5216 (84%)]	Loss: 0.434523
+Train Epoch: 4 [4800/5216 (92%)]	Loss: 0.481189
+Train Epoch: 4 [5200/5216 (100%)]	Loss: 0.517962
+Saving to: ../aggregated_model/agg_model.pt
+
+Test set: Average loss: 0.6552, Accuracy: 390/624 (62%)
+
+Aggregation Epoch Number: 2
+Train Epoch: 1 [0/5216 (0%)]	Loss: 0.524302
+Train Epoch: 1 [400/5216 (8%)]	Loss: 0.615674
+Train Epoch: 1 [800/5216 (15%)]	Loss: 0.699863
+Train Epoch: 1 [1200/5216 (23%)]	Loss: 0.271670
+Train Epoch: 1 [1600/5216 (31%)]	Loss: 0.471068
+Train Epoch: 1 [2000/5216 (38%)]	Loss: 0.549262
+Train Epoch: 1 [2400/5216 (46%)]	Loss: 0.598389
+Train Epoch: 1 [2800/5216 (54%)]	Loss: 0.583968
+Train Epoch: 1 [3200/5216 (61%)]	Loss: 0.407550
+Train Epoch: 1 [3600/5216 (69%)]	Loss: 0.511705
+Train Epoch: 1 [4000/5216 (77%)]	Loss: 0.367796
+Train Epoch: 1 [4400/5216 (84%)]	Loss: 0.636850
+Train Epoch: 1 [4800/5216 (92%)]	Loss: 0.485051
+Train Epoch: 1 [5200/5216 (100%)]	Loss: 0.494839
+Train Epoch: 2 [0/5216 (0%)]	Loss: 0.507969
+Train Epoch: 2 [400/5216 (8%)]	Loss: 0.369776
+Train Epoch: 2 [800/5216 (15%)]	Loss: 0.332951
+Train Epoch: 2 [1200/5216 (23%)]	Loss: 0.583351
+Train Epoch: 2 [1600/5216 (31%)]	Loss: 0.442058
+Train Epoch: 2 [2000/5216 (38%)]	Loss: 0.231057
+Train Epoch: 2 [2400/5216 (46%)]	Loss: 0.372445
+Train Epoch: 2 [2800/5216 (54%)]	Loss: 0.464274
+Train Epoch: 2 [3200/5216 (61%)]	Loss: 0.513550
+Train Epoch: 2 [3600/5216 (69%)]	Loss: 0.329187
+Train Epoch: 2 [4000/5216 (77%)]	Loss: 0.223332
+Train Epoch: 2 [4400/5216 (84%)]	Loss: 0.402878
+Train Epoch: 2 [4800/5216 (92%)]	Loss: 0.520273
+Train Epoch: 2 [5200/5216 (100%)]	Loss: 0.432883
+Train Epoch: 3 [0/5216 (0%)]	Loss: 0.352797
+Train Epoch: 3 [400/5216 (8%)]	Loss: 0.398893
+Train Epoch: 3 [800/5216 (15%)]	Loss: 0.327167
+Train Epoch: 3 [1200/5216 (23%)]	Loss: 0.308446
+Train Epoch: 3 [1600/5216 (31%)]	Loss: 0.406740
+Train Epoch: 3 [2000/5216 (38%)]	Loss: 0.406472
+Train Epoch: 3 [2400/5216 (46%)]	Loss: 0.307156
+Train Epoch: 3 [2800/5216 (54%)]	Loss: 0.329248
+Train Epoch: 3 [3200/5216 (61%)]	Loss: 0.472371
+Train Epoch: 3 [3600/5216 (69%)]	Loss: 0.520384
+Train Epoch: 3 [4000/5216 (77%)]	Loss: 0.332729
+Train Epoch: 3 [4400/5216 (84%)]	Loss: 0.387198
+Train Epoch: 3 [4800/5216 (92%)]	Loss: 0.441984
+Train Epoch: 3 [5200/5216 (100%)]	Loss: 0.336440
+Train Epoch: 4 [0/5216 (0%)]	Loss: 0.795661
+Train Epoch: 4 [400/5216 (8%)]	Loss: 0.388054
+Train Epoch: 4 [800/5216 (15%)]	Loss: 0.563758
+Train Epoch: 4 [1200/5216 (23%)]	Loss: 0.407254
+Train Epoch: 4 [1600/5216 (31%)]	Loss: 0.287586
+Train Epoch: 4 [2000/5216 (38%)]	Loss: 0.203414
+Train Epoch: 4 [2400/5216 (46%)]	Loss: 0.360138
+Train Epoch: 4 [2800/5216 (54%)]	Loss: 0.228663
+Train Epoch: 4 [3200/5216 (61%)]	Loss: 0.518454
+Train Epoch: 4 [3600/5216 (69%)]	Loss: 0.279095
+Train Epoch: 4 [4000/5216 (77%)]	Loss: 0.129624
+Train Epoch: 4 [4400/5216 (84%)]	Loss: 0.150091
+Train Epoch: 4 [4800/5216 (92%)]	Loss: 0.210645
+Train Epoch: 4 [5200/5216 (100%)]	Loss: 0.582738
+Saving to: ../aggregated_model/agg_model.pt
+
+Test set: Average loss: 0.4243, Accuracy: 522/624 (84%)
+
+Aggregation Epoch Number: 3
+Train Epoch: 1 [0/5216 (0%)]	Loss: 0.206551
+Train Epoch: 1 [400/5216 (8%)]	Loss: 0.480917
+Train Epoch: 1 [800/5216 (15%)]	Loss: 0.592545
+Train Epoch: 1 [1200/5216 (23%)]	Loss: 0.311677
+Train Epoch: 1 [1600/5216 (31%)]	Loss: 0.137676
+Train Epoch: 1 [2000/5216 (38%)]	Loss: 0.202216
+Train Epoch: 1 [2400/5216 (46%)]	Loss: 0.175005
+Train Epoch: 1 [2800/5216 (54%)]	Loss: 0.105907
+Train Epoch: 1 [3200/5216 (61%)]	Loss: 0.155586
+Train Epoch: 1 [3600/5216 (69%)]	Loss: 0.278138
+Train Epoch: 1 [4000/5216 (77%)]	Loss: 0.213296
+Train Epoch: 1 [4400/5216 (84%)]	Loss: 0.175813
+Train Epoch: 1 [4800/5216 (92%)]	Loss: 0.113336
+Train Epoch: 1 [5200/5216 (100%)]	Loss: 0.156516
+Train Epoch: 2 [0/5216 (0%)]	Loss: 0.303356
+Train Epoch: 2 [400/5216 (8%)]	Loss: 0.236309
+Train Epoch: 2 [800/5216 (15%)]	Loss: 0.135480
+Train Epoch: 2 [1200/5216 (23%)]	Loss: 0.149905
+Train Epoch: 2 [1600/5216 (31%)]	Loss: 0.255248
+Train Epoch: 2 [2000/5216 (38%)]	Loss: 0.269128
+Train Epoch: 2 [2400/5216 (46%)]	Loss: 0.086347
+Train Epoch: 2 [2800/5216 (54%)]	Loss: 0.242919
+Train Epoch: 2 [3200/5216 (61%)]	Loss: 0.555081
+Train Epoch: 2 [3600/5216 (69%)]	Loss: 0.302144
+Train Epoch: 2 [4000/5216 (77%)]	Loss: 0.198310
+Train Epoch: 2 [4400/5216 (84%)]	Loss: 0.178656
+Train Epoch: 2 [4800/5216 (92%)]	Loss: 0.515710
+Train Epoch: 2 [5200/5216 (100%)]	Loss: 0.260454
+Train Epoch: 3 [0/5216 (0%)]	Loss: 0.184047
+Train Epoch: 3 [400/5216 (8%)]	Loss: 0.122087
+Train Epoch: 3 [800/5216 (15%)]	Loss: 0.151626
+Train Epoch: 3 [1200/5216 (23%)]	Loss: 0.081407
+Train Epoch: 3 [1600/5216 (31%)]	Loss: 0.333486
+Train Epoch: 3 [2000/5216 (38%)]	Loss: 0.126235
+Train Epoch: 3 [2400/5216 (46%)]	Loss: 0.082551
+Train Epoch: 3 [2800/5216 (54%)]	Loss: 0.463347
+Train Epoch: 3 [3200/5216 (61%)]	Loss: 0.070882
+Train Epoch: 3 [3600/5216 (69%)]	Loss: 0.419833
+Train Epoch: 3 [4000/5216 (77%)]	Loss: 0.300438
+Train Epoch: 3 [4400/5216 (84%)]	Loss: 0.242494
+Train Epoch: 3 [4800/5216 (92%)]	Loss: 0.231357
+Train Epoch: 3 [5200/5216 (100%)]	Loss: 0.402908
+Train Epoch: 4 [0/5216 (0%)]	Loss: 0.098243
+Train Epoch: 4 [400/5216 (8%)]	Loss: 0.204140
+Train Epoch: 4 [800/5216 (15%)]	Loss: 0.096016
+Train Epoch: 4 [1200/5216 (23%)]	Loss: 0.212474
+Train Epoch: 4 [1600/5216 (31%)]	Loss: 0.281181
+Train Epoch: 4 [2000/5216 (38%)]	Loss: 0.178127
+Train Epoch: 4 [2400/5216 (46%)]	Loss: 0.627433
+Train Epoch: 4 [2800/5216 (54%)]	Loss: 0.389029
+Train Epoch: 4 [3200/5216 (61%)]	Loss: 0.067767
+Train Epoch: 4 [3600/5216 (69%)]	Loss: 0.131118
+Train Epoch: 4 [4000/5216 (77%)]	Loss: 0.111355
+Train Epoch: 4 [4400/5216 (84%)]	Loss: 0.367784
+Train Epoch: 4 [4800/5216 (92%)]	Loss: 0.311295
+Train Epoch: 4 [5200/5216 (100%)]	Loss: 0.286428
+Saving to: ../aggregated_model/agg_model.pt
+
+Test set: Average loss: 0.3719, Accuracy: 529/624 (85%)
+
+Aggregation Epoch Number: 4
+Train Epoch: 1 [0/5216 (0%)]	Loss: 0.187452
+Train Epoch: 1 [400/5216 (8%)]	Loss: 0.109146
+Train Epoch: 1 [800/5216 (15%)]	Loss: 0.201280
+Train Epoch: 1 [1200/5216 (23%)]	Loss: 0.171678
+Train Epoch: 1 [1600/5216 (31%)]	Loss: 0.286650
+Train Epoch: 1 [2000/5216 (38%)]	Loss: 0.202631
+Train Epoch: 1 [2400/5216 (46%)]	Loss: 0.393109
+Train Epoch: 1 [2800/5216 (54%)]	Loss: 0.139685
+Train Epoch: 1 [3200/5216 (61%)]	Loss: 0.270168
+Train Epoch: 1 [3600/5216 (69%)]	Loss: 0.166442
+Train Epoch: 1 [4000/5216 (77%)]	Loss: 0.107146
+Train Epoch: 1 [4400/5216 (84%)]	Loss: 0.054330
+Train Epoch: 1 [4800/5216 (92%)]	Loss: 0.308803
+Train Epoch: 1 [5200/5216 (100%)]	Loss: 0.055152
+Train Epoch: 2 [0/5216 (0%)]	Loss: 0.169778
+Train Epoch: 2 [400/5216 (8%)]	Loss: 0.209932
+Train Epoch: 2 [800/5216 (15%)]	Loss: 0.053311
+Train Epoch: 2 [1200/5216 (23%)]	Loss: 0.037170
+Train Epoch: 2 [1600/5216 (31%)]	Loss: 0.061095
+Train Epoch: 2 [2000/5216 (38%)]	Loss: 0.286506
+Train Epoch: 2 [2400/5216 (46%)]	Loss: 0.096039
+Train Epoch: 2 [2800/5216 (54%)]	Loss: 0.094836
+Train Epoch: 2 [3200/5216 (61%)]	Loss: 0.267393
+Train Epoch: 2 [3600/5216 (69%)]	Loss: 0.084596
+Train Epoch: 2 [4000/5216 (77%)]	Loss: 0.212979
+Train Epoch: 2 [4400/5216 (84%)]	Loss: 0.300804
+Train Epoch: 2 [4800/5216 (92%)]	Loss: 0.008299
+Train Epoch: 2 [5200/5216 (100%)]	Loss: 0.070971
+Train Epoch: 3 [0/5216 (0%)]	Loss: 0.149320
+Train Epoch: 3 [400/5216 (8%)]	Loss: 0.220990
+Train Epoch: 3 [800/5216 (15%)]	Loss: 0.442891
+Train Epoch: 3 [1200/5216 (23%)]	Loss: 0.083914
+Train Epoch: 3 [1600/5216 (31%)]	Loss: 0.232314
+Train Epoch: 3 [2000/5216 (38%)]	Loss: 0.039194
+Train Epoch: 3 [2400/5216 (46%)]	Loss: 0.045429
+Train Epoch: 3 [2800/5216 (54%)]	Loss: 0.115766
+Train Epoch: 3 [3200/5216 (61%)]	Loss: 0.124940
+Train Epoch: 3 [3600/5216 (69%)]	Loss: 0.039327
+Train Epoch: 3 [4000/5216 (77%)]	Loss: 0.078709
+Train Epoch: 3 [4400/5216 (84%)]	Loss: 0.021289
+Train Epoch: 3 [4800/5216 (92%)]	Loss: 0.012729
+Train Epoch: 3 [5200/5216 (100%)]	Loss: 0.326964
+Train Epoch: 4 [0/5216 (0%)]	Loss: 0.038626
+Train Epoch: 4 [400/5216 (8%)]	Loss: 0.068291
+Train Epoch: 4 [800/5216 (15%)]	Loss: 0.064406
+Train Epoch: 4 [1200/5216 (23%)]	Loss: 0.098280
+Train Epoch: 4 [1600/5216 (31%)]	Loss: 0.078902
+Train Epoch: 4 [2000/5216 (38%)]	Loss: 0.130244
+Train Epoch: 4 [2400/5216 (46%)]	Loss: 0.720358
+Train Epoch: 4 [2800/5216 (54%)]	Loss: 0.219110
+Train Epoch: 4 [3200/5216 (61%)]	Loss: 0.497773
+Train Epoch: 4 [3600/5216 (69%)]	Loss: 0.073628
+Train Epoch: 4 [4000/5216 (77%)]	Loss: 0.009024
+Train Epoch: 4 [4400/5216 (84%)]	Loss: 0.086590
+Train Epoch: 4 [4800/5216 (92%)]	Loss: 0.150052
+Train Epoch: 4 [5200/5216 (100%)]	Loss: 0.156218
+Saving to: ../aggregated_model/agg_model.pt
+
+Test set: Average loss: 0.4062, Accuracy: 520/624 (83%)
+
+Aggregation Epoch Number: 5
+Train Epoch: 1 [0/5216 (0%)]	Loss: 0.100253
+Train Epoch: 1 [400/5216 (8%)]	Loss: 0.105949
+Train Epoch: 1 [800/5216 (15%)]	Loss: 0.038032
+Train Epoch: 1 [1200/5216 (23%)]	Loss: 0.034812
+Train Epoch: 1 [1600/5216 (31%)]	Loss: 0.135944
+Train Epoch: 1 [2000/5216 (38%)]	Loss: 0.439263
+Train Epoch: 1 [2400/5216 (46%)]	Loss: 0.267793
+Train Epoch: 1 [2800/5216 (54%)]	Loss: 0.079991
+Train Epoch: 1 [3200/5216 (61%)]	Loss: 0.115228
+Train Epoch: 1 [3600/5216 (69%)]	Loss: 0.062303
+Train Epoch: 1 [4000/5216 (77%)]	Loss: 0.035590
+Train Epoch: 1 [4400/5216 (84%)]	Loss: 0.026420
+Train Epoch: 1 [4800/5216 (92%)]	Loss: 0.105838
+Train Epoch: 1 [5200/5216 (100%)]	Loss: 0.158413
+Train Epoch: 2 [0/5216 (0%)]	Loss: 0.271779
+Train Epoch: 2 [400/5216 (8%)]	Loss: 0.225640
+Train Epoch: 2 [800/5216 (15%)]	Loss: 0.040810
+Train Epoch: 2 [1200/5216 (23%)]	Loss: 0.050492
+Train Epoch: 2 [1600/5216 (31%)]	Loss: 0.264382
+Train Epoch: 2 [2000/5216 (38%)]	Loss: 0.607297
+Train Epoch: 2 [2400/5216 (46%)]	Loss: 0.063454
+Train Epoch: 2 [2800/5216 (54%)]	Loss: 0.532943
+Train Epoch: 2 [3200/5216 (61%)]	Loss: 0.217454
+Train Epoch: 2 [3600/5216 (69%)]	Loss: 0.106851
+Train Epoch: 2 [4000/5216 (77%)]	Loss: 0.387191
+Train Epoch: 2 [4400/5216 (84%)]	Loss: 0.022597
+Train Epoch: 2 [4800/5216 (92%)]	Loss: 0.120954
+Train Epoch: 2 [5200/5216 (100%)]	Loss: 0.020332
+Train Epoch: 3 [0/5216 (0%)]	Loss: 0.616049
+Train Epoch: 3 [400/5216 (8%)]	Loss: 0.044236
+Train Epoch: 3 [800/5216 (15%)]	Loss: 0.146991
+Train Epoch: 3 [1200/5216 (23%)]	Loss: 0.100570
+Train Epoch: 3 [1600/5216 (31%)]	Loss: 0.199150
+Train Epoch: 3 [2000/5216 (38%)]	Loss: 0.075084
+Train Epoch: 3 [2400/5216 (46%)]	Loss: 0.485098
+Train Epoch: 3 [2800/5216 (54%)]	Loss: 0.180166
+Train Epoch: 3 [3200/5216 (61%)]	Loss: 0.073546
+Train Epoch: 3 [3600/5216 (69%)]	Loss: 0.054496
+Train Epoch: 3 [4000/5216 (77%)]	Loss: 0.207452
+Train Epoch: 3 [4400/5216 (84%)]	Loss: 0.210730
+Train Epoch: 3 [4800/5216 (92%)]	Loss: 0.116295
+Train Epoch: 3 [5200/5216 (100%)]	Loss: 0.135209
+Train Epoch: 4 [0/5216 (0%)]	Loss: 0.183414
+Train Epoch: 4 [400/5216 (8%)]	Loss: 0.068894
+Train Epoch: 4 [800/5216 (15%)]	Loss: 0.488906
+Train Epoch: 4 [1200/5216 (23%)]	Loss: 0.169882
+Train Epoch: 4 [1600/5216 (31%)]	Loss: 0.211099
+Train Epoch: 4 [2000/5216 (38%)]	Loss: 0.160608
+Train Epoch: 4 [2400/5216 (46%)]	Loss: 0.025179
+Train Epoch: 4 [2800/5216 (54%)]	Loss: 0.134633
+Train Epoch: 4 [3200/5216 (61%)]	Loss: 0.073063
+Train Epoch: 4 [3600/5216 (69%)]	Loss: 0.100295
+Train Epoch: 4 [4000/5216 (77%)]	Loss: 0.086081
+Train Epoch: 4 [4400/5216 (84%)]	Loss: 0.183356
+Train Epoch: 4 [4800/5216 (92%)]	Loss: 0.015052
+Train Epoch: 4 [5200/5216 (100%)]	Loss: 0.011754
+Saving to: ../aggregated_model/agg_model.pt
+
+Test set: Average loss: 0.6394, Accuracy: 482/624 (77%)
+
+Aggregation Epoch Number: 6
+Train Epoch: 1 [0/5216 (0%)]	Loss: 0.025066
+Train Epoch: 1 [400/5216 (8%)]	Loss: 0.028619
+Train Epoch: 1 [800/5216 (15%)]	Loss: 0.104466
+Train Epoch: 1 [1200/5216 (23%)]	Loss: 0.234007
+Train Epoch: 1 [1600/5216 (31%)]	Loss: 0.044847
+Train Epoch: 1 [2000/5216 (38%)]	Loss: 0.169443
+Train Epoch: 1 [2400/5216 (46%)]	Loss: 0.059287
+Train Epoch: 1 [2800/5216 (54%)]	Loss: 0.356697
+Train Epoch: 1 [3200/5216 (61%)]	Loss: 0.102597
+Train Epoch: 1 [3600/5216 (69%)]	Loss: 0.057074
+Train Epoch: 1 [4000/5216 (77%)]	Loss: 0.034601
+Train Epoch: 1 [4400/5216 (84%)]	Loss: 0.083504
+Train Epoch: 1 [4800/5216 (92%)]	Loss: 0.525027
+Train Epoch: 1 [5200/5216 (100%)]	Loss: 0.104097
+Train Epoch: 2 [0/5216 (0%)]	Loss: 0.070547
+Train Epoch: 2 [400/5216 (8%)]	Loss: 0.185828
+Train Epoch: 2 [800/5216 (15%)]	Loss: 0.140196
+Train Epoch: 2 [1200/5216 (23%)]	Loss: 0.028417
+Train Epoch: 2 [1600/5216 (31%)]	Loss: 0.246068
+Train Epoch: 2 [2000/5216 (38%)]	Loss: 0.018570
+Train Epoch: 2 [2400/5216 (46%)]	Loss: 0.058005
+Train Epoch: 2 [2800/5216 (54%)]	Loss: 0.143230
+Train Epoch: 2 [3200/5216 (61%)]	Loss: 0.416347
+Train Epoch: 2 [3600/5216 (69%)]	Loss: 0.303311
+Train Epoch: 2 [4000/5216 (77%)]	Loss: 0.015306
+Train Epoch: 2 [4400/5216 (84%)]	Loss: 0.429487
+Train Epoch: 2 [4800/5216 (92%)]	Loss: 0.039356
+Train Epoch: 2 [5200/5216 (100%)]	Loss: 0.115840
+Train Epoch: 3 [0/5216 (0%)]	Loss: 0.570011
+Train Epoch: 3 [400/5216 (8%)]	Loss: 0.036898
+Train Epoch: 3 [800/5216 (15%)]	Loss: 0.523810
+Train Epoch: 3 [1200/5216 (23%)]	Loss: 0.240393
+Train Epoch: 3 [1600/5216 (31%)]	Loss: 0.041906
+Train Epoch: 3 [2000/5216 (38%)]	Loss: 0.022309
+Train Epoch: 3 [2400/5216 (46%)]	Loss: 0.245274
+Train Epoch: 3 [2800/5216 (54%)]	Loss: 0.107886
+Train Epoch: 3 [3200/5216 (61%)]	Loss: 0.128721
+Train Epoch: 3 [3600/5216 (69%)]	Loss: 0.031062
+Train Epoch: 3 [4000/5216 (77%)]	Loss: 0.421565
+Train Epoch: 3 [4400/5216 (84%)]	Loss: 0.129091
+Train Epoch: 3 [4800/5216 (92%)]	Loss: 0.007432
+Train Epoch: 3 [5200/5216 (100%)]	Loss: 0.099886
+Train Epoch: 4 [0/5216 (0%)]	Loss: 0.023978
+Train Epoch: 4 [400/5216 (8%)]	Loss: 0.068509
+Train Epoch: 4 [800/5216 (15%)]	Loss: 0.007503
+Train Epoch: 4 [1200/5216 (23%)]	Loss: 0.294826
+Train Epoch: 4 [1600/5216 (31%)]	Loss: 0.535151
+Train Epoch: 4 [2000/5216 (38%)]	Loss: 0.055538
+Train Epoch: 4 [2400/5216 (46%)]	Loss: 0.046836
+Train Epoch: 4 [2800/5216 (54%)]	Loss: 0.338335
+Train Epoch: 4 [3200/5216 (61%)]	Loss: 0.634255
+Train Epoch: 4 [3600/5216 (69%)]	Loss: 0.055100
+Train Epoch: 4 [4000/5216 (77%)]	Loss: 0.012958
+Train Epoch: 4 [4400/5216 (84%)]	Loss: 0.421184
+Train Epoch: 4 [4800/5216 (92%)]	Loss: 0.024551
+Train Epoch: 4 [5200/5216 (100%)]	Loss: 0.052864
+Saving to: ../aggregated_model/agg_model.pt
+
+Test set: Average loss: 0.5366, Accuracy: 499/624 (80%)
+
+Aggregation Epoch Number: 7
+Train Epoch: 1 [0/5216 (0%)]	Loss: 0.727660
+Train Epoch: 1 [400/5216 (8%)]	Loss: 0.004705
+Train Epoch: 1 [800/5216 (15%)]	Loss: 0.139240
+Train Epoch: 1 [1200/5216 (23%)]	Loss: 0.204007
+Train Epoch: 1 [1600/5216 (31%)]	Loss: 0.072516
+Train Epoch: 1 [2000/5216 (38%)]	Loss: 0.125780
+Train Epoch: 1 [2400/5216 (46%)]	Loss: 0.076451
+Train Epoch: 1 [2800/5216 (54%)]	Loss: 0.085876
+Train Epoch: 1 [3200/5216 (61%)]	Loss: 0.043388
+Train Epoch: 1 [3600/5216 (69%)]	Loss: 0.011858
+Train Epoch: 1 [4000/5216 (77%)]	Loss: 0.302924
+Train Epoch: 1 [4400/5216 (84%)]	Loss: 0.094746
+Train Epoch: 1 [4800/5216 (92%)]	Loss: 0.599559
+Train Epoch: 1 [5200/5216 (100%)]	Loss: 0.020205
+Train Epoch: 2 [0/5216 (0%)]	Loss: 0.329279
+Train Epoch: 2 [400/5216 (8%)]	Loss: 0.221719
+Train Epoch: 2 [800/5216 (15%)]	Loss: 0.070769
+Train Epoch: 2 [1200/5216 (23%)]	Loss: 0.335044
+Train Epoch: 2 [1600/5216 (31%)]	Loss: 0.030952
+Train Epoch: 2 [2000/5216 (38%)]	Loss: 0.018495
+Train Epoch: 2 [2400/5216 (46%)]	Loss: 0.065022
+Train Epoch: 2 [2800/5216 (54%)]	Loss: 0.090132
+Train Epoch: 2 [3200/5216 (61%)]	Loss: 0.140597
+Train Epoch: 2 [3600/5216 (69%)]	Loss: 0.125897
+Train Epoch: 2 [4000/5216 (77%)]	Loss: 0.243293
+Train Epoch: 2 [4400/5216 (84%)]	Loss: 0.114106
+Train Epoch: 2 [4800/5216 (92%)]	Loss: 0.238967
+Train Epoch: 2 [5200/5216 (100%)]	Loss: 0.181690
+Train Epoch: 3 [0/5216 (0%)]	Loss: 0.109795
+Train Epoch: 3 [400/5216 (8%)]	Loss: 0.127759
+Train Epoch: 3 [800/5216 (15%)]	Loss: 0.066461
+Train Epoch: 3 [1200/5216 (23%)]	Loss: 0.010183
+Train Epoch: 3 [1600/5216 (31%)]	Loss: 0.205824
+Train Epoch: 3 [2000/5216 (38%)]	Loss: 0.010162
+Train Epoch: 3 [2400/5216 (46%)]	Loss: 0.111304
+Train Epoch: 3 [2800/5216 (54%)]	Loss: 0.090403
+Train Epoch: 3 [3200/5216 (61%)]	Loss: 0.107659
+Train Epoch: 3 [3600/5216 (69%)]	Loss: 0.041808
+Train Epoch: 3 [4000/5216 (77%)]	Loss: 0.031594
+Train Epoch: 3 [4400/5216 (84%)]	Loss: 0.073143
+Train Epoch: 3 [4800/5216 (92%)]	Loss: 0.322477
+Train Epoch: 3 [5200/5216 (100%)]	Loss: 0.119071
+Train Epoch: 4 [0/5216 (0%)]	Loss: 0.098184
+Train Epoch: 4 [400/5216 (8%)]	Loss: 0.150056
+Train Epoch: 4 [800/5216 (15%)]	Loss: 0.009532
+Train Epoch: 4 [1200/5216 (23%)]	Loss: 0.207990
+Train Epoch: 4 [1600/5216 (31%)]	Loss: 0.046809
+Train Epoch: 4 [2000/5216 (38%)]	Loss: 0.026450
+Exception ignored in: <function ObjectPointer.__del__ at 0x7fb0b9f64a70>
+Traceback (most recent call last):
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/syft/generic/pointers/object_pointer.py", line 345, in __del__
+    self.owner.garbage(self.id_at_location, self.location)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/syft/workers/base.py", line 480, in garbage
+    self.send_msg(ForceObjectDeleteMessage(trash[location.id][1]), location)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/syft/workers/base.py", line 316, in send_msg
+    bin_response = self._send_msg(bin_message, location)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/syft/workers/virtual.py", line 12, in _send_msg
+    return location._recv_msg(message)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/syft/workers/virtual.py", line 22, in _recv_msg
+    return self.recv_msg(message)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/syft/workers/base.py", line 361, in recv_msg
+    bin_response = sy.serde.serialize(response, worker=self)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/syft/serde/serde.py", line 47, in serialize
+    return strategy(obj, worker, simplified, force_full_simplification)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/syft/serde/msgpack/serde.py", line 342, in serialize
+    simple_objects = _serialize_msgpack_simple(obj, worker, simplified, force_full_simplification)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/syft/serde/msgpack/serde.py", line 282, in _serialize_msgpack_simple
+    simple_objects = _simplify(worker, obj)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/syft/serde/msgpack/serde.py", line 425, in _simplify
+    if current_type in msgpack_global_state.simplifiers:
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/syft/serde/msgpack/serde.py", line 71, in wrapper
+    self = self.update()
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/syft/serde/msgpack/serde.py", line 142, in update
+    def update(self):
+KeyboardInterrupt: 
+Train Epoch: 4 [2400/5216 (46%)]	Loss: 0.068879
+Traceback (most recent call last):
+  File "run.py", line 20, in <module>
+    parallel_run.runTrainParallel(nodelist, datasample_count, args, FLdataloaders, testloader)
+  File "/home/nikamanth/Documents/fyp/programs/parallel_run.py", line 51, in runTrainParallel
+    node_model_list = loop.run_until_complete(collectModels(nodelist, args, agg_model, FLdataloaders))
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/asyncio/base_events.py", line 574, in run_until_complete
+    self.run_forever()
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/asyncio/base_events.py", line 541, in run_forever
+    self._run_once()
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/asyncio/base_events.py", line 1786, in _run_once
+    handle._run()
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/asyncio/events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/nikamanth/Documents/fyp/programs/parallel_run.py", line 25, in runOnNode
+    optimizer=optimizer, epoch=epoch)
+  File "/home/nikamanth/Documents/fyp/programs/train.py", line 9, in train
+    optimizer.zero_grad()
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/torch/optim/optimizer.py", line 165, in zero_grad
+    p.grad.zero_()
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/syft/generic/frameworks/hook/hook.py", line 209, in overloaded_native_method
+    response = method(*new_args, **new_kwargs)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/syft/generic/frameworks/hook/pointers.py", line 84, in overloaded_pointer_method
+    response = owner.send_command(location, attr, self, args, kwargs)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/syft/workers/base.py", line 525, in send_command
+    ret_val = self.send_msg(message, location=recipient)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/syft/workers/base.py", line 313, in send_msg
+    bin_message = sy.serde.serialize(message, worker=self)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/syft/serde/serde.py", line 47, in serialize
+    return strategy(obj, worker, simplified, force_full_simplification)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/syft/serde/msgpack/serde.py", line 342, in serialize
+    simple_objects = _serialize_msgpack_simple(obj, worker, simplified, force_full_simplification)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/syft/serde/msgpack/serde.py", line 282, in _serialize_msgpack_simple
+    simple_objects = _simplify(worker, obj)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/syft/serde/msgpack/serde.py", line 428, in _simplify
+    msgpack_global_state.simplifiers[current_type][1](worker, obj, **kwargs),
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/syft/messaging/message.py", line 148, in simplify
+    return (sy.serde.msgpack.serde._simplify(worker, ptr.action),)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/syft/serde/msgpack/serde.py", line 428, in _simplify
+    msgpack_global_state.simplifiers[current_type][1](worker, obj, **kwargs),
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/syft/execution/computation.py", line 47, in simplify
+    return Action.simplify(worker, action)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/syft/execution/action.py", line 139, in simplify
+    sy.serde.msgpack.serde._simplify(worker, action.args),
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/syft/serde/msgpack/serde.py", line 427, in _simplify
+    msgpack_global_state.simplifiers[current_type][0],
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/syft/serde/msgpack/serde.py", line 71, in wrapper
+    self = self.update()
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/syft/serde/msgpack/serde.py", line 143, in update
+    if not self.stale_state:
+KeyboardInterrupt

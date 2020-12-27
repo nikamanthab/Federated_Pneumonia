@@ -1,0 +1,6 @@
+2020-12-27 21:01:12,034 INFO    MainThread:11708 [wandb_setup.py:_flush():70] setting env: {}
+2020-12-27 21:01:12,034 INFO    MainThread:11708 [wandb_setup.py:_flush():70] multiprocessing start_methods=fork,spawn,forkserver
+2020-12-27 21:01:12,034 INFO    MainThread:11708 [wandb_setup.py:_flush():70] setting login settings: {}
+2020-12-27 21:01:12,035 INFO    MainThread:11708 [wandb_init.py:_log_setup():303] Logging user logs to /home/nikamanth/Documents/fyp/programs/wandb/run-20201227_210112-14phjv0s/logs/debug.log
+2020-12-27 21:01:12,035 INFO    MainThread:11708 [wandb_init.py:_log_setup():304] Logging internal logs to /home/nikamanth/Documents/fyp/programs/wandb/run-20201227_210112-14phjv0s/logs/debug-internal.log
+2020-12-27 21:01:48,035 INFO    MainThread:11708 [wandb_init.py:teardown():163] tearing down wandb.init

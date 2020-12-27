@@ -1,0 +1,52 @@
+Aggregation Epoch Number: 1
+Train Epoch: 1 [0/5216 (0%)]	Loss: 0.689110
+Train Epoch: 1 [400/5216 (8%)]	Loss: 0.696618
+Train Epoch: 1 [800/5216 (15%)]	Loss: 0.676449
+Train Epoch: 1 [1200/5216 (23%)]	Loss: 0.664411
+Train Epoch: 1 [1600/5216 (31%)]	Loss: 0.631183
+Train Epoch: 1 [2000/5216 (38%)]	Loss: 0.646209
+Train Epoch: 1 [2400/5216 (46%)]	Loss: 0.636648
+Train Epoch: 1 [2800/5216 (54%)]	Loss: 0.715825
+Train Epoch: 1 [3200/5216 (61%)]	Loss: 0.612249
+Train Epoch: 1 [3600/5216 (69%)]	Loss: 0.601280
+Train Epoch: 1 [4000/5216 (77%)]	Loss: 0.531904
+Train Epoch: 1 [4400/5216 (84%)]	Loss: 0.521747
+Train Epoch: 1 [4800/5216 (92%)]	Loss: 0.593578
+Train Epoch: 1 [5200/5216 (100%)]	Loss: 0.663499
+Train Epoch: 2 [0/5216 (0%)]	Loss: 0.662434
+Train Epoch: 2 [400/5216 (8%)]	Loss: 0.483847
+Train Epoch: 2 [800/5216 (15%)]	Loss: 0.477547
+Traceback (most recent call last):
+  File "run.py", line 20, in <module>
+    parallel_run.runTrainParallel(nodelist, datasample_count, args, FLdataloaders, testloader)
+  File "/home/nikamanth/Documents/fyp/programs/parallel_run.py", line 51, in runTrainParallel
+    node_model_list = loop.run_until_complete(collectModels(nodelist, args, agg_model, FLdataloaders))
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/asyncio/base_events.py", line 574, in run_until_complete
+    self.run_forever()
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/asyncio/base_events.py", line 541, in run_forever
+    self._run_once()
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/asyncio/base_events.py", line 1786, in _run_once
+    handle._run()
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/asyncio/events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/nikamanth/Documents/fyp/programs/parallel_run.py", line 25, in runOnNode
+    optimizer=optimizer, epoch=epoch)
+  File "/home/nikamanth/Documents/fyp/programs/train.py", line 10, in train
+    output = model(data)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/nikamanth/Documents/fyp/programs/models.py", line 17, in forward
+    x = F.relu(self.conv2(x))
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/syft/generic/frameworks/hook/hook.py", line 335, in overloaded_func
+    response = handle_func_command(command)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/syft/frameworks/torch/tensors/interpreters/native.py", line 356, in handle_func_command
+    response = new_type.handle_func_command(new_command)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/syft/generic/pointers/object_pointer.py", line 211, in handle_func_command
+    response = owner.send_command(location, cmd_name=cmd, args_=args_, kwargs_=kwargs_)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/syft/workers/base.py", line 523, in send_command
+    cmd_name, target, args_, kwargs_, return_ids, return_value
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/syft/messaging/message.py", line 125, in computation
+    action = ComputationAction(name, target, args_, kwargs_, return_ids, return_value)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/syft/execution/computation.py", line 30, in __init__
+    super().__init__(name, target, args_, kwargs_, return_ids, return_value=return_value)
+KeyboardInterrupt

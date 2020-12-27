@@ -10,6 +10,7 @@ import aggregator
 import syft as sy
 import copy
 import asyncio
+import log
 
 loop = asyncio.get_event_loop()
 
@@ -17,8 +18,11 @@ async def runOnNode(node, args, model, train_loader):
     x_model = copy.deepcopy(model)
     x_model.send(node)
     optimizer = optim.SGD(x_model.parameters(), lr=args.lr)
+
     for epoch in range(1, args.epochs + 1):
-        train.train(args = args, model = x_model, train_loader = train_loader, optimizer = optimizer, epoch = epoch)
+        train.train(args=args, model=x_model, 
+                    train_loader=train_loader, 
+                    optimizer=optimizer, epoch=epoch)
     x_model.get()
     return x_model
 
@@ -30,18 +34,21 @@ async def collectModels(nodelist, args, model, FLdataloaders):
     return [m.result() for m in task_list]
 
   
-def runTrainParallel(nodelist, datasample_count, args, FLdataloaders, test_loader):
+def runTrainParallel(nodelist, datasample_count, args, FLdataloaders, test_loader):   
+    agg_model = None
+    # if os.path.exists(os.path.join(args.agg_model_path, 'agg_model.pt')) == True:
+    #     agg_model = torch.load(os.path.join(args.agg_model_path, 'agg_model.pt')).to(args.device)
+    # else:
+    agg_model = args.model().to(args.device)
+    #wandb
+    logger = log.initialize_wandb(agg_model)
+    
     for agg_epoch in range(1,args.agg_epochs+1):
-        model = None
-        if os.path.exists(os.path.join(args.agg_model_path, 'agg_model.pt')) == True:
-            model = torch.load(os.path.join(args.agg_model_path, 'agg_model.pt')).to(args.device)
-        else:
-            model = args.model(args.device).to(args.device)
 
         # Disttributed training
         print("Aggregation Epoch Number:", agg_epoch)
         
-        node_model_list = loop.run_until_complete(collectModels(nodelist, args, model, FLdataloaders))
+        node_model_list = loop.run_until_complete(collectModels(nodelist, args, agg_model, FLdataloaders))
         # print(node_model_list)
         # print(datasample_count)
         
@@ -57,5 +64,5 @@ def runTrainParallel(nodelist, datasample_count, args, FLdataloaders, test_loade
         print("Saving to: "+ os.path.join(args.agg_model_path, 'agg_model.pt'))
 
         # Testing
-        test.test(args, model, args.device, test_loader)
+        test.test(args, agg_model, args.device, test_loader, logger)
 
