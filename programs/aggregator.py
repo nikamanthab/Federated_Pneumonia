@@ -1,7 +1,6 @@
 import torch
 import numpy as np
-import torchvision.models as models
-import torch.nn as nn
+
 
 
 def weights_to_array(model):
@@ -81,11 +80,7 @@ def comed_aggregator(model_data):
         temp = torch.reshape(temp, layer_shape)
         aggregated_weights.append(temp)
 
-    agg_model = models.resnet18(pretrained=True)
-    agg_model.conv1 = nn.Conv2d(1, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
-    agg_model.fc = nn.Sequential(nn.Linear(in_features=512, out_features=256, bias=True),
-                                nn.Linear(in_features=256, out_features=128, bias=True),
-                                nn.Linear(in_features=128, out_features=2, bias=True))
+    agg_model = args.model().to(args.device)
     for idx, param in enumerate(agg_model.parameters()):
         param.data = aggregated_weights[idx]
     return agg_model
