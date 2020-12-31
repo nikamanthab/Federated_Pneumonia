@@ -1,0 +1,8 @@
+2020-12-27 20:48:34,804 INFO    MainThread:10393 [internal.py:wandb_internal():63] W&B internal server running at pid: 10393
+2020-12-27 20:48:34,806 DEBUG   HandlerThread:10393 [handler.py:handle_request():55] handle_request: check_version
+2020-12-27 20:48:34,806 INFO    WriterThread:10393 [datastore.py:open_for_write():76] open: /home/nikamanth/Documents/fyp/notebooks/wandb/run-20201227_204833-32de24jp/run-32de24jp.wandb
+2020-12-27 20:48:34,806 DEBUG   SenderThread:10393 [sender.py:send():90] send: header
+2020-12-27 20:48:34,806 DEBUG   SenderThread:10393 [sender.py:send():90] send: request
+2020-12-27 20:48:34,806 DEBUG   SenderThread:10393 [sender.py:send_request():99] send_request: check_version
+2020-12-27 20:48:34,809 DEBUG   Thread-4  :10393 [connectionpool.py:_new_conn():941] Starting new HTTPS connection (1): pypi.org:443
+2020-12-27 20:48:35,177 DEBUG   Thread-4  :10393 [connectionpool.py:_make_request():442] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 52216

@@ -17,7 +17,7 @@ loop = asyncio.get_event_loop()
 async def runOnNode(node, args, model, train_loader):
     x_model = copy.deepcopy(model)
     x_model.send(node)
-    optimizer = optim.SGD(x_model.parameters(), lr=args.lr)
+    optimizer = optim.Adam(x_model.parameters(), lr=args.lr)
 
     for epoch in range(1, args.epochs + 1):
         train.train(args=args, model=x_model, 
@@ -41,7 +41,10 @@ def runTrainParallel(nodelist, datasample_count, args, FLdataloaders, test_loade
     # else:
     agg_model = args.model().to(args.device)
     #wandb
-    logger = log.initialize_wandb(agg_model)
+    if args.wandb == True:
+        logger = log.initialize_wandb(agg_model)
+    else:
+        logger = None
     
     for agg_epoch in range(1,args.agg_epochs+1):
 
@@ -59,7 +62,9 @@ def runTrainParallel(nodelist, datasample_count, args, FLdataloaders, test_loade
             node_model = node_model_list[idx]
             model_tuple_array.append((node_model, datasample_count[idx]))
         # print(model_tuple_array)
-        agg_model = aggregator.fed_avg_aggregator(model_data=model_tuple_array, args=args)
+        
+        agg_model = args.aggregator(model_data=model_tuple_array, args=args)
+
         torch.save(agg_model, os.path.join(args.agg_model_path, 'agg_model.pt'))
         print("Saving to: "+ os.path.join(args.agg_model_path, 'agg_model.pt'))
 

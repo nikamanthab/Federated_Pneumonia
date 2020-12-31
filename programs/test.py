@@ -1,7 +1,7 @@
 import torch
 import torch.nn.functional as F
 
-def test(args, model, device, test_loader, logger):
+def test(args, model, device, test_loader, logger=None):
     model.eval()
     test_loss = 0
     correct = 0
@@ -14,7 +14,8 @@ def test(args, model, device, test_loader, logger):
             correct += pred.eq(target.view_as(pred)).sum().item()
 
     test_loss /= len(test_loader.dataset)
-    logger({"loss": test_loss, "accuracy": 100. * correct / len(test_loader.dataset)})
+    if(logger!=None):
+        logger({"loss": test_loss, "accuracy": 100. * correct / len(test_loader.dataset)})
     print('\nTest set: Average loss: {:.4f}, Accuracy: {}/{} ({:.0f}%)\n'.format(
         test_loss, correct, len(test_loader.dataset),
         100. * correct / len(test_loader.dataset)))
