@@ -10,6 +10,7 @@ from PIL import Image
 import numpy as np
 import PIL
 import copy
+import random
 
 classes = {}
 pt = 0
@@ -89,3 +90,17 @@ def getTestLoader(args):
         testdataset,
         batch_size=args.test_batch_size, shuffle=True)
     return test_loader
+
+def testmodule(df, percentage):
+    
+    length = len(df)
+    numrows = int(length * percentage )
+    indices = random.sample(range(0, length), numrows)
+#     print(indices)
+    for i in indices:
+        if(df.loc[i,'label']=="NORMAL"):
+            df.loc[i,'label']  = "PNEUMONIA"
+        else:
+            df.loc[i,'label'] = "NORMAL"
+    return df
+    
