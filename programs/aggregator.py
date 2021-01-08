@@ -100,7 +100,7 @@ def g(z, node_weights, node_samples, total_no_samples, device):
     for layer_idx in range(len(node_weights[0])):
         temp = torch.zeros(node_weights[0][layer_idx].shape).to(device)
         for node_idx in range(len(node_weights)):
-            euclidean_norm = (z[layer_idx] - node_weights[node_idx][layer_idx])**2
+            euclidean_norm = (z[layer_idx] - node_weights[node_idx][layer_idx])
             weight_alpha = node_samples[node_idx]/total_no_samples
             temp = temp + (weight_alpha * euclidean_norm)
         summation = summation + sum(temp.flatten())
