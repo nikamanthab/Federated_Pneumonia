@@ -15,15 +15,6 @@ args = config.Arguments()
 # Load and simulate distribution of data
 FLdataloaders, datasample_count, nodelist = dataloader.getDataLoaders(args,sy)
 testloader = dataloader.getTestLoader(args)
-print("stage1")
+
 
 parallel_run.runTrainParallel(nodelist, datasample_count, args, FLdataloaders, testloader)
-
-
-
-
-
-
-
-
-
