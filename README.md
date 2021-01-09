@@ -7,19 +7,40 @@ Data-set: https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
 - Install the requirements - torch, pandas, wandb, flask
 - Clone the repo in multiple systems/ run multiple instances with changed input parameters
 - Download the dataset and form the following folder structure: x-ray/(train or test)/(NORMAL or PNEUMONIA)
+- Select the aggregator (fedavg, geometric median, comed) and the model architecture
 - Start the server and start the client instances with appropriate parameters like node_name and train_csv
 - CNN Architecture can be altered in the models.py and modelloader.py
 - Execute the run.py file in the program folder
 
-### Support And Future Development:
-- Supports GPU in main branch
-- For simulation with PySyft refer syft branch
+### Aggregation Algorithms:
+- FedAvg - weighted federated averaging (Torch CUDA supported)
+- Geometric median - robust aggregation (Torch CUDA supported)
+- COMED - Coordinate wise median (Numpy CPU support only)
 
-### Command to run:
-    SERVER:
+### Model Architectures:
+- TwoLayerNet - Basic two layer CNN architecture
+- ResNeXt50 - PyTorch implementation of resnext with added FCN layers.
+- ResNet18 - PyTorch implementation of resnet with added FCN layers.
+
+### Hardware Support:
+- Supports GPU in main branch
+- For simulation with PySyft refer syft branch (supports only CPU)
+
+### Example:
+        
+        Server System / Terminal 0:
         cd src/aggregator
         export FLASK_APP=server.py
         python server.py
+        
+        System 1 / Terminal 1:
+        python run.py --node_name node_0 --train_csv ../../csv/train_0.csv
+        
+        System 2 / Terminal 2:
+        python run.py --node_name node_1 --train_sv ../../csv/train_1.csv
+
+### Command to run:
+    SERVER:
         
         usage: server.py [-h] [--architecture ARCHITECTURE]
                  [--test_batch_size TEST_BATCH_SIZE] [--agg_epochs AGG_EPOCHS]
@@ -90,12 +111,6 @@ Data-set: https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
           --wandb WANDB
           --model_location MODEL_LOCATION
           --labels LABELS
-      Example:
-        System 1 / Terminal 1:
-        python run.py --node_name node_0 --train_csv ../../csv/train_0.csv
-        
-        System 2 / Terminal 2:
-        python run.py --node_name node_1 --train_sv ../../csv/train_1.csv
 
 ## Scores
 | Model  | Number of nodes | Distribution | Epochs before aggregation | Aggregation_iter | Accuracy |
