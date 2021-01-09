@@ -23,16 +23,20 @@ def getArguments():
     parser.add_argument('--agg_port', type=str, default='5000')
     parser.add_argument('--train_batch_size', type=int, default=8)
     parser.add_argument('--epochs', type=float, default=4)
-    parser.add_argument('--lr', type=float, default=0.01)
+    parser.add_argument('--lr', type=float, default=0.001)
     parser.add_argument('--device', type=str, default='cuda:0')
     parser.add_argument('--momentum', type=float, default=0.5)
     parser.add_argument('--log_interval', type=int, default=50)
-    parser.add_argument('--csv_location', type=str, default='../../csv/')
+    parser.add_argument('--train_csv', type=str, default='../../csv/train_0.csv')
     parser.add_argument('--data_location', type=str, default='../../x-ray/')
     parser.add_argument('--wandb', type=bool, default=False)
     parser.add_argument('--model_location', type=str, default='../../node_model/')
+    parser.add_argument('--labels', type=str, default='NORMAL, PNEUMONIA')
     args = parser.parse_args()
     # return args
+
+    labelstr = args.labels.split(',')
+    labels = [s.strip() for s in labelstr]
 
     cmdargs = {
         "node_name": args.node_name,
@@ -44,9 +48,10 @@ def getArguments():
         "device": args.device,
         "momentum": args.momentum,
         "log_interval": args.log_interval,
-        "csv_location": args.csv_location,
+        "train_csv": args.train_csv,
         "data_location": args.data_location,
         "model_location": args.model_location,
-        "wandb": args.wandb
+        "wandb": args.wandb,
+        "labels": labels
     }
     return cmdargs

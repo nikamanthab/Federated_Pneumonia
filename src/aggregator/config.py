@@ -25,10 +25,15 @@ def Arguments():
     parser.add_argument('--agg_optim_momentum', type=float, default=0.1)
     parser.add_argument('--wandb', type=bool, default=False)
     parser.add_argument('--num_of_nodes', type=int, default=2)
-    parser.add_argument('--csv_location', type=str, default='../../csv/')
+    parser.add_argument('--test_csv', type=str, default='../../csv/test.csv')
     parser.add_argument('--data_location', type=str, default='../../x-ray/')
     parser.add_argument('--aggregated_model_location', type=str, default='../../aggregated_model/')
+    parser.add_argument('--labels', type=str, default='NORMAL, PNEUMONIA')
     args = parser.parse_args()
+
+    labelstr = args.labels.split(',')
+    labels = [s.strip() for s in labelstr]
+
 
     cmdargs = {
         "architecture": args.architecture,
@@ -45,9 +50,11 @@ def Arguments():
         "agg_optim_momentum": args.agg_optim_momentum,
         "wandb": args.wandb,
         "num_of_nodes": args.num_of_nodes,
-        "csv_location": args.csv_location,
+        "test_csv": args.test_csv,
         "data_location": args.data_location,
-        "aggregated_model_location": args.aggregated_model_location
+        "aggregated_model_location": args.aggregated_model_location,
+        "labels": labels,
+        "image_dim": (args.image_height, args.image_width)
     }
 
     return cmdargs

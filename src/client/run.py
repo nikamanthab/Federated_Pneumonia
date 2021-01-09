@@ -16,13 +16,14 @@ args['no_of_samples'] = NumOfSamples
 agg_url = args['agg_ip']+':'+args['agg_port']
 agg_url = 'http://' + agg_url
 
-serverargs = getConnection(agg_url, args).json()
-args['image_dim'] = (serverargs['image_height'], serverargs['image_width'])
+serverargs = getConnection(agg_url, args)
+local_agg_epoch = serverargs['current_agg_epoch']
+args['image_dim'] = serverargs['image_dim']
 model_path = os.path.join(args['model_location'], args['node_name']+'.pt')
 
 while(True):# change to epoch iteration max
     # Gets model from the aggregator and stores in local system
-    getModel(agg_url, model_path)
+    getModel(agg_url, model_path, local_agg_epoch)
     
     # Creating train loader
     train_loader = getTrainLoader(args)
@@ -30,13 +31,13 @@ while(True):# change to epoch iteration max
     # Train loop
     local_model = loadModel(model_path).to(args['device'])
     optimizer = optim.Adam(local_model.parameters(), lr=args['lr'])
-    # for epoch in range(1, args['epochs'] + 1):
-    #         train.train(args=args, model=local_model, \
-    #             train_loader=train_loader, \
-    #             optimizer=optimizer, epoch=epoch)
+    for epoch in range(1, args['epochs'] + 1):
+            train.train(args=args, model=local_model, \
+                train_loader=train_loader, \
+                optimizer=optimizer, epoch=epoch)
     
     torch.save(local_model, model_path)
     # Send model to the aggregator
     sendModel(agg_url, model_path, args)
-
-    break
+    local_agg_epoch+=1
+    # break

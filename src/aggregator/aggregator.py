@@ -2,6 +2,7 @@ import torch
 import torch.optim as optim
 import numpy as np
 import random
+from modelloader import getModelArchitecture
 
 def weights_to_array(model):
     '''
@@ -33,11 +34,11 @@ def fed_avg_aggregator(model_data, args):
     
     aggregated_weights = []
     for layer_idx in range(len(node_weights[0])):
-        temp = torch.zeros(node_weights[0][layer_idx].shape).to(args.device)
+        temp = torch.zeros(node_weights[0][layer_idx].shape).to(args['device'])
         for node_idx in range(len(node_weights)):
             temp+= (node_samples[node_idx]/total_no_samples)*node_weights[node_idx][layer_idx]
         aggregated_weights.append(temp)
-    agg_model = args.model().to(args.device)
+    agg_model = getModelArchitecture(args)
     for idx, param in enumerate(agg_model.parameters()):
         param.data = aggregated_weights[idx]
     return agg_model
@@ -80,7 +81,7 @@ def comed_aggregator(model_data, args):
         temp = torch.reshape(temp, layer_shape)
         aggregated_weights.append(temp)
 
-    agg_model = args.model().to(args.device)
+    agg_model = getModelArchitecture(args)
     for idx, param in enumerate(agg_model.parameters()):
         param.data = aggregated_weights[idx]
     return agg_model
@@ -110,10 +111,10 @@ def g(z, node_weights, node_samples, total_no_samples, device):
 #g(weights_to_array(agg_model), [weights_to_array(model1), weights_to_array(model2)], [5, 5], 10)
 
 def optimizeGM(agg_model,  node_weights, node_samples, total_no_samples, args):
-    optimizer = optim.Adam(list(agg_model.parameters())[:], lr=args.agg_params["optim_lr"])
-    for _ in range(args.agg_params["iterations"]):
+    optimizer = optim.Adam(list(agg_model.parameters())[:], lr=args["agg_optim_lr"])
+    for _ in range(args["agg_iterations"]):
         optimizer.zero_grad()
-        loss = g(weights_to_array(agg_model), node_weights, node_samples, total_no_samples, args.device)
+        loss = g(weights_to_array(agg_model), node_weights, node_samples, total_no_samples, args['device'])
         print(loss, type(loss))
         loss.backward()
         optimizer.step()
@@ -136,7 +137,7 @@ def Geometric_Median(model_data, args):
         node_samples.append(no_samples)
     # calculates the total number of samples
         total_no_samples += no_samples
-    agg_model = args.model().to(args.device)
+    agg_model = getModelArchitecture(args)
     a = []
     for i in agg_model.parameters():
         a.append(i.clone())
