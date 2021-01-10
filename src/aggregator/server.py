@@ -6,6 +6,7 @@ import os
 from test import test
 from dataloader import getTestLoader
 from aggregatorloader import selectAggregator
+import log
 
 from modelloader import createInitialModel
 from config import Arguments
@@ -17,10 +18,16 @@ app.debug=True
 
 node_details = []
 
+# initialize wandb
+
+if(serverargs['wandb']==True):
+    logger = log.initialize_wandb()
+else:
+    logger = None
 
 @app.route('/getConnection', methods=['GET', 'POST'])
 def getConnection():
-    print("Connecting Nodes:")
+    print("Connecting Nodes:")    
     if len(node_details) < serverargs['num_of_nodes']:
         data = request.get_json()
         data['agg_epoch'] = serverargs['current_agg_epoch']

@@ -2,9 +2,9 @@ import wandb
 import models
 import models
 
-def initialize_wandb(model, node_name):
+def initialize_wandb(node_name):
     wandb.init(project=node_name)
-    wandb.watch(model)
+    # wandb.watch(model)
     return wandb.log
 
 # w = initialize_wandb(models.TwoLayerNet)
