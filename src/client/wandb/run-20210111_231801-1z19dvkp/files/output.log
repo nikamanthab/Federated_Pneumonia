@@ -1,0 +1,46 @@
+Train Epoch: 1 [0/2608 (0%)]	Loss: 0.009212
+Train Epoch: 1 [200/2608 (8%)]	Loss: 0.150524
+Train Epoch: 1 [400/2608 (15%)]	Loss: 0.119413
+Train Epoch: 1 [600/2608 (23%)]	Loss: 0.143121
+Train Epoch: 1 [800/2608 (31%)]	Loss: 0.314417
+Train Epoch: 1 [1000/2608 (38%)]	Loss: 0.526079
+Train Epoch: 1 [1200/2608 (46%)]	Loss: 0.215307
+Train Epoch: 1 [1400/2608 (54%)]	Loss: 0.286122
+Train Epoch: 1 [1600/2608 (61%)]	Loss: 0.708460
+Train Epoch: 1 [1800/2608 (69%)]	Loss: 0.322251
+Train Epoch: 1 [2000/2608 (77%)]	Loss: 0.372210
+Train Epoch: 1 [2200/2608 (84%)]	Loss: 0.134157
+Train Epoch: 1 [2400/2608 (92%)]	Loss: 0.671693
+Train Epoch: 1 [2600/2608 (100%)]	Loss: 0.027916
+Average loss : 0.2857772393950394
+Train Epoch: 2 [0/2608 (0%)]	Loss: 0.297095
+Train Epoch: 2 [200/2608 (8%)]	Loss: 0.419018
+Train Epoch: 2 [400/2608 (15%)]	Loss: 0.134044
+Train Epoch: 2 [600/2608 (23%)]	Loss: 0.185869
+Train Epoch: 2 [800/2608 (31%)]	Loss: 0.089083
+Train Epoch: 2 [1000/2608 (38%)]	Loss: 0.831630
+Train Epoch: 2 [1200/2608 (46%)]	Loss: 0.326108
+Train Epoch: 2 [1400/2608 (54%)]	Loss: 0.018999
+Train Epoch: 2 [1600/2608 (61%)]	Loss: 0.075416
+Train Epoch: 2 [1800/2608 (69%)]	Loss: 0.499874
+Train Epoch: 2 [2000/2608 (77%)]	Loss: 0.282604
+Train Epoch: 2 [2200/2608 (84%)]	Loss: 0.736375
+Train Epoch: 2 [2400/2608 (92%)]	Loss: 0.028371
+Train Epoch: 2 [2600/2608 (100%)]	Loss: 0.029764
+Average loss : 0.28244649938174654
+model sent successfully!
+Train Epoch: 1 [0/2608 (0%)]	Loss: 0.010940
+Train Epoch: 1 [200/2608 (8%)]	Loss: 0.783517
+Train Epoch: 1 [400/2608 (15%)]	Loss: 0.040322
+Train Epoch: 1 [600/2608 (23%)]	Loss: 0.191575
+Train Epoch: 1 [800/2608 (31%)]	Loss: 0.073688
+Train Epoch: 1 [1000/2608 (38%)]	Loss: 0.030640
+Train Epoch: 1 [1200/2608 (46%)]	Loss: 0.025016
+Traceback (most recent call last):
+  File "run.py", line 46, in <module>
+    optimizer=optimizer, epoch=epoch)                ###logger added
+  File "C:\Users\kevin\OneDrive\Documents\8th sem\Federated_Pneumonia\src\client\train.py", line 15, in train
+    optimizer.step()
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\torch\optim\adam.py", line 103, in step
+    denom = (exp_avg_sq.sqrt() / math.sqrt(bias_correction2)).add_(group['eps'])
+KeyboardInterrupt

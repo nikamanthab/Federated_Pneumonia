@@ -1,0 +1,31 @@
+Train Epoch: 1 [0/2608 (0%)]	Loss: 0.802043
+Traceback (most recent call last):
+  File "run.py", line 46, in <module>
+    optimizer=optimizer, epoch=epoch)                ###logger added
+  File "C:\Users\kevin\OneDrive\Documents\8th sem\Federated_Pneumonia\src\client\train.py", line 10, in train
+    output = model(data)
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\torch\nn\modules\module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "C:\Users\kevin\OneDrive\Documents\8th sem\Federated_Pneumonia\src\client\models.py", line 42, in forward
+    x = self.model(x)
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\torch\nn\modules\module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\torchvision\models\resnet.py", line 216, in forward
+    return self._forward_impl(x)
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\torchvision\models\resnet.py", line 206, in _forward_impl
+    x = self.layer3(x)
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\torch\nn\modules\module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\torch\nn\modules\container.py", line 100, in forward
+    input = module(input)
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\torch\nn\modules\module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\torchvision\models\resnet.py", line 108, in forward
+    out = self.conv3(out)
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\torch\nn\modules\module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\torch\nn\modules\conv.py", line 345, in forward
+    return self.conv2d_forward(input, self.weight)
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\torch\nn\modules\conv.py", line 342, in conv2d_forward
+    self.padding, self.dilation, self.groups)
+RuntimeError: CUDA out of memory. Tried to allocate 20.00 MiB (GPU 0; 2.00 GiB total capacity; 1.33 GiB already allocated; 10.93 MiB free; 1.33 GiB reserved in total by PyTorch)

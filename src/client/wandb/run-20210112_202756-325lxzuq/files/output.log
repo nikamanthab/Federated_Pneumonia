@@ -1,0 +1,30 @@
+Train Epoch: 1 [0/2608 (0%)]	Loss: 0.001530
+Train Epoch: 1 [400/2608 (15%)]	Loss: 0.000023
+Train Epoch: 1 [800/2608 (31%)]	Loss: 0.000826
+Train Epoch: 1 [1200/2608 (46%)]	Loss: 0.000273
+Train Epoch: 1 [1600/2608 (61%)]	Loss: 0.002215
+Train Epoch: 1 [2000/2608 (77%)]	Loss: 0.016688
+Train Epoch: 1 [2400/2608 (92%)]	Loss: 0.000004
+Average loss : 0.0030797656093324932
+Train Epoch: 2 [0/2608 (0%)]	Loss: 0.000233
+Train Epoch: 2 [400/2608 (15%)]	Loss: 0.000546
+Train Epoch: 2 [800/2608 (31%)]	Loss: 0.000341
+Train Epoch: 2 [1200/2608 (46%)]	Loss: 0.005962
+Train Epoch: 2 [1600/2608 (61%)]	Loss: 0.000036
+Train Epoch: 2 [2000/2608 (77%)]	Loss: 0.000510
+Train Epoch: 2 [2400/2608 (92%)]	Loss: 0.005242
+Average loss : 0.0018385435853685652
+Traceback (most recent call last):
+  File "run.py", line 50, in <module>
+    sendModel(agg_url, model_path, args)
+  File "C:\Users\kevin\OneDrive\Documents\8th sem\Federated_Pneumonia\src\client\httpcalls.py", line 27, in sendModel
+    print(res.json()['status'])
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\requests\models.py", line 897, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)

@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "run.py", line 40, in <module>
+    local_model = loadModel(model_path).to(args['device'])
+  File "C:\Users\kevin\OneDrive\Documents\8th sem\Federated_Pneumonia\src\client\modelloader.py", line 25, in loadModel
+    return torch.load(location)
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\torch\serialization.py", line 529, in load
+    return _legacy_load(opened_file, map_location, pickle_module, **pickle_load_args)
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\torch\serialization.py", line 692, in _legacy_load
+    magic_number = pickle_module.load(f, **pickle_load_args)
+_pickle.UnpicklingError: invalid load key, '<'.

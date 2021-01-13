@@ -1,0 +1,116 @@
+Train Epoch: 1 [0/2608 (0%)]	Loss: 0.681613
+Train Epoch: 1 [400/2608 (15%)]	Loss: 0.255881
+Train Epoch: 1 [800/2608 (31%)]	Loss: 0.302522
+Train Epoch: 1 [1200/2608 (46%)]	Loss: 0.225887
+Train Epoch: 1 [1600/2608 (61%)]	Loss: 0.056306
+Train Epoch: 1 [2000/2608 (77%)]	Loss: 0.030217
+Train Epoch: 1 [2400/2608 (92%)]	Loss: 0.102577
+Average loss : 0.2364289808486189
+Train Epoch: 2 [0/2608 (0%)]	Loss: 0.132483
+Train Epoch: 2 [400/2608 (15%)]	Loss: 0.192658
+Train Epoch: 2 [800/2608 (31%)]	Loss: 0.172141
+Train Epoch: 2 [1200/2608 (46%)]	Loss: 0.158147
+Train Epoch: 2 [1600/2608 (61%)]	Loss: 0.301337
+Train Epoch: 2 [2000/2608 (77%)]	Loss: 0.227846
+Train Epoch: 2 [2400/2608 (92%)]	Loss: 0.659449
+Average loss : 0.2634372136422566
+model sent successfully!
+Waiting for aggregation...
+Waiting for aggregation...
+Train Epoch: 1 [0/2608 (0%)]	Loss: 0.088684
+Train Epoch: 1 [400/2608 (15%)]	Loss: 0.184962
+Train Epoch: 1 [800/2608 (31%)]	Loss: 0.148682
+Train Epoch: 1 [1200/2608 (46%)]	Loss: 0.312879
+Train Epoch: 1 [1600/2608 (61%)]	Loss: 0.008170
+Train Epoch: 1 [2000/2608 (77%)]	Loss: 0.007466
+Train Epoch: 1 [2400/2608 (92%)]	Loss: 0.140395
+Average loss : 0.12731983831950597
+Train Epoch: 2 [0/2608 (0%)]	Loss: 0.257817
+Train Epoch: 2 [400/2608 (15%)]	Loss: 0.131672
+Train Epoch: 2 [800/2608 (31%)]	Loss: 0.044989
+Train Epoch: 2 [1200/2608 (46%)]	Loss: 0.061836
+Train Epoch: 2 [1600/2608 (61%)]	Loss: 0.189134
+Train Epoch: 2 [2000/2608 (77%)]	Loss: 0.007107
+Train Epoch: 2 [2400/2608 (92%)]	Loss: 0.020032
+Average loss : 0.10179811396769115
+model sent successfully!
+Waiting for aggregation...
+Train Epoch: 1 [0/2608 (0%)]	Loss: 0.026605
+Train Epoch: 1 [400/2608 (15%)]	Loss: 0.005050
+Train Epoch: 1 [800/2608 (31%)]	Loss: 0.064562
+Train Epoch: 1 [1200/2608 (46%)]	Loss: 0.035510
+Train Epoch: 1 [1600/2608 (61%)]	Loss: 0.006600
+Train Epoch: 1 [2000/2608 (77%)]	Loss: 0.549384
+Train Epoch: 1 [2400/2608 (92%)]	Loss: 0.017782
+Average loss : 0.10078482010534831
+Train Epoch: 2 [0/2608 (0%)]	Loss: 0.015121
+Train Epoch: 2 [400/2608 (15%)]	Loss: 0.004726
+Train Epoch: 2 [800/2608 (31%)]	Loss: 0.003760
+Train Epoch: 2 [1200/2608 (46%)]	Loss: 0.147492
+Train Epoch: 2 [1600/2608 (61%)]	Loss: 0.060328
+Train Epoch: 2 [2000/2608 (77%)]	Loss: 0.011586
+Train Epoch: 2 [2400/2608 (92%)]	Loss: 0.005121
+Average loss : 0.03544747190816062
+model sent successfully!
+Waiting for aggregation...
+Train Epoch: 1 [0/2608 (0%)]	Loss: 0.018101
+Train Epoch: 1 [400/2608 (15%)]	Loss: 0.011116
+Train Epoch: 1 [800/2608 (31%)]	Loss: 0.000435
+Train Epoch: 1 [1200/2608 (46%)]	Loss: 0.002713
+Train Epoch: 1 [1600/2608 (61%)]	Loss: 0.040689
+Train Epoch: 1 [2000/2608 (77%)]	Loss: 0.001505
+Train Epoch: 1 [2400/2608 (92%)]	Loss: 0.785846
+Average loss : 0.12291524027075086
+Train Epoch: 2 [0/2608 (0%)]	Loss: 0.004003
+Train Epoch: 2 [400/2608 (15%)]	Loss: 0.123476
+Train Epoch: 2 [800/2608 (31%)]	Loss: 0.018575
+Train Epoch: 2 [1200/2608 (46%)]	Loss: 0.002785
+Train Epoch: 2 [1600/2608 (61%)]	Loss: 0.000567
+Train Epoch: 2 [2000/2608 (77%)]	Loss: 0.004046
+Train Epoch: 2 [2400/2608 (92%)]	Loss: 0.000197
+Average loss : 0.02194998094013759
+model sent successfully!
+Waiting for aggregation...
+Train Epoch: 1 [0/2608 (0%)]	Loss: 0.148303
+Train Epoch: 1 [400/2608 (15%)]	Loss: 0.003053
+Train Epoch: 1 [800/2608 (31%)]	Loss: 0.044769
+Train Epoch: 1 [1200/2608 (46%)]	Loss: 0.426729
+Train Epoch: 1 [1600/2608 (61%)]	Loss: 0.003035
+Train Epoch: 1 [2000/2608 (77%)]	Loss: 0.000008
+Train Epoch: 1 [2400/2608 (92%)]	Loss: 0.006657
+Average loss : 0.09036499900477273
+Train Epoch: 2 [0/2608 (0%)]	Loss: 0.010911
+Train Epoch: 2 [400/2608 (15%)]	Loss: 0.004074
+Train Epoch: 2 [800/2608 (31%)]	Loss: 0.000330
+Train Epoch: 2 [1200/2608 (46%)]	Loss: 0.257195
+Train Epoch: 2 [1600/2608 (61%)]	Loss: 0.021688
+Train Epoch: 2 [2000/2608 (77%)]	Loss: 0.346870
+Train Epoch: 2 [2400/2608 (92%)]	Loss: 0.052312
+Average loss : 0.09905411409480232
+model sent successfully!
+Waiting for aggregation...
+Train Epoch: 1 [0/2608 (0%)]	Loss: 0.002823
+Train Epoch: 1 [400/2608 (15%)]	Loss: 0.281953
+Train Epoch: 1 [800/2608 (31%)]	Loss: 0.000073
+Train Epoch: 1 [1200/2608 (46%)]	Loss: 0.028303
+Train Epoch: 1 [1600/2608 (61%)]	Loss: 0.002971
+Train Epoch: 1 [2000/2608 (77%)]	Loss: 0.009229
+Train Epoch: 1 [2400/2608 (92%)]	Loss: 0.010555
+Average loss : 0.047986539346831183
+Train Epoch: 2 [0/2608 (0%)]	Loss: 0.000401
+Train Epoch: 2 [400/2608 (15%)]	Loss: 0.000097
+Train Epoch: 2 [800/2608 (31%)]	Loss: 0.000269
+Train Epoch: 2 [1200/2608 (46%)]	Loss: 0.000046
+Train Epoch: 2 [1600/2608 (61%)]	Loss: 0.001003
+Train Epoch: 2 [2000/2608 (77%)]	Loss: 0.000204
+Train Epoch: 2 [2400/2608 (92%)]	Loss: 0.016362
+Average loss : 0.002625929457800729
+model sent successfully!
+Waiting for aggregation...
+Waiting for aggregation...
+Traceback (most recent call last):
+  File "run.py", line 34, in <module>
+    getModel(agg_url, model_path, local_agg_epoch)
+  File "C:\Users\kevin\OneDrive\Documents\8th sem\Federated_Pneumonia\src\client\httpcalls.py", line 15, in getModel
+    time.sleep(10)
+KeyboardInterrupt

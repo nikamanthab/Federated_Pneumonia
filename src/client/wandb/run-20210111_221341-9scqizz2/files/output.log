@@ -1,0 +1,95 @@
+Train Epoch: 1 [0/2608 (0%)]	Loss: 0.358910
+Train Epoch: 1 [200/2608 (8%)]	Loss: 1.465764
+Train Epoch: 1 [400/2608 (15%)]	Loss: 0.444867
+Train Epoch: 1 [600/2608 (23%)]	Loss: 0.515676
+Train Epoch: 1 [800/2608 (31%)]	Loss: 0.256040
+Train Epoch: 1 [1000/2608 (38%)]	Loss: 0.226640
+Train Epoch: 1 [1200/2608 (46%)]	Loss: 0.270065
+Train Epoch: 1 [1400/2608 (54%)]	Loss: 0.459333
+Train Epoch: 1 [1600/2608 (61%)]	Loss: 0.136495
+Train Epoch: 1 [1800/2608 (69%)]	Loss: 0.362417
+Train Epoch: 1 [2000/2608 (77%)]	Loss: 0.118212
+Train Epoch: 1 [2200/2608 (84%)]	Loss: 0.132559
+Train Epoch: 1 [2400/2608 (92%)]	Loss: 0.101483
+Train Epoch: 1 [2600/2608 (100%)]	Loss: 0.244113
+Average loss : 0.551516781069704
+Train Epoch: 2 [0/2608 (0%)]	Loss: 0.813742
+Train Epoch: 2 [200/2608 (8%)]	Loss: 0.218184
+Train Epoch: 2 [400/2608 (15%)]	Loss: 1.240069
+Train Epoch: 2 [600/2608 (23%)]	Loss: 0.337072
+Train Epoch: 2 [800/2608 (31%)]	Loss: 0.243966
+Train Epoch: 2 [1000/2608 (38%)]	Loss: 0.209601
+Train Epoch: 2 [1200/2608 (46%)]	Loss: 0.113152
+Train Epoch: 2 [1400/2608 (54%)]	Loss: 0.658012
+Train Epoch: 2 [1600/2608 (61%)]	Loss: 0.357754
+Train Epoch: 2 [1800/2608 (69%)]	Loss: 0.351011
+Train Epoch: 2 [2000/2608 (77%)]	Loss: 0.108485
+Train Epoch: 2 [2200/2608 (84%)]	Loss: 0.540093
+Train Epoch: 2 [2400/2608 (92%)]	Loss: 0.308474
+Train Epoch: 2 [2600/2608 (100%)]	Loss: 0.115089
+Average loss : 0.38522171365108593
+model sent successfully!
+Train Epoch: 1 [0/2608 (0%)]	Loss: 0.195693
+Train Epoch: 1 [200/2608 (8%)]	Loss: 0.223957
+Train Epoch: 1 [400/2608 (15%)]	Loss: 0.646499
+Train Epoch: 1 [600/2608 (23%)]	Loss: 0.212605
+Train Epoch: 1 [800/2608 (31%)]	Loss: 0.185304
+Train Epoch: 1 [1000/2608 (38%)]	Loss: 0.127673
+Train Epoch: 1 [1200/2608 (46%)]	Loss: 0.529642
+Train Epoch: 1 [1400/2608 (54%)]	Loss: 0.471850
+Train Epoch: 1 [1600/2608 (61%)]	Loss: 0.108822
+Train Epoch: 1 [1800/2608 (69%)]	Loss: 0.154723
+Train Epoch: 1 [2000/2608 (77%)]	Loss: 1.164417
+Train Epoch: 1 [2200/2608 (84%)]	Loss: 0.246349
+Train Epoch: 1 [2400/2608 (92%)]	Loss: 0.465266
+Train Epoch: 1 [2600/2608 (100%)]	Loss: 0.390448
+Average loss : 0.41228167077332184
+Train Epoch: 2 [0/2608 (0%)]	Loss: 0.036299
+Train Epoch: 2 [200/2608 (8%)]	Loss: 0.130990
+Train Epoch: 2 [400/2608 (15%)]	Loss: 0.107974
+Train Epoch: 2 [600/2608 (23%)]	Loss: 0.068773
+Train Epoch: 2 [800/2608 (31%)]	Loss: 0.055312
+Train Epoch: 2 [1000/2608 (38%)]	Loss: 0.258310
+Train Epoch: 2 [1200/2608 (46%)]	Loss: 0.214942
+Train Epoch: 2 [1400/2608 (54%)]	Loss: 0.283365
+Train Epoch: 2 [1600/2608 (61%)]	Loss: 0.187428
+Train Epoch: 2 [1800/2608 (69%)]	Loss: 0.176917
+Train Epoch: 2 [2000/2608 (77%)]	Loss: 0.022766
+Train Epoch: 2 [2200/2608 (84%)]	Loss: 0.102367
+Train Epoch: 2 [2400/2608 (92%)]	Loss: 0.032700
+Train Epoch: 2 [2600/2608 (100%)]	Loss: 0.392997
+Average loss : 0.3149892043242334
+model sent successfully!
+Train Epoch: 1 [0/2608 (0%)]	Loss: 0.013210
+Train Epoch: 1 [200/2608 (8%)]	Loss: 0.036282
+Train Epoch: 1 [400/2608 (15%)]	Loss: 0.441939
+Train Epoch: 1 [600/2608 (23%)]	Loss: 0.229086
+Train Epoch: 1 [800/2608 (31%)]	Loss: 0.776448
+Train Epoch: 1 [1000/2608 (38%)]	Loss: 0.566226
+Train Epoch: 1 [1200/2608 (46%)]	Loss: 0.022367
+Train Epoch: 1 [1400/2608 (54%)]	Loss: 0.071032
+Train Epoch: 1 [1600/2608 (61%)]	Loss: 0.036896
+Train Epoch: 1 [1800/2608 (69%)]	Loss: 1.651144
+Train Epoch: 1 [2000/2608 (77%)]	Loss: 0.196094
+Train Epoch: 1 [2200/2608 (84%)]	Loss: 0.076543
+Train Epoch: 1 [2400/2608 (92%)]	Loss: 0.078723
+Train Epoch: 1 [2600/2608 (100%)]	Loss: 0.235205
+Average loss : 0.29301040246511345
+Train Epoch: 2 [0/2608 (0%)]	Loss: 0.154974
+Train Epoch: 2 [200/2608 (8%)]	Loss: 0.046879
+Train Epoch: 2 [400/2608 (15%)]	Loss: 0.337774
+Train Epoch: 2 [600/2608 (23%)]	Loss: 0.124756
+Train Epoch: 2 [800/2608 (31%)]	Loss: 0.054882
+Train Epoch: 2 [1000/2608 (38%)]	Loss: 0.325909
+Train Epoch: 2 [1200/2608 (46%)]	Loss: 1.061026
+Train Epoch: 2 [1400/2608 (54%)]	Loss: 0.357866
+Train Epoch: 2 [1600/2608 (61%)]	Loss: 0.006091
+Train Epoch: 2 [1800/2608 (69%)]	Loss: 0.117276
+Traceback (most recent call last):
+  File "run.py", line 46, in <module>
+    optimizer=optimizer, epoch=epoch)                ###logger added
+  File "C:\Users\kevin\OneDrive\Documents\8th sem\Federated_Pneumonia\src\client\train.py", line 15, in train
+    optimizer.step()
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\torch\optim\adam.py", line 96, in step
+    exp_avg_sq.mul_(beta2).addcmul_(1 - beta2, grad, grad)
+KeyboardInterrupt

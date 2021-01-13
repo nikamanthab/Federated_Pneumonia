@@ -1,0 +1,112 @@
+2021-01-12 20:24:49,584 INFO    MainThread:17948 [internal.py:wandb_internal():63] W&B internal server running at pid: 17948
+2021-01-12 20:24:49,586 INFO    WriterThread:17948 [datastore.py:open_for_write():76] open: C:\Users\kevin\OneDrive\Documents\8th sem\Federated_Pneumonia\src\aggregator\wandb\run-20210112_202448-2v7gplrw\run-2v7gplrw.wandb
+2021-01-12 20:24:49,586 DEBUG   HandlerThread:17948 [handler.py:handle_request():55] handle_request: check_version
+2021-01-12 20:24:49,588 DEBUG   SenderThread:17948 [sender.py:send():90] send: header
+2021-01-12 20:24:49,589 DEBUG   SenderThread:17948 [sender.py:send():90] send: request
+2021-01-12 20:24:49,589 DEBUG   SenderThread:17948 [sender.py:send_request():99] send_request: check_version
+2021-01-12 20:24:49,591 DEBUG   Thread-8  :17948 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): pypi.org:443
+2021-01-12 20:24:54,591 DEBUG   SenderThread:17948 [sender.py:send():90] send: run
+2021-01-12 20:24:54,604 DEBUG   SenderThread:17948 [util.py:is_cygwin_git():315] Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'The system cannot find the file specified', None, 2, None)
+2021-01-12 20:24:54,608 DEBUG   SenderThread:17948 [cmd.py:execute():719] Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\kevin\OneDrive\Documents\8th sem\Federated_Pneumonia, universal_newlines=False, shell=None, istream=<valid stream>)
+2021-01-12 20:24:54,664 DEBUG   SenderThread:17948 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-12 20:24:55,112 DEBUG   Thread-8  :17948 [connectionpool.py:_make_request():442] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 52519
+2021-01-12 20:25:00,508 DEBUG   SenderThread:17948 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-12 20:25:00,515 DEBUG   HandlerThread:17948 [handler.py:handle_request():55] handle_request: run_start
+2021-01-12 20:25:00,516 INFO    SenderThread:17948 [dir_watcher.py:__init__():165] watching files in: C:\Users\kevin\OneDrive\Documents\8th sem\Federated_Pneumonia\src\aggregator\wandb\run-20210112_202448-2v7gplrw\files
+2021-01-12 20:25:00,517 INFO    SenderThread:17948 [sender.py:_start_run_threads():490] run started: 2v7gplrw with start time 1610463288
+2021-01-12 20:25:00,517 DEBUG   SenderThread:17948 [sender.py:send():90] send: summary
+2021-01-12 20:25:00,518 INFO    SenderThread:17948 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-12 20:25:00,832 DEBUG   HandlerThread:17948 [cmd.py:execute():719] Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\kevin\OneDrive\Documents\8th sem\Federated_Pneumonia, universal_newlines=False, shell=None, istream=<valid stream>)
+2021-01-12 20:25:00,890 DEBUG   HandlerThread:17948 [cmd.py:execute():719] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=C:\Users\kevin\OneDrive\Documents\8th sem\Federated_Pneumonia, universal_newlines=False, shell=None, istream=None)
+2021-01-12 20:25:01,126 DEBUG   SenderThread:17948 [sender.py:send():90] send: files
+2021-01-12 20:25:01,127 INFO    SenderThread:17948 [sender.py:_save_file():568] saving file wandb-metadata.json with policy now
+2021-01-12 20:25:01,127 DEBUG   HandlerThread:17948 [handler.py:handle_request():55] handle_request: status
+2021-01-12 20:25:01,127 DEBUG   SenderThread:17948 [sender.py:send():90] send: request
+2021-01-12 20:25:01,128 DEBUG   SenderThread:17948 [sender.py:send_request():99] send_request: status
+2021-01-12 20:25:01,130 DEBUG   SenderThread:17948 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-12 20:25:01,152 DEBUG   Thread-17 :17948 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-12 20:25:01,518 INFO    Thread-12 :17948 [dir_watcher.py:_on_file_created():213] file/dir created: C:\Users\kevin\OneDrive\Documents\8th sem\Federated_Pneumonia\src\aggregator\wandb\run-20210112_202448-2v7gplrw\files\output.log
+2021-01-12 20:25:01,519 INFO    Thread-12 :17948 [dir_watcher.py:_on_file_created():213] file/dir created: C:\Users\kevin\OneDrive\Documents\8th sem\Federated_Pneumonia\src\aggregator\wandb\run-20210112_202448-2v7gplrw\files\requirements.txt
+2021-01-12 20:25:01,519 INFO    Thread-12 :17948 [dir_watcher.py:_on_file_created():213] file/dir created: C:\Users\kevin\OneDrive\Documents\8th sem\Federated_Pneumonia\src\aggregator\wandb\run-20210112_202448-2v7gplrw\files\wandb-summary.json
+2021-01-12 20:25:01,519 INFO    Thread-12 :17948 [dir_watcher.py:_on_file_created():213] file/dir created: C:\Users\kevin\OneDrive\Documents\8th sem\Federated_Pneumonia\src\aggregator\wandb\run-20210112_202448-2v7gplrw\files\wandb-metadata.json
+2021-01-12 20:25:02,519 DEBUG   Thread-9  :17948 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-12 20:25:06,989 DEBUG   SenderThread:17948 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-12 20:25:08,579 DEBUG   Thread-9  :17948 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/kevinthelly/fed-learning/2v7gplrw/file_stream HTTP/1.1" 200 None
+2021-01-12 20:25:10,079 DEBUG   SenderThread:17948 [sender.py:send():90] send: stats
+2021-01-12 20:25:10,237 DEBUG   SenderThread:17948 [sender.py:send():90] send: stats
+2021-01-12 20:25:10,713 DEBUG   Thread-9  :17948 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/kevinthelly/fed-learning/2v7gplrw/file_stream HTTP/1.1" 200 None
+2021-01-12 20:25:11,073 DEBUG   Thread-17 :17948 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-12 20:25:11,088 DEBUG   Thread-17 :17948 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-01-12 20:25:11,911 DEBUG   Thread-17 :17948 [connectionpool.py:_make_request():442] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/kevinthelly/fed-learning/2v7gplrw/wandb-metadata.json?Expires=1610549709&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=dRHyIbOrxff0MoKJQge6zEBThRdPKx0Je8ZPXbzzjyvxWni%2BBgySZ6D7Ce814%2FHK5g5dRcddP7u8CmWlybggbMttFw%2B9cccaq95essnkoBMSVQJn9m6762wZpV5nlam6bn68vP3F7jWuMJtdqmQVJWSEW7cxhrK6IRDKhJu9ItrliBOTNtssIed4OawZNzu85IyMtk6cZf5HDyTXlh0NtDxKlnf9N%2F%2FVJ3WEXcz1LW%2FIEB2SsyLFgIPKafPLDYzt4OPVWBDL3zWOiyZcSyI9qRqcbIn29gwpC31yhbhWR5OwugZ5MT15jYGrRzt0Op1jRoxvMhA4go3dmN9YNgxv%2BQ%3D%3D HTTP/1.1" 200 0
+2021-01-12 20:25:11,913 INFO    Thread-17 :17948 [upload_job.py:push():131] Uploaded file C:\Users\kevin\AppData\Local\Temp\tmp23kqmrvfwandb\3jxz8fxw-wandb-metadata.json
+2021-01-12 20:25:13,345 DEBUG   Thread-9  :17948 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/kevinthelly/fed-learning/2v7gplrw/file_stream HTTP/1.1" 200 None
+2021-01-12 20:25:15,585 DEBUG   SenderThread:17948 [sender.py:send():90] send: stats
+2021-01-12 20:25:16,342 DEBUG   Thread-9  :17948 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/kevinthelly/fed-learning/2v7gplrw/file_stream HTTP/1.1" 200 None
+2021-01-12 20:25:20,840 DEBUG   SenderThread:17948 [sender.py:send():90] send: stats
+2021-01-12 20:25:21,182 DEBUG   Thread-9  :17948 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/kevinthelly/fed-learning/2v7gplrw/file_stream HTTP/1.1" 200 None
+2021-01-12 20:25:25,081 DEBUG   HandlerThread:17948 [handler.py:handle_request():55] handle_request: status
+2021-01-12 20:25:25,081 DEBUG   SenderThread:17948 [sender.py:send():90] send: request
+2021-01-12 20:25:25,081 DEBUG   SenderThread:17948 [sender.py:send_request():99] send_request: status
+2021-01-12 20:25:25,083 DEBUG   SenderThread:17948 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-12 20:25:25,494 DEBUG   SenderThread:17948 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-12 20:25:26,074 DEBUG   SenderThread:17948 [sender.py:send():90] send: stats
+2021-01-12 20:25:26,399 DEBUG   Thread-9  :17948 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/kevinthelly/fed-learning/2v7gplrw/file_stream HTTP/1.1" 200 None
+2021-01-12 20:25:31,361 DEBUG   SenderThread:17948 [sender.py:send():90] send: stats
+2021-01-12 20:25:31,705 DEBUG   Thread-9  :17948 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/kevinthelly/fed-learning/2v7gplrw/file_stream HTTP/1.1" 200 None
+2021-01-12 20:25:36,705 DEBUG   SenderThread:17948 [sender.py:send():90] send: stats
+2021-01-12 20:25:37,027 DEBUG   Thread-9  :17948 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/kevinthelly/fed-learning/2v7gplrw/file_stream HTTP/1.1" 200 None
+2021-01-12 20:25:40,498 DEBUG   HandlerThread:17948 [handler.py:handle_request():55] handle_request: status
+2021-01-12 20:25:40,498 DEBUG   SenderThread:17948 [sender.py:send():90] send: request
+2021-01-12 20:25:40,498 DEBUG   SenderThread:17948 [sender.py:send_request():99] send_request: status
+2021-01-12 20:25:40,500 DEBUG   SenderThread:17948 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-12 20:25:40,869 DEBUG   SenderThread:17948 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-12 20:25:41,914 DEBUG   SenderThread:17948 [sender.py:send():90] send: stats
+2021-01-12 20:25:42,220 DEBUG   Thread-9  :17948 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/kevinthelly/fed-learning/2v7gplrw/file_stream HTTP/1.1" 200 None
+2021-01-12 20:25:46,897 DEBUG   SenderThread:17948 [sender.py:send():90] send: stats
+2021-01-12 20:25:47,190 DEBUG   Thread-9  :17948 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/kevinthelly/fed-learning/2v7gplrw/file_stream HTTP/1.1" 200 None
+2021-01-12 20:25:51,660 DEBUG   SenderThread:17948 [sender.py:send():90] send: stats
+2021-01-12 20:25:55,872 DEBUG   HandlerThread:17948 [handler.py:handle_request():55] handle_request: status
+2021-01-12 20:25:55,872 DEBUG   SenderThread:17948 [sender.py:send():90] send: request
+2021-01-12 20:25:55,872 DEBUG   SenderThread:17948 [sender.py:send_request():99] send_request: status
+2021-01-12 20:25:55,874 DEBUG   SenderThread:17948 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-12 20:25:56,334 DEBUG   SenderThread:17948 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-12 20:25:56,766 DEBUG   SenderThread:17948 [sender.py:send():90] send: stats
+2021-01-12 20:26:02,124 DEBUG   SenderThread:17948 [sender.py:send():90] send: stats
+2021-01-12 20:26:02,293 WARNING MainThread:17948 [internal.py:wandb_internal():117] Internal process interrupt: 1
+2021-01-12 20:26:02,424 DEBUG   Thread-9  :17948 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/kevinthelly/fed-learning/2v7gplrw/file_stream HTTP/1.1" 200 None
+2021-01-12 20:26:02,456 WARNING MainThread:17948 [internal.py:wandb_internal():117] Internal process interrupt: 2
+2021-01-12 20:26:02,456 ERROR   MainThread:17948 [internal.py:wandb_internal():120] Internal process interrupted.
+2021-01-12 20:26:03,125 INFO    HandlerThread:17948 [handler.py:finish():271] shutting down handler
+2021-01-12 20:26:03,126 INFO    SenderThread:17948 [sender.py:finish():642] shutting down sender
+2021-01-12 20:26:03,126 INFO    SenderThread:17948 [dir_watcher.py:finish():279] shutting down directory watcher
+2021-01-12 20:26:03,127 INFO    WriterThread:17948 [datastore.py:close():257] close: C:\Users\kevin\OneDrive\Documents\8th sem\Federated_Pneumonia\src\aggregator\wandb\run-20210112_202448-2v7gplrw\run-2v7gplrw.wandb
+2021-01-12 20:26:03,700 INFO    SenderThread:17948 [dir_watcher.py:finish():309] scan: C:\Users\kevin\OneDrive\Documents\8th sem\Federated_Pneumonia\src\aggregator\wandb\run-20210112_202448-2v7gplrw\files
+2021-01-12 20:26:03,700 INFO    SenderThread:17948 [dir_watcher.py:finish():315] scan save: C:\Users\kevin\OneDrive\Documents\8th sem\Federated_Pneumonia\src\aggregator\wandb\run-20210112_202448-2v7gplrw\files\config.yaml config.yaml
+2021-01-12 20:26:03,701 INFO    SenderThread:17948 [dir_watcher.py:finish():315] scan save: C:\Users\kevin\OneDrive\Documents\8th sem\Federated_Pneumonia\src\aggregator\wandb\run-20210112_202448-2v7gplrw\files\output.log output.log
+2021-01-12 20:26:03,702 INFO    SenderThread:17948 [dir_watcher.py:finish():315] scan save: C:\Users\kevin\OneDrive\Documents\8th sem\Federated_Pneumonia\src\aggregator\wandb\run-20210112_202448-2v7gplrw\files\requirements.txt requirements.txt
+2021-01-12 20:26:03,705 INFO    SenderThread:17948 [dir_watcher.py:finish():315] scan save: C:\Users\kevin\OneDrive\Documents\8th sem\Federated_Pneumonia\src\aggregator\wandb\run-20210112_202448-2v7gplrw\files\wandb-metadata.json wandb-metadata.json
+2021-01-12 20:26:03,705 INFO    SenderThread:17948 [dir_watcher.py:finish():315] scan save: C:\Users\kevin\OneDrive\Documents\8th sem\Federated_Pneumonia\src\aggregator\wandb\run-20210112_202448-2v7gplrw\files\wandb-summary.json wandb-summary.json
+2021-01-12 20:26:03,705 DEBUG   Thread-18 :17948 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-12 20:26:03,709 DEBUG   Thread-19 :17948 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-12 20:26:03,710 INFO    SenderThread:17948 [file_pusher.py:finish():169] shutting down file pusher
+2021-01-12 20:26:03,712 INFO    SenderThread:17948 [file_pusher.py:join():174] waiting for file pusher
+2021-01-12 20:26:03,713 DEBUG   Thread-20 :17948 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-12 20:26:03,716 DEBUG   Thread-21 :17948 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-12 20:26:04,059 DEBUG   Thread-18 :17948 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-12 20:26:04,063 DEBUG   Thread-20 :17948 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-12 20:26:04,069 DEBUG   Thread-18 :17948 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-01-12 20:26:04,071 DEBUG   Thread-20 :17948 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-01-12 20:26:04,086 DEBUG   Thread-19 :17948 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-12 20:26:04,091 DEBUG   Thread-19 :17948 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-01-12 20:26:04,498 DEBUG   Thread-21 :17948 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-12 20:26:04,502 DEBUG   Thread-21 :17948 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-01-12 20:26:04,611 DEBUG   Thread-20 :17948 [connectionpool.py:_make_request():442] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/kevinthelly/fed-learning/2v7gplrw/requirements.txt?Expires=1610549764&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=cFdI3p16fmU477k7qbxho2zki9w2l%2Fz656Y50focvR6MAELgHC72mjfVe92YBa%2BrRjXldlGBM49Rf%2FmKROJoO%2F8pS5X3VAzYKmEuxR5xo2x%2BwFVGeVDkE6%2FA7Q1OcjGApsYUbbUspS6gFl0zLApFp7EkNcFcNBoNJOBANfK5LtsgP2ktxJzJ6FKOkg33BtkJUP0AFHcP4EV4w5HHs5sZI%2B1YFwEJBbKWJ0IruL409yI85RT5pep6OeRscnkmxHt2A5%2FAWgMC5XXZq1otRqRvVMNbnRecGvkYq3GgHA7%2BcZkn1KvkCiL9pf8SqVSS1wYSFTQwC1BGSc5%2B0encnJuuvQ%3D%3D HTTP/1.1" 200 0
+2021-01-12 20:26:04,613 INFO    Thread-20 :17948 [upload_job.py:push():131] Uploaded file C:\Users\kevin\OneDrive\Documents\8th sem\Federated_Pneumonia\src\aggregator\wandb\run-20210112_202448-2v7gplrw\files\requirements.txt
+2021-01-12 20:26:04,637 DEBUG   Thread-19 :17948 [connectionpool.py:_make_request():442] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/kevinthelly/fed-learning/2v7gplrw/output.log?Expires=1610549764&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=BCxSdHGY%2BpXyATfVwGkqC%2BHZFXDHMfIUWVb2PmGX2uYSlLas8b5Nr7FLSPSGtHskxzRy840kaNpzGaBLbHWjJdGTHhOwDyjQeE3ZmI33mYEdr0RJ2kxpde1jnZjPfc4NSUfBLLZ0FdvBEPVgwQcKQuWogBB%2F5OPOuW7kWnYZUB5MbJQimZNBixwWJB6pfJlTr%2FY1uc79pleIrQNQN3UJee7Zq22d3xNSsxbdxYfiXAQSCbCluecozMMrb5E94pfoxzbEOOybjBBtJv6f8E4%2BMJn2GtoGk%2ByAZ2nC7PjHgqAdqOH1lMkWuCK9VBoKgxHr4TMTYs%2Bnkpj0hHHY9dn%2Bug%3D%3D HTTP/1.1" 200 0
+2021-01-12 20:26:04,639 INFO    Thread-19 :17948 [upload_job.py:push():131] Uploaded file C:\Users\kevin\OneDrive\Documents\8th sem\Federated_Pneumonia\src\aggregator\wandb\run-20210112_202448-2v7gplrw\files\output.log
+2021-01-12 20:26:04,652 DEBUG   Thread-18 :17948 [connectionpool.py:_make_request():442] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/kevinthelly/fed-learning/2v7gplrw/config.yaml?Expires=1610549764&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=ElJpRHQbIgmGZOp8VeSMXKpHXb29j%2BMJbcjjU6R0CRwGf%2BJYwjTYYUfKyDOHFW26lwRwByLH6ty%2FMTBtP0k1egZ%2FUedeVfAj3OK9X16h8bbk0uoQNPf9Z1QAq%2FxpbCj9QR%2F2D2uQ1JZM5265Qz%2FGax8Xhh88q3brcPb4NR0TWSBekVRRDyxRx0lxIIeypVTpb%2FzZJk9H56TXWu%2FuKa0XwC%2BsBGDodb7cQZA97XKG4ppP0ZXnDK0xjLvdHoieGFpQhXF%2FRqiLYxtlVFq0cTOAOb4PQTpyGBKG%2BpqsMUbmDtgzGRJQPp3E8bPQzV6A6DQXQ21CfWnqzgW0Hf2ny7dosg%3D%3D HTTP/1.1" 200 0
+2021-01-12 20:26:04,654 INFO    Thread-18 :17948 [upload_job.py:push():131] Uploaded file C:\Users\kevin\OneDrive\Documents\8th sem\Federated_Pneumonia\src\aggregator\wandb\run-20210112_202448-2v7gplrw\files\config.yaml
+2021-01-12 20:26:05,037 DEBUG   Thread-21 :17948 [connectionpool.py:_make_request():442] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/kevinthelly/fed-learning/2v7gplrw/wandb-summary.json?Expires=1610549764&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=PjlqaSerIxztUu%2Fit6XouH3d4VHL9cCwAjTsmHcRhDkLPnP%2FGhpWYuH42I4u00YKHZ5oihU4MbMsgSE43%2FSc%2By6csKkwfh05vac0ybr%2Fs00zKEzIDYnGtz7mmmKU02uODsSrMggS8yj2EMD7tmzj0yltZyWUybx2bkCr9gek8u0cyLchbDFtz8zv9BWCcboMUugus4YYUliR7PcF2BzZvp%2FbDM%2FLRZQ0HXdheYWvAdKTek5WS91RbBYc6tCJRLejg7di4Ko70EWjk4CiPVE5gm2xhsHO3FA6IWEOTdCqeiUmpwjaIj2l6gXZriIJSf%2Bx2rTcgRolQvTIgWJySFfIBg%3D%3D HTTP/1.1" 200 0
+2021-01-12 20:26:05,039 INFO    Thread-21 :17948 [upload_job.py:push():131] Uploaded file C:\Users\kevin\OneDrive\Documents\8th sem\Federated_Pneumonia\src\aggregator\wandb\run-20210112_202448-2v7gplrw\files\wandb-summary.json
+2021-01-12 20:26:06,003 DEBUG   Thread-9  :17948 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/kevinthelly/fed-learning/2v7gplrw/file_stream HTTP/1.1" 200 None
+2021-01-12 20:26:06,012 INFO    MainThread:17948 [internal.py:handle_exit():138] Internal process exited

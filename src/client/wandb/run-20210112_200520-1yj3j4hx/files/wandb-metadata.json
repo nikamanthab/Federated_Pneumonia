@@ -1,0 +1,35 @@
+{
+    "os": "Windows-10-10.0.18362-SP0",
+    "python": "3.7.4",
+    "heartbeatAt": "2021-01-12T14:35:23.874815",
+    "startedAt": "2021-01-12T14:35:20.417468",
+    "docker": null,
+    "gpu": "GeForce 940MX",
+    "gpu_count": 1,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "--node_name",
+        "node_0",
+        "--train_csv",
+        "../../csv/train_0.csv",
+        "--wandb",
+        "True",
+        "--train_batch_size",
+        "4",
+        "--epochs",
+        "2"
+    ],
+    "state": "running",
+    "codePath": "src\\client\\run.py",
+    "program": "run.py",
+    "git": {
+        "remote": "https://github.com/nikamanthab/Federated_Pneumonia.git",
+        "commit": "b6d4f54a06604a6a0f35fe4586fad902a5222af3"
+    },
+    "email": "kevin.thelly@gmail.com",
+    "root": "C:/Users/kevin/OneDrive/Documents/8th sem/Federated_Pneumonia",
+    "host": "LAPTOP-3EER2I78",
+    "username": "kevin",
+    "executable": "C:\\Users\\kevin\\anaconda3\\envs\\fl\\python.exe"
+}

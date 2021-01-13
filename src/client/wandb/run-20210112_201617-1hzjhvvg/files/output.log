@@ -1,0 +1,128 @@
+Train Epoch: 1 [0/2608 (0%)]	Loss: 0.690196
+Train Epoch: 1 [400/2608 (15%)]	Loss: 0.229487
+Train Epoch: 1 [800/2608 (31%)]	Loss: 0.161380
+Train Epoch: 1 [1200/2608 (46%)]	Loss: 0.054945
+Train Epoch: 1 [1600/2608 (61%)]	Loss: 0.576514
+Train Epoch: 1 [2000/2608 (77%)]	Loss: 0.514223
+Train Epoch: 1 [2400/2608 (92%)]	Loss: 0.100200
+Average loss : 0.3324208472456251
+Train Epoch: 2 [0/2608 (0%)]	Loss: 0.044910
+Train Epoch: 2 [400/2608 (15%)]	Loss: 0.033414
+Train Epoch: 2 [800/2608 (31%)]	Loss: 0.469924
+Train Epoch: 2 [1200/2608 (46%)]	Loss: 0.060549
+Train Epoch: 2 [1600/2608 (61%)]	Loss: 0.022926
+Train Epoch: 2 [2000/2608 (77%)]	Loss: 0.025376
+Train Epoch: 2 [2400/2608 (92%)]	Loss: 0.562897
+Average loss : 0.174285066979272
+model sent successfully!
+Train Epoch: 1 [0/2608 (0%)]	Loss: 0.153474
+Train Epoch: 1 [400/2608 (15%)]	Loss: 0.003718
+Train Epoch: 1 [800/2608 (31%)]	Loss: 0.221664
+Train Epoch: 1 [1200/2608 (46%)]	Loss: 0.195797
+Train Epoch: 1 [1600/2608 (61%)]	Loss: 0.072148
+Train Epoch: 1 [2000/2608 (77%)]	Loss: 0.060140
+Train Epoch: 1 [2400/2608 (92%)]	Loss: 0.483588
+Average loss : 0.1700754916029317
+Train Epoch: 2 [0/2608 (0%)]	Loss: 0.033957
+Train Epoch: 2 [400/2608 (15%)]	Loss: 0.006794
+Train Epoch: 2 [800/2608 (31%)]	Loss: 0.026121
+Train Epoch: 2 [1200/2608 (46%)]	Loss: 0.089655
+Train Epoch: 2 [1600/2608 (61%)]	Loss: 0.024518
+Train Epoch: 2 [2000/2608 (77%)]	Loss: 0.007416
+Train Epoch: 2 [2400/2608 (92%)]	Loss: 0.000041
+Average loss : 0.026929043233394623
+model sent successfully!
+Train Epoch: 1 [0/2608 (0%)]	Loss: 0.044696
+Train Epoch: 1 [400/2608 (15%)]	Loss: 0.077693
+Train Epoch: 1 [800/2608 (31%)]	Loss: 0.011758
+Train Epoch: 1 [1200/2608 (46%)]	Loss: 0.442732
+Train Epoch: 1 [1600/2608 (61%)]	Loss: 0.099661
+Train Epoch: 1 [2000/2608 (77%)]	Loss: 0.312023
+Train Epoch: 1 [2400/2608 (92%)]	Loss: 0.000058
+Average loss : 0.1412315730537687
+Train Epoch: 2 [0/2608 (0%)]	Loss: 0.057082
+Train Epoch: 2 [400/2608 (15%)]	Loss: 0.049484
+Train Epoch: 2 [800/2608 (31%)]	Loss: 0.025516
+Train Epoch: 2 [1200/2608 (46%)]	Loss: 0.369538
+Train Epoch: 2 [1600/2608 (61%)]	Loss: 0.027879
+Train Epoch: 2 [2000/2608 (77%)]	Loss: 0.022326
+Train Epoch: 2 [2400/2608 (92%)]	Loss: 0.159521
+Average loss : 0.10162087849208287
+model sent successfully!
+Train Epoch: 1 [0/2608 (0%)]	Loss: 0.003670
+Train Epoch: 1 [400/2608 (15%)]	Loss: 0.027533
+Train Epoch: 1 [800/2608 (31%)]	Loss: 0.003251
+Train Epoch: 1 [1200/2608 (46%)]	Loss: 0.000650
+Train Epoch: 1 [1600/2608 (61%)]	Loss: 0.021639
+Train Epoch: 1 [2000/2608 (77%)]	Loss: 0.006687
+Train Epoch: 1 [2400/2608 (92%)]	Loss: 0.017794
+Average loss : 0.011603402239935738
+Train Epoch: 2 [0/2608 (0%)]	Loss: 0.206431
+Train Epoch: 2 [400/2608 (15%)]	Loss: 0.042592
+Train Epoch: 2 [800/2608 (31%)]	Loss: 0.051640
+Train Epoch: 2 [1200/2608 (46%)]	Loss: 0.011219
+Train Epoch: 2 [1600/2608 (61%)]	Loss: 0.195476
+Train Epoch: 2 [2000/2608 (77%)]	Loss: 0.003129
+Train Epoch: 2 [2400/2608 (92%)]	Loss: 0.204207
+Average loss : 0.10209912327783448
+model sent successfully!
+Train Epoch: 1 [0/2608 (0%)]	Loss: 0.008446
+Train Epoch: 1 [400/2608 (15%)]	Loss: 0.438946
+Train Epoch: 1 [800/2608 (31%)]	Loss: 0.078622
+Train Epoch: 1 [1200/2608 (46%)]	Loss: 0.030331
+Train Epoch: 1 [1600/2608 (61%)]	Loss: 0.036459
+Train Epoch: 1 [2000/2608 (77%)]	Loss: 0.015846
+Train Epoch: 1 [2400/2608 (92%)]	Loss: 0.001515
+Average loss : 0.08716625507388796
+Train Epoch: 2 [0/2608 (0%)]	Loss: 0.304890
+Train Epoch: 2 [400/2608 (15%)]	Loss: 0.024622
+Train Epoch: 2 [800/2608 (31%)]	Loss: 0.000974
+Train Epoch: 2 [1200/2608 (46%)]	Loss: 0.003425
+Train Epoch: 2 [1600/2608 (61%)]	Loss: 0.263612
+Train Epoch: 2 [2000/2608 (77%)]	Loss: 0.002317
+Train Epoch: 2 [2400/2608 (92%)]	Loss: 0.257681
+Average loss : 0.12250298687389918
+model sent successfully!
+Train Epoch: 1 [0/2608 (0%)]	Loss: 0.041194
+Train Epoch: 1 [400/2608 (15%)]	Loss: 0.000445
+Train Epoch: 1 [800/2608 (31%)]	Loss: 0.000330
+Train Epoch: 1 [1200/2608 (46%)]	Loss: 0.007573
+Train Epoch: 1 [1600/2608 (61%)]	Loss: 0.001736
+Train Epoch: 1 [2000/2608 (77%)]	Loss: 0.000086
+Train Epoch: 1 [2400/2608 (92%)]	Loss: 0.004162
+Average loss : 0.007932309061288834
+Train Epoch: 2 [0/2608 (0%)]	Loss: 0.001303
+Train Epoch: 2 [400/2608 (15%)]	Loss: 0.001495
+Train Epoch: 2 [800/2608 (31%)]	Loss: 0.005498
+Train Epoch: 2 [1200/2608 (46%)]	Loss: 0.001006
+Train Epoch: 2 [1600/2608 (61%)]	Loss: 0.000887
+Train Epoch: 2 [2000/2608 (77%)]	Loss: 0.411273
+Train Epoch: 2 [2400/2608 (92%)]	Loss: 0.000718
+Average loss : 0.06031133873122079
+model sent successfully!
+Train Epoch: 1 [0/2608 (0%)]	Loss: 0.005216
+Train Epoch: 1 [400/2608 (15%)]	Loss: 0.468961
+Traceback (most recent call last):
+  File "run.py", line 46, in <module>
+    optimizer=optimizer, epoch=epoch)                ###logger added
+  File "C:\Users\kevin\OneDrive\Documents\8th sem\Federated_Pneumonia\src\client\train.py", line 9, in train
+    for batch_idx, (data, target) in enumerate(train_loader): # <-- now it is a distributed dataset
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\torch\utils\data\dataloader.py", line 345, in __next__
+    data = self._next_data()
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\torch\utils\data\dataloader.py", line 385, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\torch\utils\data\_utils\fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\torch\utils\data\_utils\fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "C:\Users\kevin\OneDrive\Documents\8th sem\Federated_Pneumonia\src\client\dataloader.py", line 54, in __getitem__
+    image = self.transform(image)
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\torchvision\transforms\transforms.py", line 70, in __call__
+    img = t(img)
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\torchvision\transforms\transforms.py", line 207, in __call__
+    return F.resize(img, self.size, self.interpolation)
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\torchvision\transforms\functional.py", line 256, in resize
+    return img.resize(size[::-1], interpolation)
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\PIL\Image.py", line 1922, in resize
+    return self._new(self.im.resize(size, resample, box))
+KeyboardInterrupt

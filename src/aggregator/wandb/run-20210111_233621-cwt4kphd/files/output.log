@@ -1,0 +1,49 @@
+ * Debugger is active!
+ * Debugger PIN: 102-738-782
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+Connecting Nodes:
+node_0
+127.0.0.1 - - [11/Jan/2021 23:36:35] "[37mPOST /getConnection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Jan/2021 23:36:40] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+model initialized
+127.0.0.1 - - [11/Jan/2021 23:36:43] "[37mPOST /getmodel HTTP/1.1[0m" 200 -
+
+Test set: Average loss: 1.0346, Accuracy: 463/624 (74%)
+
+---Aggregation Done---
+
+Test set: Average loss: 243.6755, Accuracy: 390/624 (62%)
+
+127.0.0.1 - - [12/Jan/2021 00:01:12] "[37mPOST /sendmodel HTTP/1.1[0m" 200 -
+127.0.0.1 - - [12/Jan/2021 00:01:14] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [12/Jan/2021 00:01:16] "[37mPOST /getmodel HTTP/1.1[0m" 200 -
+
+Test set: Average loss: 0.6252, Accuracy: 495/624 (79%)
+
+---Aggregation Done---
+
+Test set: Average loss: 23250114252484.9219, Accuracy: 390/624 (62%)
+
+127.0.0.1 - - [12/Jan/2021 00:16:55] "[37mPOST /sendmodel HTTP/1.1[0m" 200 -
+127.0.0.1 - - [12/Jan/2021 00:16:57] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [12/Jan/2021 00:17:01] "[37mPOST /getmodel HTTP/1.1[0m" 200 -
+
+Test set: Average loss: 1.8292, Accuracy: 431/624 (69%)
+
+---Aggregation Done---
+
+Test set: Average loss: 2216145862395966259200.0000, Accuracy: 390/624 (62%)
+
+127.0.0.1 - - [12/Jan/2021 00:31:31] "[37mPOST /sendmodel HTTP/1.1[0m" 200 -
+127.0.0.1 - - [12/Jan/2021 00:31:33] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [12/Jan/2021 00:31:35] "[37mPOST /getmodel HTTP/1.1[0m" 200 -
+
+Test set: Average loss: 1.5580, Accuracy: 447/624 (72%)
+
+---Aggregation Done---
+
+Test set: Average loss: 9642818255921640028241920.0000, Accuracy: 235/624 (38%)
+
+127.0.0.1 - - [12/Jan/2021 00:45:17] "[37mPOST /sendmodel HTTP/1.1[0m" 200 -
+127.0.0.1 - - [12/Jan/2021 00:45:19] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [12/Jan/2021 00:45:21] "[37mPOST /getmodel HTTP/1.1[0m" 200 -

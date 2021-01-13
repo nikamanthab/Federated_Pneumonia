@@ -1,0 +1,51 @@
+ * Debugger is active!
+ * Debugger PIN: 102-738-782
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+Connecting Nodes:
+node_0
+127.0.0.1 - - [12/Jan/2021 20:27:40] "[37mPOST /getConnection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [12/Jan/2021 20:27:45] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [12/Jan/2021 20:27:47] "[37mPOST /getmodel HTTP/1.1[0m" 200 -
+Connecting Nodes:
+node_1
+127.0.0.1 - - [12/Jan/2021 20:27:55] "[37mPOST /getConnection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [12/Jan/2021 20:28:01] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [12/Jan/2021 20:28:03] "[37mPOST /getmodel HTTP/1.1[0m" 200 -
+127.0.0.1 - - [12/Jan/2021 20:28:43] "[37mPOST /sendmodel HTTP/1.1[0m" 200 -
+127.0.0.1 - - [12/Jan/2021 20:28:45] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [12/Jan/2021 20:28:57] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+
+Test set: Average loss: 2.5024, Accuracy: 447/624 (72%)
+
+127.0.0.1 - - [12/Jan/2021 20:29:09] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+
+Test set: Average loss: 1.7936, Accuracy: 480/624 (77%)
+
+127.0.0.1 - - [12/Jan/2021 20:29:12] "[35m[1mPOST /sendmodel HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\flask\app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\flask\app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\flask\app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\kevin\OneDrive\Documents\8th sem\Federated_Pneumonia\src\aggregator\server.py", line 70, in sendmodel
+    agg_model = agg_func(model_data, serverargs)
+  File "C:\Users\kevin\OneDrive\Documents\8th sem\Federated_Pneumonia\src\aggregator\aggregator.py", line 43, in fed_avg_aggregator
+    param.data = aggregated_weights[idx]
+IndexError: list index out of range
+127.0.0.1 - - [12/Jan/2021 20:29:21] "[37mPOST /checkphase HTTP/1.1[0m" 200 -

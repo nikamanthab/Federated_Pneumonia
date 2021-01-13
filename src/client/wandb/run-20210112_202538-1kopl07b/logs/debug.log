@@ -1,0 +1,24 @@
+2021-01-12 20:25:38,164 INFO    MainThread:6000 [wandb_setup.py:_flush():70] setting env: {}
+2021-01-12 20:25:38,164 INFO    MainThread:6000 [wandb_setup.py:_flush():70] multiprocessing start_methods=spawn
+2021-01-12 20:25:38,164 INFO    MainThread:6000 [wandb_setup.py:_flush():70] setting login settings: {}
+2021-01-12 20:25:38,165 INFO    MainThread:6000 [wandb_init.py:_log_setup():303] Logging user logs to C:\Users\kevin\OneDrive\Documents\8th sem\Federated_Pneumonia\src\client\wandb\run-20210112_202538-1kopl07b\logs\debug.log
+2021-01-12 20:25:38,165 INFO    MainThread:6000 [wandb_init.py:_log_setup():304] Logging internal logs to C:\Users\kevin\OneDrive\Documents\8th sem\Federated_Pneumonia\src\client\wandb\run-20210112_202538-1kopl07b\logs\debug-internal.log
+2021-01-12 20:25:40,409 INFO    MainThread:6000 [wandb_run.py:_console_start():1237] atexit reg
+2021-01-12 20:25:40,410 INFO    MainThread:6000 [wandb_run.py:_redirect():1104] redirect: SettingsConsole.WRAP
+2021-01-12 20:25:40,410 INFO    MainThread:6000 [wandb_run.py:_redirect():1135] Wrapping output streams.
+2021-01-12 20:25:40,410 INFO    MainThread:6000 [wandb_run.py:_redirect():1151] Redirects installed.
+2021-01-12 20:25:51,436 INFO    MainThread:6000 [wandb_run.py:_atexit_cleanup():1207] got exitcode: 255
+2021-01-12 20:25:51,436 INFO    MainThread:6000 [wandb_run.py:_restore():1179] restore
+2021-01-12 20:25:51,441 INFO    MainThread:6000 [wandb_run.py:_wait_for_finish():1324] got exit ret: uuid: "be42b1a2bd7a4a5a83ee3797f7019782"
+response {
+  poll_exit_response {
+    file_counts {
+      wandb_count: 1
+    }
+    pusher_stats {
+      uploaded_bytes: 880
+      total_bytes: 880
+    }
+  }
+}
+

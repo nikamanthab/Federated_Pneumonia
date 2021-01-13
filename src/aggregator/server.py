@@ -64,14 +64,14 @@ def sendmodel():
         for node in node_details:
             node_model = torch.load(serverargs['aggregated_model_location']+node['node_name']+'.pt') \
                 .to(serverargs['device'])
-            test(serverargs, node_model, test_loader, logger=None)
+            test(serverargs, node_model, test_loader, logger=logger)
             node_tuple = (node_model, node['no_of_samples'])
             model_data.append(node_tuple)
         agg_model = agg_func(model_data, serverargs)
         torch.save(agg_model, serverargs['aggregated_model_location']+'agg_model.pt')
         print("---Aggregation Done---")
         #testing agg_model
-        test(serverargs, agg_model, test_loader, logger=None)
+        test(serverargs, agg_model, test_loader, logger=logger)
         serverargs['current_agg_epoch']+=1
     return json.dumps({"status": "model sent successfully!"})
 

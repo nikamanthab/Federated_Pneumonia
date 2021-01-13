@@ -1,0 +1,49 @@
+ * Debugger is active!
+ * Debugger PIN: 102-738-782
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+Connecting Nodes:
+node_0
+127.0.0.1 - - [12/Jan/2021 19:34:42] "[37mPOST /getConnection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [12/Jan/2021 19:34:49] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [12/Jan/2021 19:34:51] "[37mPOST /getmodel HTTP/1.1[0m" 200 -
+
+Test set: Average loss: 0.7839, Accuracy: 499/624 (80%)
+
+---Aggregation Done---
+127.0.0.1 - - [12/Jan/2021 19:49:16] "[35m[1mPOST /sendmodel HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\flask\app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\flask\app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\flask\app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\kevin\OneDrive\Documents\8th sem\Federated_Pneumonia\src\aggregator\server.py", line 74, in sendmodel
+    test(serverargs, agg_model, test_loader, logger=logger)
+  File "C:\Users\kevin\OneDrive\Documents\8th sem\Federated_Pneumonia\src\aggregator\test.py", line 11, in test
+    output = model(data)
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\torch\nn\modules\module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "C:\Users\kevin\OneDrive\Documents\8th sem\Federated_Pneumonia\src\aggregator\models.py", line 17, in forward
+    x = F.relu(self.conv2(x))
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\torch\nn\modules\module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\torch\nn\modules\conv.py", line 345, in forward
+    return self.conv2d_forward(input, self.weight)
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\torch\nn\modules\conv.py", line 342, in conv2d_forward
+    self.padding, self.dilation, self.groups)
+RuntimeError: weight should have at least three dimensions

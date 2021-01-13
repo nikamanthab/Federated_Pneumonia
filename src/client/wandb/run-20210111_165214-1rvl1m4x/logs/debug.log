@@ -1,0 +1,44 @@
+2021-01-11 16:52:14,870 INFO    MainThread:14256 [wandb_setup.py:_flush():70] setting env: {}
+2021-01-11 16:52:14,870 INFO    MainThread:14256 [wandb_setup.py:_flush():70] multiprocessing start_methods=spawn
+2021-01-11 16:52:14,870 INFO    MainThread:14256 [wandb_setup.py:_flush():70] setting login settings: {}
+2021-01-11 16:52:14,870 INFO    MainThread:14256 [wandb_init.py:_log_setup():303] Logging user logs to C:\Users\kevin\OneDrive\Documents\8th sem\Federated_Pneumonia\src\client\wandb\run-20210111_165214-1rvl1m4x\logs\debug.log
+2021-01-11 16:52:14,870 INFO    MainThread:14256 [wandb_init.py:_log_setup():304] Logging internal logs to C:\Users\kevin\OneDrive\Documents\8th sem\Federated_Pneumonia\src\client\wandb\run-20210111_165214-1rvl1m4x\logs\debug-internal.log
+2021-01-11 16:52:17,134 INFO    MainThread:14256 [wandb_run.py:_console_start():1237] atexit reg
+2021-01-11 16:52:17,134 INFO    MainThread:14256 [wandb_run.py:_redirect():1104] redirect: SettingsConsole.WRAP
+2021-01-11 16:52:17,134 INFO    MainThread:14256 [wandb_run.py:_redirect():1135] Wrapping output streams.
+2021-01-11 16:52:17,134 INFO    MainThread:14256 [wandb_run.py:_redirect():1151] Redirects installed.
+2021-01-11 16:52:30,626 INFO    MainThread:14256 [wandb_run.py:_atexit_cleanup():1207] got exitcode: 1
+2021-01-11 16:52:30,626 INFO    MainThread:14256 [wandb_run.py:_restore():1179] restore
+2021-01-11 16:52:30,632 INFO    MainThread:14256 [wandb_run.py:_wait_for_finish():1324] got exit ret: uuid: "7933ccbd21b3460aa4411b34dcafb174"
+response {
+  poll_exit_response {
+    file_counts {
+      wandb_count: 1
+    }
+    pusher_stats {
+      uploaded_bytes: 938
+      total_bytes: 938
+    }
+  }
+}
+
+2021-01-11 16:52:32,635 INFO    MainThread:14256 [wandb_run.py:_wait_for_finish():1324] got exit ret: uuid: "af92a6c81f55446eb5eb678e77c5f270"
+response {
+  poll_exit_response {
+    done: true
+    exit_result {
+    }
+    file_counts {
+      wandb_count: 5
+    }
+    pusher_stats {
+      uploaded_bytes: 6439
+      total_bytes: 6439
+    }
+  }
+}
+
+2021-01-11 16:52:33,752 INFO    MainThread:14256 [wandb_run.py:_show_summary():1469] rendering summary
+2021-01-11 16:52:33,755 INFO    MainThread:14256 [wandb_run.py:_show_history():1507] rendering history
+2021-01-11 16:52:33,834 INFO    MainThread:14256 [wandb_run.py:_show_files():1536] logging synced files
+2021-01-11 16:52:33,838 INFO    MainThread:14256 [internal.py:handle_exit():138] Internal process exited

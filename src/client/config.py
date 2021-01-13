@@ -22,7 +22,7 @@ def getArguments():
     parser.add_argument('--agg_ip', type=str, default='localhost')
     parser.add_argument('--agg_port', type=str, default='5000')
     parser.add_argument('--train_batch_size', type=int, default=8)
-    parser.add_argument('--epochs', type=float, default=4)
+    parser.add_argument('--epochs', type=int, default=2)
     parser.add_argument('--lr', type=float, default=0.001)
     parser.add_argument('--device', type=str, default='cuda:0')
     parser.add_argument('--momentum', type=float, default=0.5)

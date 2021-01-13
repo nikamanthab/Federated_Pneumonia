@@ -1,0 +1,77 @@
+Train Epoch: 1 [0/2608 (0%)]	Loss: 0.000000
+Train Epoch: 1 [400/2608 (15%)]	Loss: 0.000000
+Train Epoch: 1 [800/2608 (31%)]	Loss: 0.000000
+Train Epoch: 1 [1200/2608 (46%)]	Loss: 0.000000
+Train Epoch: 1 [1600/2608 (61%)]	Loss: 0.000000
+Train Epoch: 1 [2000/2608 (77%)]	Loss: 0.000239
+Train Epoch: 1 [2400/2608 (92%)]	Loss: 0.000005
+Train Epoch: 2 [0/2608 (0%)]	Loss: 0.000000
+Train Epoch: 2 [400/2608 (15%)]	Loss: 0.000008
+Train Epoch: 2 [800/2608 (31%)]	Loss: 0.002706
+Train Epoch: 2 [1200/2608 (46%)]	Loss: 0.000000
+Train Epoch: 2 [1600/2608 (61%)]	Loss: 0.000000
+Train Epoch: 2 [2000/2608 (77%)]	Loss: 0.000000
+Train Epoch: 2 [2400/2608 (92%)]	Loss: 0.000025
+Train Epoch: 3 [0/2608 (0%)]	Loss: 0.000000
+Train Epoch: 3 [400/2608 (15%)]	Loss: 0.000000
+Train Epoch: 3 [800/2608 (31%)]	Loss: 0.000000
+Train Epoch: 3 [1200/2608 (46%)]	Loss: 0.000000
+Train Epoch: 3 [1600/2608 (61%)]	Loss: 0.000000
+Train Epoch: 3 [2000/2608 (77%)]	Loss: 0.000000
+Train Epoch: 3 [2400/2608 (92%)]	Loss: 0.000000
+Train Epoch: 4 [0/2608 (0%)]	Loss: 0.000001
+Train Epoch: 4 [400/2608 (15%)]	Loss: 0.000044
+Train Epoch: 4 [800/2608 (31%)]	Loss: 0.000008
+Train Epoch: 4 [1200/2608 (46%)]	Loss: 0.000318
+Train Epoch: 4 [1600/2608 (61%)]	Loss: 0.000001
+Train Epoch: 4 [2000/2608 (77%)]	Loss: 0.000000
+Train Epoch: 4 [2400/2608 (92%)]	Loss: 0.000000
+model sent successfully!
+Train Epoch: 1 [0/2608 (0%)]	Loss: 0.000000
+Train Epoch: 1 [400/2608 (15%)]	Loss: 0.000000
+Train Epoch: 1 [800/2608 (31%)]	Loss: 0.000000
+Train Epoch: 1 [1200/2608 (46%)]	Loss: 0.000000
+Train Epoch: 1 [1600/2608 (61%)]	Loss: 0.000407
+Train Epoch: 1 [2000/2608 (77%)]	Loss: 0.000000
+Train Epoch: 1 [2400/2608 (92%)]	Loss: 0.000025
+Train Epoch: 2 [0/2608 (0%)]	Loss: 0.026121
+Train Epoch: 2 [400/2608 (15%)]	Loss: 0.000005
+Train Epoch: 2 [800/2608 (31%)]	Loss: 0.000006
+Train Epoch: 2 [1200/2608 (46%)]	Loss: 0.000000
+Train Epoch: 2 [1600/2608 (61%)]	Loss: 0.000003
+Train Epoch: 2 [2000/2608 (77%)]	Loss: 0.000000
+Train Epoch: 2 [2400/2608 (92%)]	Loss: 0.000000
+Train Epoch: 3 [0/2608 (0%)]	Loss: 0.000000
+Train Epoch: 3 [400/2608 (15%)]	Loss: 0.000000
+Train Epoch: 3 [800/2608 (31%)]	Loss: 0.000000
+Train Epoch: 3 [1200/2608 (46%)]	Loss: 0.000000
+Train Epoch: 3 [1600/2608 (61%)]	Loss: 0.000000
+Train Epoch: 3 [2000/2608 (77%)]	Loss: 0.000000
+Train Epoch: 3 [2400/2608 (92%)]	Loss: 0.000000
+Train Epoch: 4 [0/2608 (0%)]	Loss: 0.000000
+Train Epoch: 4 [400/2608 (15%)]	Loss: 0.000000
+Train Epoch: 4 [800/2608 (31%)]	Loss: 0.000000
+Train Epoch: 4 [1200/2608 (46%)]	Loss: 0.000000
+Train Epoch: 4 [1600/2608 (61%)]	Loss: 0.000001
+Train Epoch: 4 [2000/2608 (77%)]	Loss: 0.000000
+Train Epoch: 4 [2400/2608 (92%)]	Loss: 0.000000
+model sent successfully!
+Train Epoch: 1 [0/2608 (0%)]	Loss: 0.000001
+Train Epoch: 1 [400/2608 (15%)]	Loss: 0.000000
+Train Epoch: 1 [800/2608 (31%)]	Loss: 0.000000
+Train Epoch: 1 [1200/2608 (46%)]	Loss: 0.000014
+Train Epoch: 1 [1600/2608 (61%)]	Loss: 0.000000
+Train Epoch: 1 [2000/2608 (77%)]	Loss: 0.000000
+Train Epoch: 1 [2400/2608 (92%)]	Loss: 0.232077
+Train Epoch: 2 [0/2608 (0%)]	Loss: 0.212974
+Train Epoch: 2 [400/2608 (15%)]	Loss: 0.000000
+Traceback (most recent call last):
+  File "run.py", line 46, in <module>
+    optimizer=optimizer, epoch=epoch)                ###logger added
+  File "C:\Users\kevin\OneDrive\Documents\8th sem\Federated_Pneumonia\src\client\train.py", line 12, in train
+    loss.backward()
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\torch\tensor.py", line 195, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph)
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\torch\autograd\__init__.py", line 99, in backward
+    allow_unreachable=True)  # allow_unreachable flag
+KeyboardInterrupt

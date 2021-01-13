@@ -1,0 +1,57 @@
+2021-01-11 16:27:16,594 INFO    MainThread:21492 [wandb_setup.py:_flush():70] setting env: {}
+2021-01-11 16:27:16,594 INFO    MainThread:21492 [wandb_setup.py:_flush():70] multiprocessing start_methods=spawn
+2021-01-11 16:27:16,594 INFO    MainThread:21492 [wandb_setup.py:_flush():70] setting login settings: {}
+2021-01-11 16:27:16,594 INFO    MainThread:21492 [wandb_init.py:_log_setup():303] Logging user logs to C:\Users\kevin\OneDrive\Documents\8th sem\Federated_Pneumonia\src\client\wandb\run-20210111_162716-8zxhtwmf\logs\debug.log
+2021-01-11 16:27:16,594 INFO    MainThread:21492 [wandb_init.py:_log_setup():304] Logging internal logs to C:\Users\kevin\OneDrive\Documents\8th sem\Federated_Pneumonia\src\client\wandb\run-20210111_162716-8zxhtwmf\logs\debug-internal.log
+2021-01-11 16:27:18,821 INFO    MainThread:21492 [wandb_run.py:_console_start():1237] atexit reg
+2021-01-11 16:27:18,821 INFO    MainThread:21492 [wandb_run.py:_redirect():1104] redirect: SettingsConsole.WRAP
+2021-01-11 16:27:18,821 INFO    MainThread:21492 [wandb_run.py:_redirect():1135] Wrapping output streams.
+2021-01-11 16:27:18,821 INFO    MainThread:21492 [wandb_run.py:_redirect():1151] Redirects installed.
+2021-01-11 16:27:30,839 INFO    MainThread:21492 [wandb_run.py:_atexit_cleanup():1207] got exitcode: 1
+2021-01-11 16:27:30,839 INFO    MainThread:21492 [wandb_run.py:_restore():1179] restore
+2021-01-11 16:27:30,839 INFO    MainThread:21492 [wandb_run.py:_wait_for_finish():1324] got exit ret: uuid: "77a774efeb19439291899a41fa060114"
+response {
+  poll_exit_response {
+    file_counts {
+      wandb_count: 1
+    }
+    pusher_stats {
+      uploaded_bytes: 938
+      total_bytes: 938
+    }
+  }
+}
+
+2021-01-11 16:27:32,841 INFO    MainThread:21492 [wandb_run.py:_wait_for_finish():1324] got exit ret: uuid: "eab560579ad24d49bcfbd02913655cca"
+response {
+  poll_exit_response {
+    file_counts {
+      wandb_count: 5
+    }
+    pusher_stats {
+      uploaded_bytes: 6439
+      total_bytes: 6439
+    }
+  }
+}
+
+2021-01-11 16:27:34,856 INFO    MainThread:21492 [wandb_run.py:_wait_for_finish():1324] got exit ret: uuid: "fadaaf5917d241088097b5d8c9f24a09"
+response {
+  poll_exit_response {
+    done: true
+    exit_result {
+    }
+    file_counts {
+      wandb_count: 5
+    }
+    pusher_stats {
+      uploaded_bytes: 6439
+      total_bytes: 6439
+    }
+  }
+}
+
+2021-01-11 16:27:35,950 INFO    MainThread:21492 [wandb_run.py:_show_summary():1469] rendering summary
+2021-01-11 16:27:35,950 INFO    MainThread:21492 [wandb_run.py:_show_history():1507] rendering history
+2021-01-11 16:27:35,950 INFO    MainThread:21492 [wandb_run.py:_show_files():1536] logging synced files
+2021-01-11 16:27:35,965 INFO    MainThread:21492 [internal.py:handle_exit():138] Internal process exited
