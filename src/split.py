@@ -2,14 +2,14 @@ import pandas as pd
 import random
 
 
-def datasplit(num_nodes,df):
-#     parser = argparse.ArgumentParser(description='Server module.')
-#     parser.add_argument('--num_nodes', type=int, default=5)
-#     parser.add_argument('--input_file', type=str)
-#     parser.add_argument('--output_file',type=str)
-#     args = parser.parse_args()
+def datasplit():
+    # parser = argparse.ArgumentParser(description='Server module.')
+    # parser.add_argument('--num_nodes', type=int, default=5)
+    # parser.add_argument('--input_file', type=str)
+    # parser.add_argument('--output_file',type=str)
+    # args = parser.parse_args()
     
-#     df=pd.read_csv(args['input_file'])
+    # df=pd.read_csv(args['input_file'])
     
     
     length=len(df)
@@ -27,10 +27,10 @@ def datasplit(num_nodes,df):
     for i in range(num_nodes):            
         temp=pd.DataFrame(nodes[i])
         filename = "node_" + str(i) + ".csv"
-#         path = "../csv/split/" + filename + ".csv"
+        filepath = "../csv/splits/" + filename 
 #         path = args["output_file"] + filename
-        temp.to_csv(filename)
+        temp.to_csv(path_or_buf=filepath)
         
-    print(df)
+        
         
         
