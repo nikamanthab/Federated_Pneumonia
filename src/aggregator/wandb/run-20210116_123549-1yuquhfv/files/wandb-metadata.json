@@ -1,0 +1,37 @@
+{
+    "os": "Linux-5.4.0-60-generic-x86_64-with-debian-bullseye-sid",
+    "python": "3.7.9",
+    "heartbeatAt": "2021-01-16T07:05:50.827134",
+    "startedAt": "2021-01-16T07:05:49.787624",
+    "docker": null,
+    "gpu": "GeForce 940MX",
+    "gpu_count": 1,
+    "cpu_count": 4,
+    "cuda": null,
+    "args": [
+        "--wandb",
+        "True",
+        "--agg_epochs",
+        "5",
+        "--architecture",
+        "TwoLayerNet",
+        "--image_height",
+        "28",
+        "--image_width",
+        "28",
+        "--num_of_nodes",
+        "2"
+    ],
+    "state": "running",
+    "codePath": "src/aggregator/server.py",
+    "program": "server.py",
+    "git": {
+        "remote": "https://github.com/nikamanthab/Federated_Pneumonia.git",
+        "commit": "c2a837f651aeb7c9f2ff2221cc93f237068b81c5"
+    },
+    "email": "nitinnikamanth@gmail.com",
+    "root": "/home/nikamanth/Documents/fyp",
+    "host": "nikamanth-UX430UQ",
+    "username": "nikamanth",
+    "executable": "/home/nikamanth/anaconda3/envs/torch/bin/python"
+}

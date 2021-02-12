@@ -1,0 +1,14 @@
+<wandb.sdk.wandb_run.Run at 0x7fa04c541150>
+
+[0;36m  File [0;32m"<ipython-input-5-bbebb0a3802e>"[0;36m, line [0;32m1[0m
+[0;31m    wandb login[0m
+[0m              ^[0m
+[0;31mSyntaxError[0m[0;31m:[0m invalid syntax
+
+
+<function wandb.sdk.wandb_login.login(anonymous=None, key=None, relogin=None, host=None, force=None)>
+
+[34m[1mwandb[0m: [33mWARNING[0m Calling wandb.login() after wandb.init() has no effect.
+True
+
+<IPython.core.display.HTML object>

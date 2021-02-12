@@ -1,0 +1,36 @@
+--- Connection established ---
+--- Dataset loaded ---
+--- model loaded ---
+Train Epoch: 1 [0/2608 (0%)]	Loss: 0.218107
+Train Epoch: 1 [800/2608 (31%)]	Loss: 0.010167
+Train Epoch: 1 [1600/2608 (61%)]	Loss: 0.130820
+Train Epoch: 1 [2400/2608 (92%)]	Loss: 0.129376
+Train Epoch: 2 [0/2608 (0%)]	Loss: 0.021751
+Train Epoch: 2 [800/2608 (31%)]	Loss: 0.066918
+Train Epoch: 2 [1600/2608 (61%)]	Loss: 0.128352
+Train Epoch: 2 [2400/2608 (92%)]	Loss: 0.036037
+Train Epoch: 3 [0/2608 (0%)]	Loss: 0.024867
+Train Epoch: 3 [800/2608 (31%)]	Loss: 0.063816
+Train Epoch: 3 [1600/2608 (61%)]	Loss: 0.174050
+Traceback (most recent call last):
+  File "run.py", line 47, in <module>
+    optimizer=optimizer, epoch=epoch)                ###logger added
+  File "/home/nikamanth/Documents/fyp/src/client/train.py", line 7, in train
+    for batch_idx, (data, target) in enumerate(train_loader): # <-- now it is a distributed dataset
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 345, in __next__
+    data = self._next_data()
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 385, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/torch/utils/data/_utils/fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/torch/utils/data/_utils/fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/nikamanth/Documents/fyp/src/client/dataloader.py", line 51, in __getitem__
+    image = PIL.ImageOps.grayscale(image)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/PIL/ImageOps.py", line 476, in grayscale
+    return image.convert("L")
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/PIL/Image.py", line 893, in convert
+    self.load()
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/PIL/ImageFile.py", line 265, in load
+    n, err_code = decoder.decode(b)
+KeyboardInterrupt

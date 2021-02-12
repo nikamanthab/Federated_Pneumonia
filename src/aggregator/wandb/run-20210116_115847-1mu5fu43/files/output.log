@@ -1,0 +1,21 @@
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Restarting with inotify reloader
+wandb: Currently logged in as: nikamanth (use `wandb login --relogin` to force relogin)
+wandb: wandb version 0.10.14 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.10.12
+wandb: Syncing run fragrant-meadow-19
+wandb: ⭐️ View project at https://wandb.ai/nikamanth/fed-learning
+wandb: 🚀 View run at https://wandb.ai/nikamanth/fed-learning/runs/3lcb0hmx
+wandb: Run data is saved locally in /home/nikamanth/Documents/fyp/src/aggregator/wandb/run-20210116_115850-3lcb0hmx
+wandb: Run `wandb offline` to turn off syncing.
+ * Debugger is active!
+ * Debugger PIN: 298-623-058
+Connecting Nodes:127.0.0.1 - - [16/Jan/2021 11:58:57] "[37mPOST /getConnection HTTP/1.1[0m" 200 -
+
+node_0
+127.0.0.1 - - [16/Jan/2021 11:58:58] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 11:58:58] "[37mPOST /getmodel HTTP/1.1[0m" 200 -
+wandb: Waiting for W&B process to finish, PID 7581
+wandb: Program ended successfully.
+wandb: - 0.00MB of 0.00MB uploaded (0.00MB deduped)

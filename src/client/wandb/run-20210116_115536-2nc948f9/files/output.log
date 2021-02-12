@@ -1,0 +1,7 @@
+--- Connection established ---
+--- Dataset loaded ---
+--- model loaded ---
+Traceback (most recent call last):
+  File "run.py", line 43, in <module>
+    for epoch in range(1, args['epochs'] + 1):
+TypeError: 'float' object cannot be interpreted as an integer

@@ -1,0 +1,91 @@
+Train Epoch: 1 [0/2608 (0%)]	Loss: 0.709533
+Train Epoch: 1 [800/2608 (31%)]	Loss: 0.304710
+Train Epoch: 1 [1600/2608 (61%)]	Loss: 0.214569
+Train Epoch: 1 [2400/2608 (92%)]	Loss: 0.073209
+Average loss : 0.3255052696913481
+Train Epoch: 2 [0/2608 (0%)]	Loss: 0.171018
+Train Epoch: 2 [800/2608 (31%)]	Loss: 0.097841
+Train Epoch: 2 [1600/2608 (61%)]	Loss: 0.053213
+Train Epoch: 2 [2400/2608 (92%)]	Loss: 0.135617
+Average loss : 0.11442219000309706
+Train Epoch: 3 [0/2608 (0%)]	Loss: 0.096545
+Train Epoch: 3 [800/2608 (31%)]	Loss: 0.235180
+Train Epoch: 3 [1600/2608 (61%)]	Loss: 0.014147
+Train Epoch: 3 [2400/2608 (92%)]	Loss: 0.252428
+Average loss : 0.14957533404231071
+Train Epoch: 4 [0/2608 (0%)]	Loss: 0.009369
+Train Epoch: 4 [800/2608 (31%)]	Loss: 0.011183
+Train Epoch: 4 [1600/2608 (61%)]	Loss: 0.192128
+Train Epoch: 4 [2400/2608 (92%)]	Loss: 0.050055
+Average loss : 0.06568357069045305
+model sent successfully!
+Waiting for aggregation...
+Waiting for aggregation...
+Waiting for aggregation...
+Train Epoch: 1 [0/2608 (0%)]	Loss: 0.014189
+Train Epoch: 1 [800/2608 (31%)]	Loss: 0.043740
+Train Epoch: 1 [1600/2608 (61%)]	Loss: 0.009660
+Train Epoch: 1 [2400/2608 (92%)]	Loss: 0.479533
+Average loss : 0.13678043615072966
+Train Epoch: 2 [0/2608 (0%)]	Loss: 0.073566
+Train Epoch: 2 [800/2608 (31%)]	Loss: 0.031475
+Train Epoch: 2 [1600/2608 (61%)]	Loss: 0.003591
+Train Epoch: 2 [2400/2608 (92%)]	Loss: 0.068909
+Average loss : 0.04438523203134537
+Train Epoch: 3 [0/2608 (0%)]	Loss: 0.004857
+Train Epoch: 3 [800/2608 (31%)]	Loss: 0.015517
+Train Epoch: 3 [1600/2608 (61%)]	Loss: 0.026668
+Train Epoch: 3 [2400/2608 (92%)]	Loss: 0.054049
+Average loss : 0.025272607803344727
+Train Epoch: 4 [0/2608 (0%)]	Loss: 0.123314
+Train Epoch: 4 [800/2608 (31%)]	Loss: 0.005168
+Train Epoch: 4 [1600/2608 (61%)]	Loss: 0.009376
+Train Epoch: 4 [2400/2608 (92%)]	Loss: 0.016076
+Average loss : 0.03848354984074831
+model sent successfully!
+Train Epoch: 1 [0/2608 (0%)]	Loss: 0.023636
+Train Epoch: 1 [800/2608 (31%)]	Loss: 0.024142
+Train Epoch: 1 [1600/2608 (61%)]	Loss: 0.129881
+Train Epoch: 1 [2400/2608 (92%)]	Loss: 0.040959
+Average loss : 0.05465481476858258
+Train Epoch: 2 [0/2608 (0%)]	Loss: 0.019508
+Train Epoch: 2 [800/2608 (31%)]	Loss: 0.008349
+Train Epoch: 2 [1600/2608 (61%)]	Loss: 0.005907
+Train Epoch: 2 [2400/2608 (92%)]	Loss: 0.117822
+Average loss : 0.0378964114934206
+Train Epoch: 3 [0/2608 (0%)]	Loss: 0.004046
+Train Epoch: 3 [800/2608 (31%)]	Loss: 0.024979
+Train Epoch: 3 [1600/2608 (61%)]	Loss: 0.197933
+Train Epoch: 3 [2400/2608 (92%)]	Loss: 0.011527
+Average loss : 0.059621247462928295
+Train Epoch: 4 [0/2608 (0%)]	Loss: 0.001403
+Train Epoch: 4 [800/2608 (31%)]	Loss: 0.008685
+Train Epoch: 4 [1600/2608 (61%)]	Loss: 0.016918
+Train Epoch: 4 [2400/2608 (92%)]	Loss: 0.001984
+Average loss : 0.00724735576659441
+model sent successfully!
+Train Epoch: 1 [0/2608 (0%)]	Loss: 0.210621
+Traceback (most recent call last):
+  File "run.py", line 46, in <module>
+    optimizer=optimizer, epoch=epoch)                ###logger added
+  File "/home/nikamanth/Documents/fyp/src/client/train.py", line 9, in train
+    for batch_idx, (data, target) in enumerate(train_loader): # <-- now it is a distributed dataset
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 345, in __next__
+    data = self._next_data()
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 385, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/torch/utils/data/_utils/fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/torch/utils/data/_utils/fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/nikamanth/Documents/fyp/src/client/dataloader.py", line 54, in __getitem__
+    image = self.transform(image)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/torchvision/transforms/transforms.py", line 70, in __call__
+    img = t(img)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/torchvision/transforms/transforms.py", line 207, in __call__
+    return F.resize(img, self.size, self.interpolation)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/torchvision/transforms/functional.py", line 256, in resize
+    return img.resize(size[::-1], interpolation)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/PIL/Image.py", line 1922, in resize
+    return self._new(self.im.resize(size, resample, box))
+KeyboardInterrupt

@@ -45,7 +45,7 @@ class ResNeXt50(nn.Module):
 
 class ResNet18(nn.Module):
     def __init__(self):
-        self.model = torchvision.models.resnet18(pretrained=True)
+        self.model = torchvision.models.resnet18()
         self.model.conv1 = nn.Conv2d(1, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
         self.model.fc = nn.Sequential(nn.Linear(in_features=512, out_features=256, bias=True),
                                 nn.Linear(in_features=256, out_features=128, bias=True),

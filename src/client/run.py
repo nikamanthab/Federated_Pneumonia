@@ -29,7 +29,7 @@ else:
     logger = None
 
 
-while(True):# change to epoch iteration max
+while(True):# change to aggregation epoch iteration max
     # Gets model from the aggregator and stores in local system
     getModel(agg_url, model_path, local_agg_epoch)
     

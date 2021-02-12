@@ -1,0 +1,29 @@
+ * Debugger is active!
+ * Debugger PIN: 202-684-240
+Connecting Nodes:127.0.0.1 - - [18/Jan/2021 12:57:47] "[37mPOST /getConnection HTTP/1.1[0m" 200 -
+
+node_0
+127.0.0.1 - - [18/Jan/2021 12:57:48] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+model initialized
+127.0.0.1 - - [18/Jan/2021 12:57:48] "[37mPOST /getmodel HTTP/1.1[0m" 200 -
+---Aggregation Done---
+
+Test set: Average loss: 0.4374, Accuracy: 516/624 (83%)
+
+127.0.0.1 - - [18/Jan/2021 12:58:46] "[37mPOST /sendmodel HTTP/1.1[0m" 200 -
+127.0.0.1 - - [18/Jan/2021 12:58:46] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [18/Jan/2021 12:58:46] "[37mPOST /getmodel HTTP/1.1[0m" 200 -
+---Aggregation Done---
+
+Test set: Average loss: 0.3776, Accuracy: 525/624 (84%)
+
+127.0.0.1 - - [18/Jan/2021 12:59:42] "[37mPOST /sendmodel HTTP/1.1[0m" 200 -
+127.0.0.1 - - [18/Jan/2021 12:59:42] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [18/Jan/2021 12:59:42] "[37mPOST /getmodel HTTP/1.1[0m" 200 -
+---Aggregation Done---
+
+Test set: Average loss: 0.4250, Accuracy: 516/624 (83%)
+
+127.0.0.1 - - [18/Jan/2021 13:00:38] "[37mPOST /sendmodel HTTP/1.1[0m" 200 -
+127.0.0.1 - - [18/Jan/2021 13:00:38] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [18/Jan/2021 13:00:38] "[37mPOST /getmodel HTTP/1.1[0m" 200 -

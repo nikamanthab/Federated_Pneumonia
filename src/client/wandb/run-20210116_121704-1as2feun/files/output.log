@@ -1,0 +1,187 @@
+--- Connection established ---
+--- Dataset loaded ---
+--- model loaded ---
+Train Epoch: 1 [0/2608 (0%)]	Loss: 0.667792
+Train Epoch: 1 [400/2608 (15%)]	Loss: 0.461761
+Train Epoch: 1 [800/2608 (31%)]	Loss: 0.172118
+Train Epoch: 1 [1200/2608 (46%)]	Loss: 0.025777
+Train Epoch: 1 [1600/2608 (61%)]	Loss: 0.102342
+Train Epoch: 1 [2000/2608 (77%)]	Loss: 0.106445
+Train Epoch: 1 [2400/2608 (92%)]	Loss: 0.042482
+Train Epoch: 2 [0/2608 (0%)]	Loss: 0.041116
+Train Epoch: 2 [400/2608 (15%)]	Loss: 0.154952
+Train Epoch: 2 [800/2608 (31%)]	Loss: 0.011337
+Train Epoch: 2 [1200/2608 (46%)]	Loss: 0.060216
+Train Epoch: 2 [1600/2608 (61%)]	Loss: 0.127805
+Train Epoch: 2 [2000/2608 (77%)]	Loss: 0.045952
+Train Epoch: 2 [2400/2608 (92%)]	Loss: 0.471543
+Train Epoch: 3 [0/2608 (0%)]	Loss: 0.073082
+Train Epoch: 3 [400/2608 (15%)]	Loss: 0.165675
+Train Epoch: 3 [800/2608 (31%)]	Loss: 0.059523
+Train Epoch: 3 [1200/2608 (46%)]	Loss: 0.188552
+Train Epoch: 3 [1600/2608 (61%)]	Loss: 0.274792
+Train Epoch: 3 [2000/2608 (77%)]	Loss: 0.011476
+Train Epoch: 3 [2400/2608 (92%)]	Loss: 0.175381
+Train Epoch: 4 [0/2608 (0%)]	Loss: 0.022221
+Train Epoch: 4 [400/2608 (15%)]	Loss: 0.023152
+Train Epoch: 4 [800/2608 (31%)]	Loss: 0.055966
+Train Epoch: 4 [1200/2608 (46%)]	Loss: 0.174869
+Train Epoch: 4 [1600/2608 (61%)]	Loss: 0.065595
+Train Epoch: 4 [2000/2608 (77%)]	Loss: 0.152909
+Train Epoch: 4 [2400/2608 (92%)]	Loss: 0.050923
+--- Training Done ---
+--- model saved ---
+model sent successfully!
+--- model sent to aggregation server ---
+--- Connection established ---
+--- Dataset loaded ---
+--- model loaded ---
+Train Epoch: 1 [0/2608 (0%)]	Loss: 0.389416
+Train Epoch: 1 [400/2608 (15%)]	Loss: 0.131819
+Train Epoch: 1 [800/2608 (31%)]	Loss: 0.142258
+Train Epoch: 1 [1200/2608 (46%)]	Loss: 0.021233
+Train Epoch: 1 [1600/2608 (61%)]	Loss: 0.114894
+Train Epoch: 1 [2000/2608 (77%)]	Loss: 0.304940
+Train Epoch: 1 [2400/2608 (92%)]	Loss: 0.153316
+Train Epoch: 2 [0/2608 (0%)]	Loss: 0.185441
+Train Epoch: 2 [400/2608 (15%)]	Loss: 0.400625
+Train Epoch: 2 [800/2608 (31%)]	Loss: 0.385157
+Train Epoch: 2 [1200/2608 (46%)]	Loss: 0.896349
+Train Epoch: 2 [1600/2608 (61%)]	Loss: 0.657586
+Train Epoch: 2 [2000/2608 (77%)]	Loss: 0.146555
+Train Epoch: 2 [2400/2608 (92%)]	Loss: 0.039551
+Train Epoch: 3 [0/2608 (0%)]	Loss: 0.055985
+Train Epoch: 3 [400/2608 (15%)]	Loss: 0.059257
+Train Epoch: 3 [800/2608 (31%)]	Loss: 0.020896
+Train Epoch: 3 [1200/2608 (46%)]	Loss: 0.148144
+Train Epoch: 3 [1600/2608 (61%)]	Loss: 0.454872
+Train Epoch: 3 [2000/2608 (77%)]	Loss: 0.014073
+Train Epoch: 3 [2400/2608 (92%)]	Loss: 0.133093
+Train Epoch: 4 [0/2608 (0%)]	Loss: 0.079708
+Train Epoch: 4 [400/2608 (15%)]	Loss: 0.017959
+Train Epoch: 4 [800/2608 (31%)]	Loss: 0.409373
+Train Epoch: 4 [1200/2608 (46%)]	Loss: 0.000622
+Train Epoch: 4 [1600/2608 (61%)]	Loss: 0.168259
+Train Epoch: 4 [2000/2608 (77%)]	Loss: 0.162817
+Train Epoch: 4 [2400/2608 (92%)]	Loss: 0.292081
+--- Training Done ---
+--- model saved ---
+model sent successfully!
+--- model sent to aggregation server ---
+Waiting for aggregation...
+Waiting for aggregation...
+--- Connection established ---
+--- Dataset loaded ---
+--- model loaded ---
+Train Epoch: 1 [0/2608 (0%)]	Loss: 0.167322
+Train Epoch: 1 [400/2608 (15%)]	Loss: 0.019792
+Train Epoch: 1 [800/2608 (31%)]	Loss: 0.043462
+Train Epoch: 1 [1200/2608 (46%)]	Loss: 0.002761
+Train Epoch: 1 [1600/2608 (61%)]	Loss: 0.065467
+Train Epoch: 1 [2000/2608 (77%)]	Loss: 0.493921
+Train Epoch: 1 [2400/2608 (92%)]	Loss: 0.107825
+Train Epoch: 2 [0/2608 (0%)]	Loss: 0.011382
+Train Epoch: 2 [400/2608 (15%)]	Loss: 0.213583
+Train Epoch: 2 [800/2608 (31%)]	Loss: 0.088019
+Train Epoch: 2 [1200/2608 (46%)]	Loss: 0.071401
+Train Epoch: 2 [1600/2608 (61%)]	Loss: 0.061813
+Train Epoch: 2 [2000/2608 (77%)]	Loss: 0.002199
+Train Epoch: 2 [2400/2608 (92%)]	Loss: 0.256931
+Train Epoch: 3 [0/2608 (0%)]	Loss: 0.295002
+Train Epoch: 3 [400/2608 (15%)]	Loss: 0.304013
+Train Epoch: 3 [800/2608 (31%)]	Loss: 0.005950
+Train Epoch: 3 [1200/2608 (46%)]	Loss: 0.002269
+Train Epoch: 3 [1600/2608 (61%)]	Loss: 0.175870
+Train Epoch: 3 [2000/2608 (77%)]	Loss: 0.338167
+Train Epoch: 3 [2400/2608 (92%)]	Loss: 0.024592
+Train Epoch: 4 [0/2608 (0%)]	Loss: 0.089752
+Train Epoch: 4 [400/2608 (15%)]	Loss: 0.837657
+Train Epoch: 4 [800/2608 (31%)]	Loss: 0.343025
+Train Epoch: 4 [1200/2608 (46%)]	Loss: 0.022468
+Train Epoch: 4 [1600/2608 (61%)]	Loss: 0.003868
+Train Epoch: 4 [2000/2608 (77%)]	Loss: 0.100150
+Train Epoch: 4 [2400/2608 (92%)]	Loss: 0.017746
+--- Training Done ---
+--- model saved ---
+model sent successfully!
+--- model sent to aggregation server ---
+--- Connection established ---
+--- Dataset loaded ---
+--- model loaded ---
+Train Epoch: 1 [0/2608 (0%)]	Loss: 0.067087
+Train Epoch: 1 [400/2608 (15%)]	Loss: 0.016769
+Train Epoch: 1 [800/2608 (31%)]	Loss: 2.541801
+Train Epoch: 1 [1200/2608 (46%)]	Loss: 0.005028
+Train Epoch: 1 [1600/2608 (61%)]	Loss: 0.024392
+Train Epoch: 1 [2000/2608 (77%)]	Loss: 0.144758
+Train Epoch: 1 [2400/2608 (92%)]	Loss: 0.654970
+Train Epoch: 2 [0/2608 (0%)]	Loss: 0.002305
+Train Epoch: 2 [400/2608 (15%)]	Loss: 0.006407
+Train Epoch: 2 [800/2608 (31%)]	Loss: 0.177649
+Train Epoch: 2 [1200/2608 (46%)]	Loss: 0.236953
+Train Epoch: 2 [1600/2608 (61%)]	Loss: 0.056465
+Train Epoch: 2 [2000/2608 (77%)]	Loss: 0.201413
+Train Epoch: 2 [2400/2608 (92%)]	Loss: 0.010403
+Train Epoch: 3 [0/2608 (0%)]	Loss: 0.012312
+Train Epoch: 3 [400/2608 (15%)]	Loss: 0.000453
+Train Epoch: 3 [800/2608 (31%)]	Loss: 0.180747
+Train Epoch: 3 [1200/2608 (46%)]	Loss: 0.055517
+Train Epoch: 3 [1600/2608 (61%)]	Loss: 0.040780
+Train Epoch: 3 [2000/2608 (77%)]	Loss: 0.142916
+Train Epoch: 3 [2400/2608 (92%)]	Loss: 0.885999
+Train Epoch: 4 [0/2608 (0%)]	Loss: 0.152260
+Train Epoch: 4 [400/2608 (15%)]	Loss: 0.021501
+Train Epoch: 4 [800/2608 (31%)]	Loss: 0.114646
+Train Epoch: 4 [1200/2608 (46%)]	Loss: 0.001390
+Train Epoch: 4 [1600/2608 (61%)]	Loss: 0.129164
+Train Epoch: 4 [2000/2608 (77%)]	Loss: 0.059342
+Train Epoch: 4 [2400/2608 (92%)]	Loss: 0.001504
+--- Training Done ---
+--- model saved ---
+model sent successfully!
+--- model sent to aggregation server ---
+Waiting for aggregation...
+Waiting for aggregation...
+--- Connection established ---
+--- Dataset loaded ---
+--- model loaded ---
+Train Epoch: 1 [0/2608 (0%)]	Loss: 0.101185
+Train Epoch: 1 [400/2608 (15%)]	Loss: 0.086693
+Train Epoch: 1 [800/2608 (31%)]	Loss: 0.289802
+Train Epoch: 1 [1200/2608 (46%)]	Loss: 0.107252
+Train Epoch: 1 [1600/2608 (61%)]	Loss: 0.003237
+Train Epoch: 1 [2000/2608 (77%)]	Loss: 0.028810
+Train Epoch: 1 [2400/2608 (92%)]	Loss: 0.077158
+Train Epoch: 2 [0/2608 (0%)]	Loss: 0.019262
+Train Epoch: 2 [400/2608 (15%)]	Loss: 0.049106
+Train Epoch: 2 [800/2608 (31%)]	Loss: 0.140220
+Train Epoch: 2 [1200/2608 (46%)]	Loss: 0.002368
+Train Epoch: 2 [1600/2608 (61%)]	Loss: 0.095756
+Train Epoch: 2 [2000/2608 (77%)]	Loss: 0.082703
+Train Epoch: 2 [2400/2608 (92%)]	Loss: 0.681534
+Train Epoch: 3 [0/2608 (0%)]	Loss: 0.233991
+Train Epoch: 3 [400/2608 (15%)]	Loss: 0.490806
+Train Epoch: 3 [800/2608 (31%)]	Loss: 0.034225
+Train Epoch: 3 [1200/2608 (46%)]	Loss: 0.042825
+Traceback (most recent call last):
+  File "run.py", line 47, in <module>
+    optimizer=optimizer, epoch=epoch)                ###logger added
+  File "/home/nikamanth/Documents/fyp/src/client/train.py", line 7, in train
+    for batch_idx, (data, target) in enumerate(train_loader): # <-- now it is a distributed dataset
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 345, in __next__
+    data = self._next_data()
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 385, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/torch/utils/data/_utils/fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/torch/utils/data/_utils/fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/nikamanth/Documents/fyp/src/client/dataloader.py", line 51, in __getitem__
+    image = PIL.ImageOps.grayscale(image)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/PIL/ImageOps.py", line 476, in grayscale
+    return image.convert("L")
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/PIL/Image.py", line 893, in convert
+    self.load()
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/PIL/ImageFile.py", line 265, in load
+    n, err_code = decoder.decode(b)
+KeyboardInterrupt

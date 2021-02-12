@@ -1,0 +1,38 @@
+--- Connection established ---
+--- Dataset loaded ---
+--- model loaded ---
+Train Epoch: 1 [0/2608 (0%)]	Loss: 0.045141
+Train Epoch: 1 [800/2608 (31%)]	Loss: 0.103784
+Train Epoch: 1 [1600/2608 (61%)]	Loss: 0.046898
+Train Epoch: 1 [2400/2608 (92%)]	Loss: 0.019703
+Train Epoch: 2 [0/2608 (0%)]	Loss: 0.130656
+Train Epoch: 2 [800/2608 (31%)]	Loss: 0.094797
+Train Epoch: 2 [1600/2608 (61%)]	Loss: 0.224463
+Train Epoch: 2 [2400/2608 (92%)]	Loss: 0.045125
+Train Epoch: 3 [0/2608 (0%)]	Loss: 0.030394
+Train Epoch: 3 [800/2608 (31%)]	Loss: 0.125935
+Train Epoch: 3 [1600/2608 (61%)]	Loss: 0.122774
+Traceback (most recent call last):
+  File "run.py", line 47, in <module>
+    optimizer=optimizer, epoch=epoch)                ###logger added
+  File "/home/nikamanth/Documents/fyp/src/client/train.py", line 7, in train
+    for batch_idx, (data, target) in enumerate(train_loader): # <-- now it is a distributed dataset
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 345, in __next__
+    data = self._next_data()
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 385, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/torch/utils/data/_utils/fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/torch/utils/data/_utils/fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/nikamanth/Documents/fyp/src/client/dataloader.py", line 54, in __getitem__
+    image = self.transform(image)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/torchvision/transforms/transforms.py", line 70, in __call__
+    img = t(img)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/torchvision/transforms/transforms.py", line 207, in __call__
+    return F.resize(img, self.size, self.interpolation)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/torchvision/transforms/functional.py", line 256, in resize
+    return img.resize(size[::-1], interpolation)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/PIL/Image.py", line 1922, in resize
+    return self._new(self.im.resize(size, resample, box))
+KeyboardInterrupt

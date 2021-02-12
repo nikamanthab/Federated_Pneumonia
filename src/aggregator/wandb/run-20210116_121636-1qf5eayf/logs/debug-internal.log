@@ -1,0 +1,15 @@
+2021-01-16 12:16:36,798 INFO    MainThread:9690 [internal.py:wandb_internal():63] W&B internal server running at pid: 9690
+2021-01-16 12:16:36,800 DEBUG   HandlerThread:9690 [handler.py:handle_request():55] handle_request: check_version
+2021-01-16 12:16:36,800 INFO    WriterThread:9690 [datastore.py:open_for_write():76] open: /home/nikamanth/Documents/fyp/src/aggregator/wandb/run-20210116_121636-1qf5eayf/run-1qf5eayf.wandb
+2021-01-16 12:16:36,801 DEBUG   SenderThread:9690 [sender.py:send():90] send: header
+2021-01-16 12:16:36,801 DEBUG   SenderThread:9690 [sender.py:send():90] send: request
+2021-01-16 12:16:36,801 DEBUG   SenderThread:9690 [sender.py:send_request():99] send_request: check_version
+2021-01-16 12:16:36,802 DEBUG   Thread-4  :9690 [connectionpool.py:_new_conn():941] Starting new HTTPS connection (1): pypi.org:443
+2021-01-16 12:16:36,886 WARNING MainThread:9690 [internal.py:wandb_internal():117] Internal process interrupt: 1
+2021-01-16 12:16:36,889 DEBUG   Thread-4  :9690 [connectionpool.py:_make_request():442] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 52801
+2021-01-16 12:16:38,008 WARNING MainThread:9690 [internal.py:wandb_internal():117] Internal process interrupt: 2
+2021-01-16 12:16:38,008 ERROR   MainThread:9690 [internal.py:wandb_internal():120] Internal process interrupted.
+2021-01-16 12:16:38,801 INFO    WriterThread:9690 [datastore.py:close():257] close: /home/nikamanth/Documents/fyp/src/aggregator/wandb/run-20210116_121636-1qf5eayf/run-1qf5eayf.wandb
+2021-01-16 12:16:38,802 INFO    HandlerThread:9690 [handler.py:finish():271] shutting down handler
+2021-01-16 12:16:38,928 INFO    SenderThread:9690 [sender.py:finish():642] shutting down sender
+2021-01-16 12:16:38,929 INFO    MainThread:9690 [internal.py:handle_exit():138] Internal process exited

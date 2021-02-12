@@ -1,0 +1,75 @@
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Restarting with inotify reloader
+wandb: Currently logged in as: nikamanth (use `wandb login --relogin` to force relogin)
+wandb: wandb version 0.10.14 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.10.12
+wandb: Syncing run good-bee-38
+wandb: ⭐️ View project at https://wandb.ai/nikamanth/fed-learning
+wandb: 🚀 View run at https://wandb.ai/nikamanth/fed-learning/runs/6nr5ki7v
+wandb: Run data is saved locally in /home/nikamanth/Documents/fyp/src/aggregator/wandb/run-20210116_121648-6nr5ki7v
+wandb: Run `wandb offline` to turn off syncing.
+ * Debugger is active!
+ * Debugger PIN: 298-623-058
+Connecting Nodes:
+node_0
+127.0.0.1 - - [16/Jan/2021 12:16:50] "[37mPOST /getConnection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:16:51] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:16:51] "[37mPOST /getmodel HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:17:03] "[37mPOST /getConnection HTTP/1.1[0m" 200 -
+Connecting Nodes:
+node_1
+127.0.0.1 - - [16/Jan/2021 12:17:05] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:17:05] "[37mPOST /getmodel HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:18:53] "[37mPOST /sendmodel HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:18:53] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:19:03] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+---Aggregation Done---
+127.0.0.1 - - [16/Jan/2021 12:19:13] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+
+Test set: Average loss: 0.7522, Accuracy: 390/624 (62%)
+127.0.0.1 - - [16/Jan/2021 12:19:15] "[37mPOST /sendmodel HTTP/1.1[0m" 200 -
+
+127.0.0.1 - - [16/Jan/2021 12:19:15] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:19:15] "[37mPOST /getmodel HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:19:23] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:19:23] "[37mPOST /getmodel HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:21:27] "[37mPOST /sendmodel HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:21:27] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+---Aggregation Done---
+127.0.0.1 - - [16/Jan/2021 12:21:37] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+
+Test set: Average loss: 0.6858, Accuracy: 450/624 (72%)
+
+127.0.0.1 - - [16/Jan/2021 12:21:42] "[37mPOST /sendmodel HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:21:42] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:21:42] "[37mPOST /getmodel HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:21:47] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:21:47] "[37mPOST /getmodel HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:23:52] "[37mPOST /sendmodel HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:23:52] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+---Aggregation Done---
+127.0.0.1 - - [16/Jan/2021 12:24:02] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+
+Test set: Average loss: 0.5349, Accuracy: 474/624 (76%)
+
+127.0.0.1 - - [16/Jan/2021 12:24:05] "[37mPOST /sendmodel HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:24:05] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:24:05] "[37mPOST /getmodel HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:24:12] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:24:12] "[37mPOST /getmodel HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:26:33] "[37mPOST /sendmodel HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:26:33] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:26:43] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+---Aggregation Done---
+
+Test set: Average loss: 0.7069, Accuracy: 439/624 (70%)
+
+127.0.0.1 - - [16/Jan/2021 12:26:51] "[37mPOST /sendmodel HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:26:51] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:26:51] "[37mPOST /getmodel HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:26:53] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:26:53] "[37mPOST /getmodel HTTP/1.1[0m" 200 -
+wandb: Waiting for W&B process to finish, PID 9772
+wandb: Program ended successfully.
+wandb: - 0.00MB of 0.00MB uploaded (0.00MB deduped)

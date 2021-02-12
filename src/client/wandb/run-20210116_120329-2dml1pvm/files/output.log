@@ -1,0 +1,97 @@
+--- Connection established ---
+--- Dataset loaded ---
+--- model loaded ---
+Train Epoch: 1 [0/2608 (0%)]	Loss: 0.294288
+Train Epoch: 1 [100/2608 (4%)]	Loss: 0.322511
+Train Epoch: 1 [200/2608 (8%)]	Loss: 0.249826
+Train Epoch: 1 [300/2608 (12%)]	Loss: 0.224694
+Train Epoch: 1 [400/2608 (15%)]	Loss: 0.275695
+Train Epoch: 1 [500/2608 (19%)]	Loss: 1.272462
+Train Epoch: 1 [600/2608 (23%)]	Loss: 0.782963
+Train Epoch: 1 [700/2608 (27%)]	Loss: 0.319432
+Train Epoch: 1 [800/2608 (31%)]	Loss: 0.310640
+Train Epoch: 1 [900/2608 (35%)]	Loss: 0.355428
+Train Epoch: 1 [1000/2608 (38%)]	Loss: 0.325105
+Train Epoch: 1 [1100/2608 (42%)]	Loss: 0.287092
+Train Epoch: 1 [1200/2608 (46%)]	Loss: 0.249888
+Train Epoch: 1 [1300/2608 (50%)]	Loss: 0.867001
+Train Epoch: 1 [1400/2608 (54%)]	Loss: 0.294829
+Train Epoch: 1 [1500/2608 (58%)]	Loss: 0.793108
+Train Epoch: 1 [1600/2608 (61%)]	Loss: 0.292412
+Train Epoch: 1 [1700/2608 (65%)]	Loss: 0.256413
+Train Epoch: 1 [1800/2608 (69%)]	Loss: 0.855942
+Train Epoch: 1 [1900/2608 (73%)]	Loss: 0.313295
+Train Epoch: 1 [2000/2608 (77%)]	Loss: 0.798121
+Train Epoch: 1 [2100/2608 (81%)]	Loss: 0.823626
+Train Epoch: 1 [2200/2608 (84%)]	Loss: 0.296151
+Train Epoch: 1 [2300/2608 (88%)]	Loss: 0.259024
+Train Epoch: 1 [2400/2608 (92%)]	Loss: 0.268526
+Train Epoch: 1 [2500/2608 (96%)]	Loss: 0.296785
+Train Epoch: 1 [2600/2608 (100%)]	Loss: 0.289175
+--- Training Done ---
+--- model saved ---
+model sent successfully!
+--- model sent to aggregation server ---
+Waiting for aggregation...
+Waiting for aggregation...
+Waiting for aggregation...
+Waiting for aggregation...
+Waiting for aggregation...
+Waiting for aggregation...
+Waiting for aggregation...
+Waiting for aggregation...
+Waiting for aggregation...
+Waiting for aggregation...
+Waiting for aggregation...
+Waiting for aggregation...
+--- Connection established ---
+--- Dataset loaded ---
+--- model loaded ---
+Train Epoch: 1 [0/2608 (0%)]	Loss: 0.308852
+Train Epoch: 1 [100/2608 (4%)]	Loss: 0.229140
+Train Epoch: 1 [200/2608 (8%)]	Loss: 1.558947
+Train Epoch: 1 [300/2608 (12%)]	Loss: 0.277043
+Train Epoch: 1 [400/2608 (15%)]	Loss: 0.810230
+Train Epoch: 1 [500/2608 (19%)]	Loss: 0.808551
+Train Epoch: 1 [600/2608 (23%)]	Loss: 0.334424
+Train Epoch: 1 [700/2608 (27%)]	Loss: 0.350967
+Train Epoch: 1 [800/2608 (31%)]	Loss: 0.341387
+Train Epoch: 1 [900/2608 (35%)]	Loss: 0.818473
+Train Epoch: 1 [1000/2608 (38%)]	Loss: 0.269527
+Train Epoch: 1 [1100/2608 (42%)]	Loss: 0.283879
+Train Epoch: 1 [1200/2608 (46%)]	Loss: 0.242260
+Train Epoch: 1 [1300/2608 (50%)]	Loss: 0.897132
+Train Epoch: 1 [1400/2608 (54%)]	Loss: 0.275447
+Train Epoch: 1 [1500/2608 (58%)]	Loss: 0.836154
+Train Epoch: 1 [1600/2608 (61%)]	Loss: 0.816529
+Train Epoch: 1 [1700/2608 (65%)]	Loss: 0.886526
+Train Epoch: 1 [1800/2608 (69%)]	Loss: 0.865185
+Train Epoch: 1 [1900/2608 (73%)]	Loss: 0.818887
+Train Epoch: 1 [2000/2608 (77%)]	Loss: 0.845168
+Train Epoch: 1 [2100/2608 (81%)]	Loss: 0.258956
+Train Epoch: 1 [2200/2608 (84%)]	Loss: 0.284830
+Train Epoch: 1 [2300/2608 (88%)]	Loss: 0.839935
+Train Epoch: 1 [2400/2608 (92%)]	Loss: 0.353737
+Train Epoch: 1 [2500/2608 (96%)]	Loss: 0.377435
+Traceback (most recent call last):
+  File "run.py", line 47, in <module>
+    optimizer=optimizer, epoch=epoch)                ###logger added
+  File "/home/nikamanth/Documents/fyp/src/client/train.py", line 7, in train
+    for batch_idx, (data, target) in enumerate(train_loader): # <-- now it is a distributed dataset
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 345, in __next__
+    data = self._next_data()
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 385, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/torch/utils/data/_utils/fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/torch/utils/data/_utils/fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/nikamanth/Documents/fyp/src/client/dataloader.py", line 51, in __getitem__
+    image = PIL.ImageOps.grayscale(image)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/PIL/ImageOps.py", line 476, in grayscale
+    return image.convert("L")
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/PIL/Image.py", line 893, in convert
+    self.load()
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/PIL/ImageFile.py", line 265, in load
+    n, err_code = decoder.decode(b)
+KeyboardInterrupt

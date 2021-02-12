@@ -1,0 +1,14 @@
+ * Debugger is active!
+ * Debugger PIN: 298-623-058
+127.0.0.1 - - [16/Jan/2021 12:07:39] "[37mPOST /getConnection HTTP/1.1[0m" 200 -
+Connecting Nodes:
+node_0
+127.0.0.1 - - [16/Jan/2021 12:07:41] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:07:41] "[37mPOST /getmodel HTTP/1.1[0m" 200 -
+Connecting Nodes:
+node_1
+127.0.0.1 - - [16/Jan/2021 12:07:48] "[37mPOST /getConnection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:07:51] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:07:51] "[37mPOST /getmodel HTTP/1.1[0m" 200 -
+ * Detected change in '/home/nikamanth/Documents/fyp/src/aggregator/server.py', reloading
+ * Detected change in '/home/nikamanth/Documents/fyp/src/aggregator/server.py', reloading

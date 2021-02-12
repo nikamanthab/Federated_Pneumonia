@@ -1,0 +1,60 @@
+2021-01-16 12:00:13,203 INFO    MainThread:7949 [wandb_setup.py:_flush():70] setting env: {}
+2021-01-16 12:00:13,204 INFO    MainThread:7949 [wandb_setup.py:_flush():70] multiprocessing start_methods=fork,spawn,forkserver
+2021-01-16 12:00:13,204 INFO    MainThread:7949 [wandb_setup.py:_flush():70] setting login settings: {}
+2021-01-16 12:00:13,204 INFO    MainThread:7949 [wandb_init.py:_log_setup():303] Logging user logs to /home/nikamanth/Documents/fyp/src/aggregator/wandb/run-20210116_120013-4rl9qx7o/logs/debug.log
+2021-01-16 12:00:13,204 INFO    MainThread:7949 [wandb_init.py:_log_setup():304] Logging internal logs to /home/nikamanth/Documents/fyp/src/aggregator/wandb/run-20210116_120013-4rl9qx7o/logs/debug-internal.log
+2021-01-16 12:00:14,342 INFO    MainThread:7949 [wandb_run.py:_console_start():1237] atexit reg
+2021-01-16 12:00:14,342 INFO    MainThread:7949 [wandb_run.py:_redirect():1104] redirect: SettingsConsole.REDIRECT
+2021-01-16 12:00:14,343 INFO    MainThread:7949 [wandb_run.py:_redirect():1107] Redirecting console.
+2021-01-16 12:00:14,343 INFO    MainThread:7949 [redirect.py:install():204] install start
+2021-01-16 12:00:14,343 INFO    MainThread:7949 [redirect.py:install():219] install stop
+2021-01-16 12:00:14,343 INFO    MainThread:7949 [redirect.py:install():204] install start
+2021-01-16 12:00:14,343 INFO    MainThread:7949 [redirect.py:install():219] install stop
+2021-01-16 12:00:14,343 INFO    MainThread:7949 [wandb_run.py:_redirect():1151] Redirects installed.
+2021-01-16 12:00:53,441 INFO    MainThread:7949 [wandb_run.py:_atexit_cleanup():1207] got exitcode: 3
+2021-01-16 12:00:53,441 INFO    MainThread:7949 [wandb_run.py:_restore():1179] restore
+2021-01-16 12:00:53,441 INFO    MainThread:7949 [redirect.py:uninstall():223] uninstall start
+2021-01-16 12:00:53,441 INFO    MainThread:7949 [redirect.py:_stop():278] _stop: stdout
+2021-01-16 12:00:53,441 INFO    stdout    :7949 [redirect.py:_pipe_relay():120] relay done saw last write: stdout
+2021-01-16 12:00:53,441 INFO    stdout    :7949 [redirect.py:_pipe_relay():136] relay done done: stdout
+2021-01-16 12:00:53,441 INFO    MainThread:7949 [redirect.py:_stop():284] _stop closed: stdout
+2021-01-16 12:00:53,441 INFO    MainThread:7949 [redirect.py:_stop():290] _stop joined: stdout
+2021-01-16 12:00:53,441 INFO    MainThread:7949 [redirect.py:_stop():292] _stop rd closed: stdout
+2021-01-16 12:00:53,441 INFO    MainThread:7949 [redirect.py:uninstall():227] uninstall done
+2021-01-16 12:00:53,441 INFO    MainThread:7949 [redirect.py:uninstall():223] uninstall start
+2021-01-16 12:00:53,441 INFO    MainThread:7949 [redirect.py:_stop():278] _stop: stderr
+2021-01-16 12:00:53,441 INFO    MainThread:7949 [redirect.py:_stop():284] _stop closed: stderr
+2021-01-16 12:00:53,442 INFO    stderr    :7949 [redirect.py:_pipe_relay():120] relay done saw last write: stderr
+2021-01-16 12:00:53,442 INFO    stderr    :7949 [redirect.py:_pipe_relay():136] relay done done: stderr
+2021-01-16 12:00:53,442 INFO    MainThread:7949 [redirect.py:_stop():290] _stop joined: stderr
+2021-01-16 12:00:53,442 INFO    MainThread:7949 [redirect.py:_stop():292] _stop rd closed: stderr
+2021-01-16 12:00:53,442 INFO    MainThread:7949 [redirect.py:uninstall():227] uninstall done
+2021-01-16 12:00:53,443 INFO    MainThread:7949 [wandb_run.py:_wait_for_finish():1324] got exit ret: uuid: "f66b456eea754657bb6b355ec2fc653d"
+response {
+  poll_exit_response {
+    file_counts {
+      wandb_count: 1
+    }
+    pusher_stats {
+      uploaded_bytes: 953
+      total_bytes: 953
+    }
+  }
+}
+
+2021-01-16 12:00:55,449 INFO    MainThread:7949 [wandb_run.py:_wait_for_finish():1324] got exit ret: uuid: "f41b84a6893e42618eb6d999e1e4e13e"
+response {
+  poll_exit_response {
+    done: true
+    exit_result {
+    }
+    file_counts {
+      wandb_count: 5
+    }
+    pusher_stats {
+      uploaded_bytes: 4392
+      total_bytes: 4392
+    }
+  }
+}
+

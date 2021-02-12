@@ -1,0 +1,92 @@
+--- Connection established ---
+--- Dataset loaded ---
+--- model loaded ---
+Train Epoch: 1 [0/2608 (0%)]	Loss: 0.714038
+Train Epoch: 1 [100/2608 (4%)]	Loss: 0.756616
+Train Epoch: 1 [200/2608 (8%)]	Loss: 1.145264
+Train Epoch: 1 [300/2608 (12%)]	Loss: 0.777827
+Train Epoch: 1 [400/2608 (15%)]	Loss: 0.777797
+Train Epoch: 1 [500/2608 (19%)]	Loss: 0.218836
+Train Epoch: 1 [600/2608 (23%)]	Loss: 1.736840
+Train Epoch: 1 [700/2608 (27%)]	Loss: 0.782062
+Train Epoch: 1 [800/2608 (31%)]	Loss: 0.268072
+Train Epoch: 1 [900/2608 (35%)]	Loss: 0.279384
+Train Epoch: 1 [1000/2608 (38%)]	Loss: 0.769243
+Train Epoch: 1 [1100/2608 (42%)]	Loss: 0.333799
+Train Epoch: 1 [1200/2608 (46%)]	Loss: 0.269852
+Train Epoch: 1 [1300/2608 (50%)]	Loss: 0.333561
+Train Epoch: 1 [1400/2608 (54%)]	Loss: 0.304019
+Train Epoch: 1 [1500/2608 (58%)]	Loss: 0.271800
+Train Epoch: 1 [1600/2608 (61%)]	Loss: 0.346171
+Train Epoch: 1 [1700/2608 (65%)]	Loss: 0.298173
+Train Epoch: 1 [1800/2608 (69%)]	Loss: 0.252150
+Train Epoch: 1 [1900/2608 (73%)]	Loss: 0.866962
+Train Epoch: 1 [2000/2608 (77%)]	Loss: 0.792249
+Train Epoch: 1 [2100/2608 (81%)]	Loss: 0.819841
+Train Epoch: 1 [2200/2608 (84%)]	Loss: 0.353747
+Train Epoch: 1 [2300/2608 (88%)]	Loss: 0.312567
+Train Epoch: 1 [2400/2608 (92%)]	Loss: 0.282892
+Train Epoch: 1 [2500/2608 (96%)]	Loss: 0.331595
+Train Epoch: 1 [2600/2608 (100%)]	Loss: 1.389476
+--- Training Done ---
+--- model saved ---
+Traceback (most recent call last):
+  File "/home/nikamanth/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/home/nikamanth/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 426, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/nikamanth/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 421, in _make_request
+    httplib_response = conn.getresponse()
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/http/client.py", line 1369, in getresponse
+    response.begin()
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/http/client.py", line 310, in begin
+    version, status, reason = self._read_status()
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/http/client.py", line 279, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/home/nikamanth/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 725, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/nikamanth/.local/lib/python3.7/site-packages/urllib3/util/retry.py", line 403, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/nikamanth/.local/lib/python3.7/site-packages/urllib3/packages/six.py", line 734, in reraise
+    raise value.with_traceback(tb)
+  File "/home/nikamanth/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/home/nikamanth/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 426, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/nikamanth/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 421, in _make_request
+    httplib_response = conn.getresponse()
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/http/client.py", line 1369, in getresponse
+    response.begin()
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/http/client.py", line 310, in begin
+    version, status, reason = self._read_status()
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/http/client.py", line 279, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "run.py", line 52, in <module>
+    sendModel(agg_url, model_path, args)
+  File "/home/nikamanth/Documents/fyp/src/client/httpcalls.py", line 26, in sendModel
+    res = requests.post(url+'/sendmodel', files={'file': (args['node_name']+'.pt', open(path, 'rb'))})
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/requests/api.py", line 116, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/requests/adapters.py", line 498, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))

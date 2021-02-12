@@ -64,7 +64,7 @@ def sendmodel():
         for node in node_details:
             node_model = torch.load(serverargs['aggregated_model_location']+node['node_name']+'.pt') \
                 .to(serverargs['device'])
-            test(serverargs, node_model, test_loader, logger=logger)
+            # test(serverargs, node_model, test_loader, logger=logger)
             node_tuple = (node_model, node['no_of_samples'])
             model_data.append(node_tuple)
         agg_model = agg_func(model_data, serverargs)

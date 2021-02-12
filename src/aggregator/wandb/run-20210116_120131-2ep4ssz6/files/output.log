@@ -1,0 +1,12 @@
+ * Debugger is active!
+ * Debugger PIN: 298-623-058
+Connecting Nodes:127.0.0.1 - - [16/Jan/2021 12:01:46] "[37mPOST /getConnection HTTP/1.1[0m" 200 -
+
+node_0
+127.0.0.1 - - [16/Jan/2021 12:01:48] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+model initialized
+127.0.0.1 - - [16/Jan/2021 12:01:48] "[37mPOST /getmodel HTTP/1.1[0m" 200 -
+
+Test set: Average loss: 0.6965, Accuracy: 390/624 (62%)
+
+---Aggregation Done---

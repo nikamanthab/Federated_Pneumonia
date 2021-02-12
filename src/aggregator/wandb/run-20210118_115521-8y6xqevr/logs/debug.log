@@ -1,0 +1,13 @@
+2021-01-18 11:55:22,002 INFO    MainThread:12230 [wandb_setup.py:_flush():70] setting env: {}
+2021-01-18 11:55:22,003 INFO    MainThread:12230 [wandb_setup.py:_flush():70] multiprocessing start_methods=fork,spawn,forkserver
+2021-01-18 11:55:22,003 INFO    MainThread:12230 [wandb_setup.py:_flush():70] setting login settings: {}
+2021-01-18 11:55:22,003 INFO    MainThread:12230 [wandb_init.py:_log_setup():303] Logging user logs to /home/nikamanth/Documents/fyp/src/aggregator/wandb/run-20210118_115521-8y6xqevr/logs/debug.log
+2021-01-18 11:55:22,004 INFO    MainThread:12230 [wandb_init.py:_log_setup():304] Logging internal logs to /home/nikamanth/Documents/fyp/src/aggregator/wandb/run-20210118_115521-8y6xqevr/logs/debug-internal.log
+2021-01-18 11:55:23,194 INFO    MainThread:12230 [wandb_run.py:_console_start():1237] atexit reg
+2021-01-18 11:55:23,194 INFO    MainThread:12230 [wandb_run.py:_redirect():1104] redirect: SettingsConsole.REDIRECT
+2021-01-18 11:55:23,195 INFO    MainThread:12230 [wandb_run.py:_redirect():1107] Redirecting console.
+2021-01-18 11:55:23,195 INFO    MainThread:12230 [redirect.py:install():204] install start
+2021-01-18 11:55:23,195 INFO    MainThread:12230 [redirect.py:install():219] install stop
+2021-01-18 11:55:23,196 INFO    MainThread:12230 [redirect.py:install():204] install start
+2021-01-18 11:55:23,196 INFO    MainThread:12230 [redirect.py:install():219] install stop
+2021-01-18 11:55:23,196 INFO    MainThread:12230 [wandb_run.py:_redirect():1151] Redirects installed.

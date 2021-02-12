@@ -1,0 +1,8 @@
+ * Debugger is active!
+ * Debugger PIN: 298-623-058
+Connecting Nodes:127.0.0.1 - - [16/Jan/2021 12:15:21] "[37mPOST /getConnection HTTP/1.1[0m" 200 -
+
+node_1
+127.0.0.1 - - [16/Jan/2021 12:15:22] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:15:22] "[37mPOST /getmodel HTTP/1.1[0m" 200 -
+model initialized

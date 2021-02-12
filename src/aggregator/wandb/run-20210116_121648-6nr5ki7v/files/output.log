@@ -1,0 +1,61 @@
+ * Debugger is active!
+ * Debugger PIN: 298-623-058
+Connecting Nodes:
+node_0
+127.0.0.1 - - [16/Jan/2021 12:16:50] "[37mPOST /getConnection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:16:51] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:16:51] "[37mPOST /getmodel HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:17:03] "[37mPOST /getConnection HTTP/1.1[0m" 200 -
+Connecting Nodes:
+node_1
+127.0.0.1 - - [16/Jan/2021 12:17:05] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:17:05] "[37mPOST /getmodel HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:18:53] "[37mPOST /sendmodel HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:18:53] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:19:03] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+---Aggregation Done---
+127.0.0.1 - - [16/Jan/2021 12:19:13] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+
+Test set: Average loss: 0.7522, Accuracy: 390/624 (62%)
+
+127.0.0.1 - - [16/Jan/2021 12:19:15] "[37mPOST /sendmodel HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:19:15] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:19:15] "[37mPOST /getmodel HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:19:23] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:19:23] "[37mPOST /getmodel HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:21:27] "[37mPOST /sendmodel HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:21:27] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+---Aggregation Done---
+127.0.0.1 - - [16/Jan/2021 12:21:37] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+
+Test set: Average loss: 0.6858, Accuracy: 450/624 (72%)
+127.0.0.1 - - [16/Jan/2021 12:21:42] "[37mPOST /sendmodel HTTP/1.1[0m" 200 -
+
+127.0.0.1 - - [16/Jan/2021 12:21:42] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:21:42] "[37mPOST /getmodel HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:21:47] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:21:47] "[37mPOST /getmodel HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:23:52] "[37mPOST /sendmodel HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:23:52] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+---Aggregation Done---
+127.0.0.1 - - [16/Jan/2021 12:24:02] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+
+Test set: Average loss: 0.5349, Accuracy: 474/624 (76%)
+
+127.0.0.1 - - [16/Jan/2021 12:24:05] "[37mPOST /sendmodel HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:24:05] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:24:05] "[37mPOST /getmodel HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:24:12] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:24:12] "[37mPOST /getmodel HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:26:33] "[37mPOST /sendmodel HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:26:33] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:26:43] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+---Aggregation Done---
+
+Test set: Average loss: 0.7069, Accuracy: 439/624 (70%)
+
+127.0.0.1 - - [16/Jan/2021 12:26:51] "[37mPOST /sendmodel HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:26:51] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:26:51] "[37mPOST /getmodel HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:26:53] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2021 12:26:53] "[37mPOST /getmodel HTTP/1.1[0m" 200 -

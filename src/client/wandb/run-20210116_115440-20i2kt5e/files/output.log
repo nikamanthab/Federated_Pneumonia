@@ -1,0 +1,36 @@
+--- Connection established ---
+--- Dataset loaded ---
+--- model loaded ---
+--- Training Done ---
+--- model saved ---
+Traceback (most recent call last):
+  File "run.py", line 52, in <module>
+    sendModel(agg_url, model_path, args)
+  File "/home/nikamanth/Documents/fyp/src/client/httpcalls.py", line 26, in sendModel
+    res = requests.post(url+'/sendmodel', files={'file': (args['node_name']+'.pt', open(path, 'rb'))})
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/requests/api.py", line 116, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/home/nikamanth/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/home/nikamanth/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 426, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/nikamanth/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 421, in _make_request
+    httplib_response = conn.getresponse()
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/http/client.py", line 1369, in getresponse
+    response.begin()
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/http/client.py", line 310, in begin
+    version, status, reason = self._read_status()
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/http/client.py", line 271, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt

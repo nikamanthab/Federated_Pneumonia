@@ -1,0 +1,12 @@
+--- Connection established ---
+--- Dataset loaded ---
+--- model loaded ---
+Train Epoch: 1 [0/2608 (0%)]	Loss: 0.745519
+Traceback (most recent call last):
+  File "run.py", line 47, in <module>
+    optimizer=optimizer, epoch=epoch)                ###logger added
+  File "/home/nikamanth/Documents/fyp/src/client/train.py", line 13, in train
+    optimizer.step()
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/torch/optim/adam.py", line 103, in step
+    denom = (exp_avg_sq.sqrt() / math.sqrt(bias_correction2)).add_(group['eps'])
+KeyboardInterrupt

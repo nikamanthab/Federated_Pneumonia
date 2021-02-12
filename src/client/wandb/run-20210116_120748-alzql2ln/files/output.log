@@ -1,0 +1,71 @@
+--- Connection established ---
+--- Dataset loaded ---
+--- model loaded ---
+Train Epoch: 1 [0/2608 (0%)]	Loss: 1.325348
+Train Epoch: 1 [100/2608 (4%)]	Loss: 0.311184
+Train Epoch: 1 [200/2608 (8%)]	Loss: 0.281603
+Train Epoch: 1 [300/2608 (12%)]	Loss: 0.844985
+Train Epoch: 1 [400/2608 (15%)]	Loss: 0.329930
+Train Epoch: 1 [500/2608 (19%)]	Loss: 0.781965
+Train Epoch: 1 [600/2608 (23%)]	Loss: 0.791063
+Train Epoch: 1 [700/2608 (27%)]	Loss: 0.799811
+Train Epoch: 1 [800/2608 (31%)]	Loss: 0.342569
+Train Epoch: 1 [900/2608 (35%)]	Loss: 0.775658
+Train Epoch: 1 [1000/2608 (38%)]	Loss: 0.800577
+Train Epoch: 1 [1100/2608 (42%)]	Loss: 0.315245
+Train Epoch: 1 [1200/2608 (46%)]	Loss: 1.337512
+Train Epoch: 1 [1300/2608 (50%)]	Loss: 0.344603
+Train Epoch: 1 [1400/2608 (54%)]	Loss: 0.817804
+Train Epoch: 1 [1500/2608 (58%)]	Loss: 0.314763
+Train Epoch: 1 [1600/2608 (61%)]	Loss: 0.824973
+Train Epoch: 1 [1700/2608 (65%)]	Loss: 0.286953
+Train Epoch: 1 [1800/2608 (69%)]	Loss: 0.865727
+Train Epoch: 1 [1900/2608 (73%)]	Loss: 0.290143
+Train Epoch: 1 [2000/2608 (77%)]	Loss: 1.463738
+Train Epoch: 1 [2100/2608 (81%)]	Loss: 0.818408
+Train Epoch: 1 [2200/2608 (84%)]	Loss: 0.261405
+Train Epoch: 1 [2300/2608 (88%)]	Loss: 0.882718
+Train Epoch: 1 [2400/2608 (92%)]	Loss: 0.265736
+Train Epoch: 1 [2500/2608 (96%)]	Loss: 0.855958
+Train Epoch: 1 [2600/2608 (100%)]	Loss: 1.393319
+Train Epoch: 2 [0/2608 (0%)]	Loss: 0.288073
+Train Epoch: 2 [100/2608 (4%)]	Loss: 0.863298
+Train Epoch: 2 [200/2608 (8%)]	Loss: 0.850677
+Train Epoch: 2 [300/2608 (12%)]	Loss: 1.294517
+Train Epoch: 2 [400/2608 (15%)]	Loss: 1.272929
+Train Epoch: 2 [500/2608 (19%)]	Loss: 0.835860
+Train Epoch: 2 [600/2608 (23%)]	Loss: 0.823451
+Train Epoch: 2 [700/2608 (27%)]	Loss: 0.309786
+Train Epoch: 2 [800/2608 (31%)]	Loss: 0.256810
+Train Epoch: 2 [900/2608 (35%)]	Loss: 0.288449
+Train Epoch: 2 [1000/2608 (38%)]	Loss: 0.829772
+Train Epoch: 2 [1100/2608 (42%)]	Loss: 0.847717
+Train Epoch: 2 [1200/2608 (46%)]	Loss: 0.313175
+Train Epoch: 2 [1300/2608 (50%)]	Loss: 1.266825
+Train Epoch: 2 [1400/2608 (54%)]	Loss: 0.792126
+Train Epoch: 2 [1500/2608 (58%)]	Loss: 0.340956
+Train Epoch: 2 [1600/2608 (61%)]	Loss: 0.822063
+Train Epoch: 2 [1700/2608 (65%)]	Loss: 0.829664
+Train Epoch: 2 [1800/2608 (69%)]	Loss: 0.836758
+Train Epoch: 2 [1900/2608 (73%)]	Loss: 0.857459
+Train Epoch: 2 [2000/2608 (77%)]	Loss: 0.282022
+Train Epoch: 2 [2100/2608 (81%)]	Loss: 0.865463
+Train Epoch: 2 [2200/2608 (84%)]	Loss: 0.789645
+Train Epoch: 2 [2300/2608 (88%)]	Loss: 0.364816
+Train Epoch: 2 [2400/2608 (92%)]	Loss: 0.314968
+Traceback (most recent call last):
+  File "run.py", line 47, in <module>
+    optimizer=optimizer, epoch=epoch)                ###logger added
+  File "/home/nikamanth/Documents/fyp/src/client/train.py", line 10, in train
+    output = model(data)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/nikamanth/Documents/fyp/src/client/models.py", line 20, in forward
+    x = F.relu(self.fc1(x))
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/torch/nn/modules/linear.py", line 87, in forward
+    return F.linear(input, self.weight, self.bias)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/torch/nn/functional.py", line 1368, in linear
+    if input.dim() == 2 and bias is not None:
+KeyboardInterrupt

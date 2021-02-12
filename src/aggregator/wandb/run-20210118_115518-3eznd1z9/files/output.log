@@ -1,0 +1,110 @@
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Restarting with inotify reloader
+wandb: Currently logged in as: nikamanth (use `wandb login --relogin` to force relogin)
+wandb: wandb version 0.10.14 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.10.12
+wandb: Syncing run daily-snow-56
+wandb: ⭐️ View project at https://wandb.ai/nikamanth/fed-learning
+wandb: 🚀 View run at https://wandb.ai/nikamanth/fed-learning/runs/8y6xqevr
+wandb: Run data is saved locally in /home/nikamanth/Documents/fyp/src/aggregator/wandb/run-20210118_115521-8y6xqevr
+wandb: Run `wandb offline` to turn off syncing.
+ * Debugger is active!
+ * Debugger PIN: 202-684-240
+127.0.0.1 - - [18/Jan/2021 11:57:03] "[37mPOST /getConnection HTTP/1.1[0m" 200 -
+Connecting Nodes:
+node_0
+127.0.0.1 - - [18/Jan/2021 11:57:05] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+model initialized
+127.0.0.1 - - [18/Jan/2021 11:57:05] "[37mPOST /getmodel HTTP/1.1[0m" 200 -
+---Aggregation Done---
+
+Test set: Average loss: 0.3777, Accuracy: 516/624 (83%)
+
+127.0.0.1 - - [18/Jan/2021 11:58:18] "[37mPOST /sendmodel HTTP/1.1[0m" 200 -
+127.0.0.1 - - [18/Jan/2021 11:58:18] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [18/Jan/2021 11:58:18] "[37mPOST /getmodel HTTP/1.1[0m" 200 -
+---Aggregation Done---
+
+Test set: Average loss: 0.5416, Accuracy: 490/624 (79%)
+127.0.0.1 - - [18/Jan/2021 11:59:32] "[37mPOST /sendmodel HTTP/1.1[0m" 200 -
+
+127.0.0.1 - - [18/Jan/2021 11:59:32] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [18/Jan/2021 11:59:32] "[37mPOST /getmodel HTTP/1.1[0m" 200 -
+---Aggregation Done---
+
+Test set: Average loss: 0.6120, Accuracy: 484/624 (78%)
+
+127.0.0.1 - - [18/Jan/2021 12:00:45] "[37mPOST /sendmodel HTTP/1.1[0m" 200 -
+127.0.0.1 - - [18/Jan/2021 12:00:45] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [18/Jan/2021 12:00:45] "[37mPOST /getmodel HTTP/1.1[0m" 200 -
+---Aggregation Done---
+
+Test set: Average loss: 0.5327, Accuracy: 498/624 (80%)
+
+127.0.0.1 - - [18/Jan/2021 12:01:57] "[37mPOST /sendmodel HTTP/1.1[0m" 200 -
+127.0.0.1 - - [18/Jan/2021 12:01:57] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [18/Jan/2021 12:01:57] "[37mPOST /getmodel HTTP/1.1[0m" 200 -
+---Aggregation Done---
+
+Test set: Average loss: 0.7534, Accuracy: 470/624 (75%)
+
+127.0.0.1 - - [18/Jan/2021 12:03:08] "[37mPOST /sendmodel HTTP/1.1[0m" 200 -
+127.0.0.1 - - [18/Jan/2021 12:03:08] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [18/Jan/2021 12:03:08] "[37mPOST /getmodel HTTP/1.1[0m" 200 -
+---Aggregation Done---
+
+Test set: Average loss: 0.7756, Accuracy: 473/624 (76%)
+127.0.0.1 - - [18/Jan/2021 12:04:20] "[37mPOST /sendmodel HTTP/1.1[0m" 200 -
+
+127.0.0.1 - - [18/Jan/2021 12:04:20] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [18/Jan/2021 12:04:20] "[37mPOST /getmodel HTTP/1.1[0m" 200 -
+---Aggregation Done---
+
+Test set: Average loss: 0.9961, Accuracy: 448/624 (72%)
+
+127.0.0.1 - - [18/Jan/2021 12:05:32] "[37mPOST /sendmodel HTTP/1.1[0m" 200 -
+127.0.0.1 - - [18/Jan/2021 12:05:32] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [18/Jan/2021 12:05:32] "[37mPOST /getmodel HTTP/1.1[0m" 200 -
+---Aggregation Done---
+
+Test set: Average loss: 0.9992, Accuracy: 456/624 (73%)
+
+127.0.0.1 - - [18/Jan/2021 12:06:44] "[37mPOST /sendmodel HTTP/1.1[0m" 200 -
+127.0.0.1 - - [18/Jan/2021 12:06:44] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [18/Jan/2021 12:06:44] "[37mPOST /getmodel HTTP/1.1[0m" 200 -
+---Aggregation Done---
+
+Test set: Average loss: 1.0071, Accuracy: 461/624 (74%)
+
+127.0.0.1 - - [18/Jan/2021 12:07:55] "[37mPOST /sendmodel HTTP/1.1[0m" 200 -
+127.0.0.1 - - [18/Jan/2021 12:07:55] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [18/Jan/2021 12:07:55] "[37mPOST /getmodel HTTP/1.1[0m" 200 -
+---Aggregation Done---
+
+Test set: Average loss: 1.0602, Accuracy: 457/624 (73%)
+
+127.0.0.1 - - [18/Jan/2021 12:09:07] "[37mPOST /sendmodel HTTP/1.1[0m" 200 -
+127.0.0.1 - - [18/Jan/2021 12:09:07] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [18/Jan/2021 12:09:07] "[37mPOST /getmodel HTTP/1.1[0m" 200 -
+---Aggregation Done---
+
+Test set: Average loss: 0.9619, Accuracy: 470/624 (75%)
+
+127.0.0.1 - - [18/Jan/2021 12:10:21] "[37mPOST /sendmodel HTTP/1.1[0m" 200 -
+127.0.0.1 - - [18/Jan/2021 12:10:21] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [18/Jan/2021 12:10:21] "[37mPOST /getmodel HTTP/1.1[0m" 200 -
+---Aggregation Done---
+
+Test set: Average loss: 0.9415, Accuracy: 475/624 (76%)
+
+127.0.0.1 - - [18/Jan/2021 12:11:35] "[37mPOST /sendmodel HTTP/1.1[0m" 200 -
+127.0.0.1 - - [18/Jan/2021 12:11:35] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [18/Jan/2021 12:11:35] "[37mPOST /getmodel HTTP/1.1[0m" 200 -
+---Aggregation Done---
+
+Test set: Average loss: 0.8807, Accuracy: 483/624 (77%)
+
+127.0.0.1 - - [18/Jan/2021 12:12:49] "[37mPOST /sendmodel HTTP/1.1[0m" 200 -
+127.0.0.1 - - [18/Jan/2021 12:12:49] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [18/Jan/2021 12:12:49] "[37mPOST /getmodel HTTP/1.1[0m" 200 -

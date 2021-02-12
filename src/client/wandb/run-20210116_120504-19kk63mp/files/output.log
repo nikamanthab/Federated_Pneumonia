@@ -1,0 +1,75 @@
+--- Connection established ---
+--- Dataset loaded ---
+--- model loaded ---
+Train Epoch: 1 [0/2608 (0%)]	Loss: 0.830512
+Train Epoch: 1 [100/2608 (4%)]	Loss: 0.342369
+Train Epoch: 1 [200/2608 (8%)]	Loss: 1.325076
+Train Epoch: 1 [300/2608 (12%)]	Loss: 0.320152
+Train Epoch: 1 [400/2608 (15%)]	Loss: 0.360743
+Train Epoch: 1 [500/2608 (19%)]	Loss: 0.837438
+Train Epoch: 1 [600/2608 (23%)]	Loss: 0.296542
+Train Epoch: 1 [700/2608 (27%)]	Loss: 0.297884
+Train Epoch: 1 [800/2608 (31%)]	Loss: 1.416904
+Train Epoch: 1 [900/2608 (35%)]	Loss: 0.799594
+Train Epoch: 1 [1000/2608 (38%)]	Loss: 0.297039
+Train Epoch: 1 [1100/2608 (42%)]	Loss: 0.292849
+Train Epoch: 1 [1200/2608 (46%)]	Loss: 0.321046
+Train Epoch: 1 [1300/2608 (50%)]	Loss: 0.326669
+Train Epoch: 1 [1400/2608 (54%)]	Loss: 0.803295
+Train Epoch: 1 [1500/2608 (58%)]	Loss: 0.297683
+Train Epoch: 1 [1600/2608 (61%)]	Loss: 0.863059
+Train Epoch: 1 [1700/2608 (65%)]	Loss: 0.864710
+Train Epoch: 1 [1800/2608 (69%)]	Loss: 0.290477
+Train Epoch: 1 [1900/2608 (73%)]	Loss: 0.277040
+Train Epoch: 1 [2000/2608 (77%)]	Loss: 0.842028
+Train Epoch: 1 [2100/2608 (81%)]	Loss: 0.864636
+Train Epoch: 1 [2200/2608 (84%)]	Loss: 0.841005
+Train Epoch: 1 [2300/2608 (88%)]	Loss: 0.838096
+Train Epoch: 1 [2400/2608 (92%)]	Loss: 0.293803
+Train Epoch: 1 [2500/2608 (96%)]	Loss: 0.324226
+Train Epoch: 1 [2600/2608 (100%)]	Loss: 0.331883
+--- Training Done ---
+--- model saved ---
+model sent successfully!
+--- model sent to aggregation server ---
+--- Connection established ---
+--- Dataset loaded ---
+--- model loaded ---
+Train Epoch: 1 [0/2608 (0%)]	Loss: 1.325348
+Train Epoch: 1 [100/2608 (4%)]	Loss: 0.278419
+Train Epoch: 1 [200/2608 (8%)]	Loss: 0.263092
+Train Epoch: 1 [300/2608 (12%)]	Loss: 0.834719
+Train Epoch: 1 [400/2608 (15%)]	Loss: 0.290492
+Train Epoch: 1 [500/2608 (19%)]	Loss: 0.292159
+Train Epoch: 1 [600/2608 (23%)]	Loss: 0.791344
+Train Epoch: 1 [700/2608 (27%)]	Loss: 0.789464
+Train Epoch: 1 [800/2608 (31%)]	Loss: 0.300588
+Train Epoch: 1 [900/2608 (35%)]	Loss: 0.866536
+Train Epoch: 1 [1000/2608 (38%)]	Loss: 0.322305
+Train Epoch: 1 [1100/2608 (42%)]	Loss: 0.808416
+Train Epoch: 1 [1200/2608 (46%)]	Loss: 0.326705
+Train Epoch: 1 [1300/2608 (50%)]	Loss: 0.299164
+Train Epoch: 1 [1400/2608 (54%)]	Loss: 0.268504
+Train Epoch: 1 [1500/2608 (58%)]	Loss: 0.272923
+Train Epoch: 1 [1600/2608 (61%)]	Loss: 0.284407
+Train Epoch: 1 [1700/2608 (65%)]	Loss: 0.278348
+Train Epoch: 1 [1800/2608 (69%)]	Loss: 0.812285
+Train Epoch: 1 [1900/2608 (73%)]	Loss: 1.275639
+Train Epoch: 1 [2000/2608 (77%)]	Loss: 0.324256
+Train Epoch: 1 [2100/2608 (81%)]	Loss: 0.321042
+Train Epoch: 1 [2200/2608 (84%)]	Loss: 0.322394
+Train Epoch: 1 [2300/2608 (88%)]	Loss: 0.289117
+Train Epoch: 1 [2400/2608 (92%)]	Loss: 0.820873
+Train Epoch: 1 [2500/2608 (96%)]	Loss: 0.296390
+Train Epoch: 1 [2600/2608 (100%)]	Loss: 0.297445
+--- Training Done ---
+--- model saved ---
+model sent successfully!
+--- model sent to aggregation server ---
+Waiting for aggregation...
+Traceback (most recent call last):
+  File "run.py", line 34, in <module>
+    getModel(agg_url, model_path, local_agg_epoch)
+  File "/home/nikamanth/Documents/fyp/src/client/httpcalls.py", line 15, in getModel
+    time.sleep(10)
+KeyboardInterrupt

@@ -1,0 +1,168 @@
+Train Epoch: 1 [0/2608 (0%)]	Loss: 0.690431
+Train Epoch: 1 [800/2608 (31%)]	Loss: 0.045377
+Train Epoch: 1 [1600/2608 (61%)]	Loss: 0.246594
+Train Epoch: 1 [2400/2608 (92%)]	Loss: 0.028230
+Average loss : 0.252658030949533
+Train Epoch: 2 [0/2608 (0%)]	Loss: 0.116256
+Train Epoch: 2 [800/2608 (31%)]	Loss: 0.036581
+Train Epoch: 2 [1600/2608 (61%)]	Loss: 0.203830
+Train Epoch: 2 [2400/2608 (92%)]	Loss: 0.088810
+Average loss : 0.11136928386986256
+Train Epoch: 3 [0/2608 (0%)]	Loss: 0.077185
+Train Epoch: 3 [800/2608 (31%)]	Loss: 0.001656
+Train Epoch: 3 [1600/2608 (61%)]	Loss: 0.015995
+Train Epoch: 3 [2400/2608 (92%)]	Loss: 0.068497
+Average loss : 0.040833376348018646
+Train Epoch: 4 [0/2608 (0%)]	Loss: 0.163889
+Train Epoch: 4 [800/2608 (31%)]	Loss: 0.150120
+Train Epoch: 4 [1600/2608 (61%)]	Loss: 0.006961
+Train Epoch: 4 [2400/2608 (92%)]	Loss: 0.023158
+Average loss : 0.08603211957961321
+model sent successfully!
+Waiting for aggregation...
+Waiting for aggregation...
+Train Epoch: 1 [0/2608 (0%)]	Loss: 0.328086
+Train Epoch: 1 [800/2608 (31%)]	Loss: 0.057587
+Train Epoch: 1 [1600/2608 (61%)]	Loss: 0.009627
+Train Epoch: 1 [2400/2608 (92%)]	Loss: 0.309778
+Average loss : 0.17626951541751623
+Train Epoch: 2 [0/2608 (0%)]	Loss: 0.039503
+Train Epoch: 2 [800/2608 (31%)]	Loss: 0.104009
+Train Epoch: 2 [1600/2608 (61%)]	Loss: 0.042181
+Train Epoch: 2 [2400/2608 (92%)]	Loss: 0.015209
+Average loss : 0.05022551119327545
+Train Epoch: 3 [0/2608 (0%)]	Loss: 0.163317
+Train Epoch: 3 [800/2608 (31%)]	Loss: 0.014390
+Train Epoch: 3 [1600/2608 (61%)]	Loss: 0.004104
+Train Epoch: 3 [2400/2608 (92%)]	Loss: 0.090075
+Average loss : 0.06797160673886538
+Train Epoch: 4 [0/2608 (0%)]	Loss: 0.054367
+Train Epoch: 4 [800/2608 (31%)]	Loss: 0.022417
+Train Epoch: 4 [1600/2608 (61%)]	Loss: 0.017901
+Train Epoch: 4 [2400/2608 (92%)]	Loss: 0.023932
+Average loss : 0.0296541266143322
+model sent successfully!
+Train Epoch: 1 [0/2608 (0%)]	Loss: 0.002104
+Train Epoch: 1 [800/2608 (31%)]	Loss: 0.107228
+Train Epoch: 1 [1600/2608 (61%)]	Loss: 0.003613
+Train Epoch: 1 [2400/2608 (92%)]	Loss: 0.040398
+Average loss : 0.038335636258125305
+Train Epoch: 2 [0/2608 (0%)]	Loss: 0.013227
+Train Epoch: 2 [800/2608 (31%)]	Loss: 0.011612
+Train Epoch: 2 [1600/2608 (61%)]	Loss: 0.048311
+Train Epoch: 2 [2400/2608 (92%)]	Loss: 0.258675
+Average loss : 0.08295666053891182
+Train Epoch: 3 [0/2608 (0%)]	Loss: 0.013549
+Train Epoch: 3 [800/2608 (31%)]	Loss: 0.277019
+Train Epoch: 3 [1600/2608 (61%)]	Loss: 0.027294
+Train Epoch: 3 [2400/2608 (92%)]	Loss: 0.024768
+Average loss : 0.08565761102363467
+Train Epoch: 4 [0/2608 (0%)]	Loss: 0.004220
+Train Epoch: 4 [800/2608 (31%)]	Loss: 0.002169
+Train Epoch: 4 [1600/2608 (61%)]	Loss: 0.005488
+Train Epoch: 4 [2400/2608 (92%)]	Loss: 0.015134
+Average loss : 0.006752990186214447
+model sent successfully!
+Waiting for aggregation...
+Train Epoch: 1 [0/2608 (0%)]	Loss: 0.002506
+Train Epoch: 1 [800/2608 (31%)]	Loss: 0.136354
+Train Epoch: 1 [1600/2608 (61%)]	Loss: 0.009218
+Train Epoch: 1 [2400/2608 (92%)]	Loss: 0.009698
+Average loss : 0.039443861693143845
+Train Epoch: 2 [0/2608 (0%)]	Loss: 0.015429
+Train Epoch: 2 [800/2608 (31%)]	Loss: 0.027436
+Train Epoch: 2 [1600/2608 (61%)]	Loss: 0.008719
+Train Epoch: 2 [2400/2608 (92%)]	Loss: 0.001096
+Average loss : 0.013169942423701286
+Train Epoch: 3 [0/2608 (0%)]	Loss: 0.001606
+Train Epoch: 3 [800/2608 (31%)]	Loss: 0.019377
+Train Epoch: 3 [1600/2608 (61%)]	Loss: 0.005301
+Train Epoch: 3 [2400/2608 (92%)]	Loss: 0.042085
+Average loss : 0.017092312686145306
+Train Epoch: 4 [0/2608 (0%)]	Loss: 0.001793
+Train Epoch: 4 [800/2608 (31%)]	Loss: 0.000681
+Train Epoch: 4 [1600/2608 (61%)]	Loss: 0.031223
+Train Epoch: 4 [2400/2608 (92%)]	Loss: 0.000561
+Average loss : 0.008564403746277094
+model sent successfully!
+Train Epoch: 1 [0/2608 (0%)]	Loss: 0.009371
+Train Epoch: 1 [800/2608 (31%)]	Loss: 0.013251
+Train Epoch: 1 [1600/2608 (61%)]	Loss: 0.004521
+Train Epoch: 1 [2400/2608 (92%)]	Loss: 0.002414
+Average loss : 0.007389243692159653
+Train Epoch: 2 [0/2608 (0%)]	Loss: 0.000190
+Train Epoch: 2 [800/2608 (31%)]	Loss: 0.001308
+Train Epoch: 2 [1600/2608 (61%)]	Loss: 0.031754
+Train Epoch: 2 [2400/2608 (92%)]	Loss: 0.004447
+Average loss : 0.009424623101949692
+Train Epoch: 3 [0/2608 (0%)]	Loss: 0.002396
+Train Epoch: 3 [800/2608 (31%)]	Loss: 0.010060
+Train Epoch: 3 [1600/2608 (61%)]	Loss: 0.001899
+Train Epoch: 3 [2400/2608 (92%)]	Loss: 0.311280
+Average loss : 0.08140867110341787
+Train Epoch: 4 [0/2608 (0%)]	Loss: 0.171202
+Train Epoch: 4 [800/2608 (31%)]	Loss: 0.003511
+Train Epoch: 4 [1600/2608 (61%)]	Loss: 0.015156
+Train Epoch: 4 [2400/2608 (92%)]	Loss: 0.005185
+Average loss : 0.04876364301890135
+model sent successfully!
+Waiting for aggregation...
+Train Epoch: 1 [0/2608 (0%)]	Loss: 0.001185
+Train Epoch: 1 [800/2608 (31%)]	Loss: 0.007069
+Train Epoch: 1 [1600/2608 (61%)]	Loss: 0.000387
+Train Epoch: 1 [2400/2608 (92%)]	Loss: 0.002387
+Average loss : 0.002757009118795395
+Train Epoch: 2 [0/2608 (0%)]	Loss: 0.000363
+Train Epoch: 2 [800/2608 (31%)]	Loss: 0.001024
+Train Epoch: 2 [1600/2608 (61%)]	Loss: 0.000122
+Train Epoch: 2 [2400/2608 (92%)]	Loss: 0.001385
+Average loss : 0.0007233228534460068
+Train Epoch: 3 [0/2608 (0%)]	Loss: 0.007791
+Train Epoch: 3 [800/2608 (31%)]	Loss: 0.000194
+Train Epoch: 3 [1600/2608 (61%)]	Loss: 0.000332
+Train Epoch: 3 [2400/2608 (92%)]	Loss: 0.000165
+Average loss : 0.0021205171942710876
+Train Epoch: 4 [0/2608 (0%)]	Loss: 0.000241
+Train Epoch: 4 [800/2608 (31%)]	Loss: 0.008090
+Train Epoch: 4 [1600/2608 (61%)]	Loss: 0.000007
+Train Epoch: 4 [2400/2608 (92%)]	Loss: 0.000069
+Average loss : 0.002101706340909004
+model sent successfully!
+Train Epoch: 1 [0/2608 (0%)]	Loss: 0.000763
+Train Epoch: 1 [800/2608 (31%)]	Loss: 0.013156
+Train Epoch: 1 [1600/2608 (61%)]	Loss: 0.027047
+Train Epoch: 1 [2400/2608 (92%)]	Loss: 0.000473
+Average loss : 0.01035976130515337
+Train Epoch: 2 [0/2608 (0%)]	Loss: 0.017220
+Train Epoch: 2 [800/2608 (31%)]	Loss: 0.000877
+Train Epoch: 2 [1600/2608 (61%)]	Loss: 0.000212
+Train Epoch: 2 [2400/2608 (92%)]	Loss: 0.000268
+Average loss : 0.004644213244318962
+Train Epoch: 3 [0/2608 (0%)]	Loss: 0.000357
+Train Epoch: 3 [800/2608 (31%)]	Loss: 0.000421
+Train Epoch: 3 [1600/2608 (61%)]	Loss: 0.014280
+Train Epoch: 3 [2400/2608 (92%)]	Loss: 0.048110
+Average loss : 0.015791929326951504
+Train Epoch: 4 [0/2608 (0%)]	Loss: 0.000702
+Traceback (most recent call last):
+  File "run.py", line 46, in <module>
+    optimizer=optimizer, epoch=epoch)                ###logger added
+  File "/home/nikamanth/Documents/fyp/src/client/train.py", line 9, in train
+    for batch_idx, (data, target) in enumerate(train_loader): # <-- now it is a distributed dataset
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 345, in __next__
+    data = self._next_data()
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 385, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/torch/utils/data/_utils/fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/torch/utils/data/_utils/fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/nikamanth/Documents/fyp/src/client/dataloader.py", line 54, in __getitem__
+    image = self.transform(image)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/torchvision/transforms/transforms.py", line 70, in __call__
+    img = t(img)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/torchvision/transforms/transforms.py", line 175, in __call__
+    return F.normalize(tensor, self.mean, self.std, self.inplace)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/torchvision/transforms/functional.py", line 216, in normalize
+    mean = torch.as_tensor(mean, dtype=dtype, device=tensor.device)
+KeyboardInterrupt

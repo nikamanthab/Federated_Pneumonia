@@ -1,0 +1,127 @@
+2021-01-18 12:17:55,922 INFO    MainThread:12979 [internal.py:wandb_internal():63] W&B internal server running at pid: 12979
+2021-01-18 12:17:55,924 DEBUG   HandlerThread:12979 [handler.py:handle_request():55] handle_request: check_version
+2021-01-18 12:17:55,927 INFO    WriterThread:12979 [datastore.py:open_for_write():76] open: /home/nikamanth/Documents/fyp/src/client/wandb/run-20210118_121755-r655yoch/run-r655yoch.wandb
+2021-01-18 12:17:55,929 DEBUG   SenderThread:12979 [sender.py:send():90] send: header
+2021-01-18 12:17:55,929 DEBUG   SenderThread:12979 [sender.py:send():90] send: request
+2021-01-18 12:17:55,929 DEBUG   SenderThread:12979 [sender.py:send_request():99] send_request: check_version
+2021-01-18 12:17:55,932 DEBUG   Thread-4  :12979 [connectionpool.py:_new_conn():941] Starting new HTTPS connection (1): pypi.org:443
+2021-01-18 12:17:56,044 DEBUG   Thread-4  :12979 [connectionpool.py:_make_request():442] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 52801
+2021-01-18 12:17:56,089 DEBUG   SenderThread:12979 [sender.py:send():90] send: run
+2021-01-18 12:17:56,097 DEBUG   SenderThread:12979 [cmd.py:execute():719] Popen(['git', 'cat-file', '--batch-check'], cwd=/home/nikamanth/Documents/fyp, universal_newlines=False, shell=None, istream=<valid stream>)
+2021-01-18 12:17:56,115 DEBUG   SenderThread:12979 [connectionpool.py:_new_conn():941] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-18 12:17:56,420 DEBUG   SenderThread:12979 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-18 12:17:56,428 DEBUG   HandlerThread:12979 [handler.py:handle_request():55] handle_request: run_start
+2021-01-18 12:17:56,430 INFO    SenderThread:12979 [dir_watcher.py:__init__():165] watching files in: /home/nikamanth/Documents/fyp/src/client/wandb/run-20210118_121755-r655yoch/files
+2021-01-18 12:17:56,430 INFO    SenderThread:12979 [sender.py:_start_run_threads():490] run started: r655yoch with start time 1610952475
+2021-01-18 12:17:56,431 DEBUG   SenderThread:12979 [sender.py:send():90] send: summary
+2021-01-18 12:17:56,431 INFO    SenderThread:12979 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-18 12:17:56,472 DEBUG   HandlerThread:12979 [cmd.py:execute():719] Popen(['git', 'cat-file', '--batch-check'], cwd=/home/nikamanth/Documents/fyp, universal_newlines=False, shell=None, istream=<valid stream>)
+2021-01-18 12:17:56,495 DEBUG   HandlerThread:12979 [cmd.py:execute():719] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/home/nikamanth/Documents/fyp, universal_newlines=False, shell=None, istream=None)
+2021-01-18 12:17:56,572 DEBUG   SenderThread:12979 [sender.py:send():90] send: files
+2021-01-18 12:17:56,573 INFO    SenderThread:12979 [sender.py:_save_file():568] saving file wandb-metadata.json with policy now
+2021-01-18 12:17:56,579 DEBUG   HandlerThread:12979 [handler.py:handle_request():55] handle_request: status
+2021-01-18 12:17:56,580 DEBUG   SenderThread:12979 [sender.py:send():90] send: request
+2021-01-18 12:17:56,580 DEBUG   SenderThread:12979 [sender.py:send_request():99] send_request: status
+2021-01-18 12:17:56,584 DEBUG   SenderThread:12979 [connectionpool.py:_new_conn():941] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-18 12:17:56,585 DEBUG   Thread-11 :12979 [connectionpool.py:_new_conn():941] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-18 12:17:56,867 DEBUG   SenderThread:12979 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-18 12:17:56,882 DEBUG   Thread-11 :12979 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-18 12:17:56,887 DEBUG   Thread-11 :12979 [connectionpool.py:_new_conn():941] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-01-18 12:17:57,344 DEBUG   Thread-11 :12979 [connectionpool.py:_make_request():442] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/nikamanth/node_0/r655yoch/wandb-metadata.json?Expires=1611038876&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=G0LZujdyMeTAu2ZmSpU7e9r9FyMO5gY1hJgfHOhgB0lc6SPYHIjYMivNG4cZYs%2BheTKOzeEdcP2xpHJKBCNtrJFVfLBZbJWVvHmeRqRKbpmsh9rHshHso%2Brnb5kX1qym%2BoqbQmk6GpPQv5lSz4I5dT10wqII8ndkR4renFdKascffGeoHdgWELXfYb5zUuYudbuT7%2B1fgXQN7P2RaxKk0w74tdlJRt5RCxGzAvD0CGhlJutjSkBVYtycNt6BViXJRe0qrxvBuobP2LH8pNF6YmKIzhUxhR%2FIk6xNVo3SCfp6hJ9Aygd1h4bucMJJu12GQv3GMzb9EXkv4JqZHFKr4w%3D%3D HTTP/1.1" 200 0
+2021-01-18 12:17:57,347 INFO    Thread-11 :12979 [upload_job.py:push():131] Uploaded file /tmp/tmp4rl1pgb7wandb/3gkekdee-wandb-metadata.json
+2021-01-18 12:17:57,433 INFO    Thread-8  :12979 [dir_watcher.py:_on_file_created():213] file/dir created: /home/nikamanth/Documents/fyp/src/client/wandb/run-20210118_121755-r655yoch/files/requirements.txt
+2021-01-18 12:17:57,434 INFO    Thread-8  :12979 [dir_watcher.py:_on_file_created():213] file/dir created: /home/nikamanth/Documents/fyp/src/client/wandb/run-20210118_121755-r655yoch/files/output.log
+2021-01-18 12:17:57,435 INFO    Thread-8  :12979 [dir_watcher.py:_on_file_created():213] file/dir created: /home/nikamanth/Documents/fyp/src/client/wandb/run-20210118_121755-r655yoch/files/wandb-metadata.json
+2021-01-18 12:17:58,433 DEBUG   Thread-5  :12979 [connectionpool.py:_new_conn():941] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-18 12:17:58,747 DEBUG   Thread-5  :12979 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/nikamanth/node_0/r655yoch/file_stream HTTP/1.1" 200 None
+2021-01-18 12:17:59,434 INFO    Thread-8  :12979 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/nikamanth/Documents/fyp/src/client/wandb/run-20210118_121755-r655yoch/files/output.log
+2021-01-18 12:17:59,953 DEBUG   SenderThread:12979 [sender.py:send():90] send: stats
+2021-01-18 12:18:01,434 INFO    Thread-8  :12979 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/nikamanth/Documents/fyp/src/client/wandb/run-20210118_121755-r655yoch/files/output.log
+2021-01-18 12:18:01,704 DEBUG   Thread-5  :12979 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/nikamanth/node_0/r655yoch/file_stream HTTP/1.1" 200 None
+2021-01-18 12:18:04,411 DEBUG   Thread-5  :12979 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/nikamanth/node_0/r655yoch/file_stream HTTP/1.1" 200 None
+2021-01-18 12:18:04,416 DEBUG   SenderThread:12979 [sender.py:send():90] send: stats
+2021-01-18 12:18:04,435 INFO    Thread-8  :12979 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/nikamanth/Documents/fyp/src/client/wandb/run-20210118_121755-r655yoch/files/output.log
+2021-01-18 12:18:06,688 DEBUG   Thread-5  :12979 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/nikamanth/node_0/r655yoch/file_stream HTTP/1.1" 200 None
+2021-01-18 12:18:07,436 INFO    Thread-8  :12979 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/nikamanth/Documents/fyp/src/client/wandb/run-20210118_121755-r655yoch/files/output.log
+2021-01-18 12:18:08,872 DEBUG   SenderThread:12979 [sender.py:send():90] send: stats
+2021-01-18 12:18:09,166 DEBUG   Thread-5  :12979 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/nikamanth/node_0/r655yoch/file_stream HTTP/1.1" 200 None
+2021-01-18 12:18:10,437 INFO    Thread-8  :12979 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/nikamanth/Documents/fyp/src/client/wandb/run-20210118_121755-r655yoch/files/output.log
+2021-01-18 12:18:12,313 DEBUG   Thread-5  :12979 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/nikamanth/node_0/r655yoch/file_stream HTTP/1.1" 200 None
+2021-01-18 12:18:13,346 DEBUG   SenderThread:12979 [sender.py:send():90] send: stats
+2021-01-18 12:18:13,438 INFO    Thread-8  :12979 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/nikamanth/Documents/fyp/src/client/wandb/run-20210118_121755-r655yoch/files/output.log
+2021-01-18 12:18:13,831 DEBUG   HandlerThread:12979 [handler.py:handle_request():55] handle_request: status
+2021-01-18 12:18:13,831 DEBUG   SenderThread:12979 [sender.py:send():90] send: request
+2021-01-18 12:18:13,831 DEBUG   SenderThread:12979 [sender.py:send_request():99] send_request: status
+2021-01-18 12:18:13,833 DEBUG   SenderThread:12979 [connectionpool.py:_new_conn():941] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-18 12:18:14,100 DEBUG   SenderThread:12979 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-18 12:18:15,623 DEBUG   Thread-5  :12979 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/nikamanth/node_0/r655yoch/file_stream HTTP/1.1" 200 None
+2021-01-18 12:18:16,440 INFO    Thread-8  :12979 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/nikamanth/Documents/fyp/src/client/wandb/run-20210118_121755-r655yoch/files/output.log
+2021-01-18 12:18:17,816 DEBUG   SenderThread:12979 [sender.py:send():90] send: stats
+2021-01-18 12:18:18,065 DEBUG   Thread-5  :12979 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/nikamanth/node_0/r655yoch/file_stream HTTP/1.1" 200 None
+2021-01-18 12:18:19,444 INFO    Thread-8  :12979 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/nikamanth/Documents/fyp/src/client/wandb/run-20210118_121755-r655yoch/files/output.log
+2021-01-18 12:18:21,324 DEBUG   Thread-5  :12979 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/nikamanth/node_0/r655yoch/file_stream HTTP/1.1" 200 None
+2021-01-18 12:18:22,280 DEBUG   SenderThread:12979 [sender.py:send():90] send: stats
+2021-01-18 12:18:22,445 INFO    Thread-8  :12979 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/nikamanth/Documents/fyp/src/client/wandb/run-20210118_121755-r655yoch/files/output.log
+2021-01-18 12:18:24,557 DEBUG   Thread-5  :12979 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/nikamanth/node_0/r655yoch/file_stream HTTP/1.1" 200 None
+2021-01-18 12:18:25,446 INFO    Thread-8  :12979 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/nikamanth/Documents/fyp/src/client/wandb/run-20210118_121755-r655yoch/files/output.log
+2021-01-18 12:18:26,755 DEBUG   SenderThread:12979 [sender.py:send():90] send: stats
+2021-01-18 12:18:26,840 DEBUG   Thread-5  :12979 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/nikamanth/node_0/r655yoch/file_stream HTTP/1.1" 200 None
+2021-01-18 12:18:27,447 INFO    Thread-8  :12979 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/nikamanth/Documents/fyp/src/client/wandb/run-20210118_121755-r655yoch/files/output.log
+2021-01-18 12:18:29,103 DEBUG   HandlerThread:12979 [handler.py:handle_request():55] handle_request: status
+2021-01-18 12:18:29,104 DEBUG   SenderThread:12979 [sender.py:send():90] send: request
+2021-01-18 12:18:29,104 DEBUG   SenderThread:12979 [sender.py:send_request():99] send_request: status
+2021-01-18 12:18:29,108 DEBUG   SenderThread:12979 [connectionpool.py:_new_conn():941] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-18 12:18:29,366 DEBUG   SenderThread:12979 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-18 12:18:29,552 DEBUG   Thread-5  :12979 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/nikamanth/node_0/r655yoch/file_stream HTTP/1.1" 200 None
+2021-01-18 12:18:30,448 INFO    Thread-8  :12979 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/nikamanth/Documents/fyp/src/client/wandb/run-20210118_121755-r655yoch/files/output.log
+2021-01-18 12:18:31,229 DEBUG   SenderThread:12979 [sender.py:send():90] send: stats
+2021-01-18 12:18:32,924 WARNING MainThread:12979 [internal.py:wandb_internal():117] Internal process interrupt: 1
+2021-01-18 12:18:32,937 DEBUG   SenderThread:12979 [sender.py:send():90] send: exit
+2021-01-18 12:18:32,937 INFO    SenderThread:12979 [sender.py:send_exit():168] handling exit code: 255
+2021-01-18 12:18:32,937 INFO    SenderThread:12979 [sender.py:send_exit():176] send defer
+2021-01-18 12:18:32,938 DEBUG   HandlerThread:12979 [handler.py:handle_request():55] handle_request: defer
+2021-01-18 12:18:32,938 INFO    HandlerThread:12979 [handler.py:handle_request_defer():69] handle defer: 0
+2021-01-18 12:18:32,938 DEBUG   SenderThread:12979 [sender.py:send():90] send: request
+2021-01-18 12:18:32,938 DEBUG   SenderThread:12979 [sender.py:send_request():99] send_request: defer
+2021-01-18 12:18:32,938 INFO    SenderThread:12979 [sender.py:send_request_defer():185] handle sender defer: 0
+2021-01-18 12:18:32,938 INFO    SenderThread:12979 [sender.py:send_request_defer():221] send defer: 1
+2021-01-18 12:18:32,939 DEBUG   HandlerThread:12979 [handler.py:handle_request():55] handle_request: defer
+2021-01-18 12:18:32,939 INFO    HandlerThread:12979 [handler.py:handle_request_defer():69] handle defer: 1
+2021-01-18 12:18:32,952 DEBUG   SenderThread:12979 [sender.py:send():90] send: request
+2021-01-18 12:18:32,953 DEBUG   SenderThread:12979 [sender.py:send_request():99] send_request: defer
+2021-01-18 12:18:32,953 INFO    SenderThread:12979 [sender.py:send_request_defer():185] handle sender defer: 1
+2021-01-18 12:18:32,953 INFO    SenderThread:12979 [sender.py:send_request_defer():221] send defer: 2
+2021-01-18 12:18:32,953 DEBUG   HandlerThread:12979 [handler.py:handle_request():55] handle_request: poll_exit
+2021-01-18 12:18:32,954 DEBUG   HandlerThread:12979 [handler.py:handle_request():55] handle_request: defer
+2021-01-18 12:18:32,954 DEBUG   SenderThread:12979 [sender.py:send():90] send: request
+2021-01-18 12:18:32,954 INFO    HandlerThread:12979 [handler.py:handle_request_defer():69] handle defer: 2
+2021-01-18 12:18:32,954 DEBUG   SenderThread:12979 [sender.py:send_request():99] send_request: poll_exit
+2021-01-18 12:18:32,955 DEBUG   SenderThread:12979 [sender.py:send():90] send: stats
+2021-01-18 12:18:32,956 DEBUG   SenderThread:12979 [sender.py:send():90] send: request
+2021-01-18 12:18:32,956 DEBUG   SenderThread:12979 [sender.py:send_request():99] send_request: defer
+2021-01-18 12:18:32,956 INFO    SenderThread:12979 [sender.py:send_request_defer():185] handle sender defer: 2
+2021-01-18 12:18:32,956 INFO    SenderThread:12979 [sender.py:send_request_defer():221] send defer: 3
+2021-01-18 12:18:32,956 DEBUG   HandlerThread:12979 [handler.py:handle_request():55] handle_request: defer
+2021-01-18 12:18:32,957 INFO    HandlerThread:12979 [handler.py:handle_request_defer():69] handle defer: 3
+2021-01-18 12:18:32,957 DEBUG   SenderThread:12979 [sender.py:send():90] send: summary
+2021-01-18 12:18:32,957 INFO    SenderThread:12979 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-18 12:18:32,957 DEBUG   SenderThread:12979 [sender.py:send():90] send: request
+2021-01-18 12:18:32,958 DEBUG   SenderThread:12979 [sender.py:send_request():99] send_request: defer
+2021-01-18 12:18:32,958 INFO    SenderThread:12979 [sender.py:send_request_defer():185] handle sender defer: 3
+2021-01-18 12:18:32,958 INFO    SenderThread:12979 [sender.py:send_request_defer():221] send defer: 4
+2021-01-18 12:18:32,959 DEBUG   HandlerThread:12979 [handler.py:handle_request():55] handle_request: defer
+2021-01-18 12:18:32,959 INFO    HandlerThread:12979 [handler.py:handle_request_defer():69] handle defer: 4
+2021-01-18 12:18:32,959 DEBUG   SenderThread:12979 [sender.py:send():90] send: request
+2021-01-18 12:18:32,960 DEBUG   SenderThread:12979 [sender.py:send_request():99] send_request: defer
+2021-01-18 12:18:32,960 INFO    SenderThread:12979 [sender.py:send_request_defer():185] handle sender defer: 4
+2021-01-18 12:18:32,960 INFO    SenderThread:12979 [dir_watcher.py:finish():279] shutting down directory watcher
+2021-01-18 12:18:33,051 DEBUG   Thread-5  :12979 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/nikamanth/node_0/r655yoch/file_stream HTTP/1.1" 200 None
+2021-01-18 12:18:33,426 WARNING MainThread:12979 [internal.py:wandb_internal():117] Internal process interrupt: 2
+2021-01-18 12:18:33,426 ERROR   MainThread:12979 [internal.py:wandb_internal():120] Internal process interrupted.
+2021-01-18 12:18:33,452 INFO    Thread-8  :12979 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/nikamanth/Documents/fyp/src/client/wandb/run-20210118_121755-r655yoch/files/output.log
+2021-01-18 12:18:33,455 INFO    SenderThread:12979 [dir_watcher.py:finish():309] scan: /home/nikamanth/Documents/fyp/src/client/wandb/run-20210118_121755-r655yoch/files
+2021-01-18 12:18:33,456 INFO    SenderThread:12979 [dir_watcher.py:finish():315] scan save: /home/nikamanth/Documents/fyp/src/client/wandb/run-20210118_121755-r655yoch/files/wandb-summary.json wandb-summary.json
+2021-01-18 12:18:33,469 INFO    SenderThread:12979 [dir_watcher.py:finish():315] scan save: /home/nikamanth/Documents/fyp/src/client/wandb/run-20210118_121755-r655yoch/files/wandb-metadata.json wandb-metadata.json
+2021-01-18 12:18:33,477 INFO    SenderThread:12979 [dir_watcher.py:finish():315] scan save: /home/nikamanth/Documents/fyp/src/client/wandb/run-20210118_121755-r655yoch/files/output.log output.log
+2021-01-18 12:18:33,504 INFO    MainThread:12979 [internal.py:handle_exit():138] Internal process exited
+2021-01-18 12:18:33,506 DEBUG   Thread-12 :12979 [connectionpool.py:_new_conn():941] Starting new HTTPS connection (1): api.wandb.ai:443

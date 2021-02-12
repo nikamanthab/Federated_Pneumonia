@@ -1,0 +1,56 @@
+Train Epoch: 1 [0/5216 (0%)]	Loss: 0.025619
+Train Epoch: 1 [800/5216 (15%)]	Loss: 0.042594
+Train Epoch: 1 [1600/5216 (31%)]	Loss: 0.008850
+Train Epoch: 1 [2400/5216 (46%)]	Loss: 0.013808
+Train Epoch: 1 [3200/5216 (61%)]	Loss: 0.270275
+Train Epoch: 1 [4000/5216 (77%)]	Loss: 0.001921
+Train Epoch: 1 [4800/5216 (92%)]	Loss: 0.052740
+Average loss : 0.0594010233346905
+model sent successfully!
+Train Epoch: 1 [0/5216 (0%)]	Loss: 0.005592
+Train Epoch: 1 [800/5216 (15%)]	Loss: 0.131072
+Train Epoch: 1 [1600/5216 (31%)]	Loss: 0.043309
+Train Epoch: 1 [2400/5216 (46%)]	Loss: 0.001333
+Train Epoch: 1 [3200/5216 (61%)]	Loss: 0.157407
+Train Epoch: 1 [4000/5216 (77%)]	Loss: 0.001952
+Train Epoch: 1 [4800/5216 (92%)]	Loss: 0.048559
+Average loss : 0.05560345521994999
+model sent successfully!
+Train Epoch: 1 [0/5216 (0%)]	Loss: 0.018700
+Train Epoch: 1 [800/5216 (15%)]	Loss: 0.005824
+Train Epoch: 1 [1600/5216 (31%)]	Loss: 0.090895
+Train Epoch: 1 [2400/5216 (46%)]	Loss: 0.120259
+Train Epoch: 1 [3200/5216 (61%)]	Loss: 0.010716
+Train Epoch: 1 [4000/5216 (77%)]	Loss: 0.009343
+Train Epoch: 1 [4800/5216 (92%)]	Loss: 0.011825
+Average loss : 0.03822326074753489
+model sent successfully!
+Train Epoch: 1 [0/5216 (0%)]	Loss: 0.030567
+Train Epoch: 1 [800/5216 (15%)]	Loss: 0.262852
+Train Epoch: 1 [1600/5216 (31%)]	Loss: 0.031171
+Train Epoch: 1 [2400/5216 (46%)]	Loss: 0.014025
+Train Epoch: 1 [3200/5216 (61%)]	Loss: 0.010196
+Traceback (most recent call last):
+  File "run.py", line 46, in <module>
+    optimizer=optimizer, epoch=epoch)                ###logger added
+  File "/home/nikamanth/Documents/fyp/src/client/train.py", line 9, in train
+    for batch_idx, (data, target) in enumerate(train_loader): # <-- now it is a distributed dataset
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 345, in __next__
+    data = self._next_data()
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 385, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/torch/utils/data/_utils/fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/torch/utils/data/_utils/fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/nikamanth/Documents/fyp/src/client/dataloader.py", line 54, in __getitem__
+    image = self.transform(image)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/torchvision/transforms/transforms.py", line 70, in __call__
+    img = t(img)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/torchvision/transforms/transforms.py", line 207, in __call__
+    return F.resize(img, self.size, self.interpolation)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/torchvision/transforms/functional.py", line 256, in resize
+    return img.resize(size[::-1], interpolation)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/PIL/Image.py", line 1922, in resize
+    return self._new(self.im.resize(size, resample, box))
+KeyboardInterrupt

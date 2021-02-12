@@ -1,0 +1,13 @@
+--- Connection established ---
+--- Dataset loaded ---
+--- model loaded ---
+Traceback (most recent call last):
+  File "run.py", line 47, in <module>
+    optimizer=optimizer, epoch=epoch)                ###logger added
+  File "/home/nikamanth/Documents/fyp/src/client/train.py", line 10, in train
+    output = model(data)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/nikamanth/Documents/fyp/src/client/models.py", line 19, in forward
+    x = x.view(-1, 4*4*50)
+RuntimeError: shape '[-1, 800]' is invalid for input of size 372100
