@@ -1,0 +1,64 @@
+ * Debugger is active!
+ * Debugger PIN: 102-738-782
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+Connecting Nodes:
+node_0
+127.0.0.1 - - [13/Jan/2021 11:03:02] "[37mPOST /getConnection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [13/Jan/2021 11:03:08] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+model initialized
+127.0.0.1 - - [13/Jan/2021 11:03:10] "[37mPOST /getmodel HTTP/1.1[0m" 200 -
+Connecting Nodes:
+node_1
+127.0.0.1 - - [13/Jan/2021 11:03:24] "[37mPOST /getConnection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [13/Jan/2021 11:03:29] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [13/Jan/2021 11:03:31] "[37mPOST /getmodel HTTP/1.1[0m" 200 -
+127.0.0.1 - - [13/Jan/2021 11:27:49] "[37mPOST /sendmodel HTTP/1.1[0m" 200 -
+127.0.0.1 - - [13/Jan/2021 11:27:51] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [13/Jan/2021 11:28:03] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [13/Jan/2021 11:28:15] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [13/Jan/2021 11:28:27] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [13/Jan/2021 11:28:39] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [13/Jan/2021 11:28:51] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [13/Jan/2021 11:29:03] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [13/Jan/2021 11:29:15] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+
+Test set: Average loss: 0.6521, Accuracy: 449/624 (72%)
+
+127.0.0.1 - - [13/Jan/2021 11:29:27] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+
+Test set: Average loss: 0.7945, Accuracy: 448/624 (72%)
+
+127.0.0.1 - - [13/Jan/2021 11:29:38] "[35m[1mPOST /sendmodel HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\flask\app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\flask\app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\flask\app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\kevin\OneDrive\Documents\8th sem\Federated_Pneumonia\src\aggregator\server.py", line 70, in sendmodel
+    agg_model = agg_func(model_data, serverargs)
+  File "C:\Users\kevin\OneDrive\Documents\8th sem\Federated_Pneumonia\src\aggregator\aggregator.py", line 39, in fed_avg_aggregator
+    temp+= (node_samples[node_idx]/total_no_samples)*node_weights[node_idx][layer_idx]
+RuntimeError: CUDA out of memory. Tried to allocate 20.00 MiB (GPU 0; 2.00 GiB total capacity; 254.45 MiB already allocated; 0 bytes free; 266.00 MiB reserved in total by PyTorch)
+127.0.0.1 - - [13/Jan/2021 11:29:39] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [13/Jan/2021 11:29:51] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [13/Jan/2021 11:30:03] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [13/Jan/2021 11:30:15] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [13/Jan/2021 11:30:27] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [13/Jan/2021 11:30:39] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
+127.0.0.1 - - [13/Jan/2021 11:30:51] "[37mPOST /checkphase HTTP/1.1[0m" 200 -
