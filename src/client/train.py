@@ -1,7 +1,8 @@
 import torch
 import torch.nn.functional as F
+from torch.nn import CrossEntropyLoss
 
-
+loss_fn = CrossEntropyLoss()
 def train(args, model, train_loader, optimizer, epoch, logger):
     model.train()
     total=0
@@ -10,7 +11,9 @@ def train(args, model, train_loader, optimizer, epoch, logger):
         data, target = data.to(args['device']), target.to(args['device'])
         optimizer.zero_grad()
         output = model(data)
-        loss = F.nll_loss(output, target)
+        # import pdb; pdb.set_trace()
+        loss = loss_fn(output,target)
+        # loss = F.nll_loss(output, target)
         loss.backward()
         optimizer.step()
 

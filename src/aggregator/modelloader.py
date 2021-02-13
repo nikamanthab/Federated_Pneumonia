@@ -19,7 +19,7 @@ def createInitialModel(serverargs):
 
 def getModelArchitecture(serverargs):
     model = switcher.get(serverargs['architecture'], "architecture name mismatch - check help for architectures")
-    import pdb; pdb.set_trace();
+    # import pdb; pdb.set_trace();
     model = model().to(serverargs['device'])
     return model
 

@@ -1,0 +1,59 @@
+2021-02-12 14:10:35,304 INFO    MainThread:26465 [wandb_setup.py:_flush():70] setting env: {}
+2021-02-12 14:10:35,305 INFO    MainThread:26465 [wandb_setup.py:_flush():70] multiprocessing start_methods=fork,spawn,forkserver
+2021-02-12 14:10:35,305 INFO    MainThread:26465 [wandb_setup.py:_flush():70] setting login settings: {}
+2021-02-12 14:10:35,305 INFO    MainThread:26465 [wandb_init.py:_log_setup():303] Logging user logs to /home/nikamanth/Documents/fyp/src/client/wandb/run-20210212_141035-1rgjtg35/logs/debug.log
+2021-02-12 14:10:35,306 INFO    MainThread:26465 [wandb_init.py:_log_setup():304] Logging internal logs to /home/nikamanth/Documents/fyp/src/client/wandb/run-20210212_141035-1rgjtg35/logs/debug-internal.log
+2021-02-12 14:10:36,386 INFO    MainThread:26465 [wandb_run.py:_console_start():1237] atexit reg
+2021-02-12 14:10:36,386 INFO    MainThread:26465 [wandb_run.py:_redirect():1104] redirect: SettingsConsole.REDIRECT
+2021-02-12 14:10:36,387 INFO    MainThread:26465 [wandb_run.py:_redirect():1107] Redirecting console.
+2021-02-12 14:10:36,387 INFO    MainThread:26465 [redirect.py:install():204] install start
+2021-02-12 14:10:36,387 INFO    MainThread:26465 [redirect.py:install():219] install stop
+2021-02-12 14:10:36,387 INFO    MainThread:26465 [redirect.py:install():204] install start
+2021-02-12 14:10:36,388 INFO    MainThread:26465 [redirect.py:install():219] install stop
+2021-02-12 14:10:36,388 INFO    MainThread:26465 [wandb_run.py:_redirect():1151] Redirects installed.
+2021-02-13 00:49:52,768 ERROR   stdout    :26465 [redirect.py:_pipe_relay():130] problem in pipe relay
+Traceback (most recent call last):
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/wandb/sdk/lib/redirect.py", line 128, in _pipe_relay
+    cb(name, data)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/wandb/sdk/wandb_run.py", line 602, in _console_callback
+    self._backend.interface.publish_output(name, data)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/wandb/sdk/interface/interface.py", line 151, in publish_output
+    self._publish_output(o)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/wandb/sdk/interface/interface.py", line 156, in _publish_output
+    self._publish(rec)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/wandb/sdk/interface/interface.py", line 439, in _publish
+    raise Exception("The wandb backend process has shutdown")
+Exception: The wandb backend process has shutdown
+2021-02-13 00:49:56,664 INFO    MainThread:26465 [wandb_run.py:_atexit_cleanup():1207] got exitcode: 1
+2021-02-13 00:49:56,664 INFO    MainThread:26465 [wandb_run.py:_restore():1179] restore
+2021-02-13 00:49:56,665 ERROR   stderr    :26465 [redirect.py:_pipe_relay():130] problem in pipe relay
+Traceback (most recent call last):
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/wandb/sdk/lib/redirect.py", line 128, in _pipe_relay
+    cb(name, data)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/wandb/sdk/wandb_run.py", line 602, in _console_callback
+    self._backend.interface.publish_output(name, data)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/wandb/sdk/interface/interface.py", line 151, in publish_output
+    self._publish_output(o)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/wandb/sdk/interface/interface.py", line 156, in _publish_output
+    self._publish(rec)
+  File "/home/nikamanth/anaconda3/envs/torch/lib/python3.7/site-packages/wandb/sdk/interface/interface.py", line 439, in _publish
+    raise Exception("The wandb backend process has shutdown")
+Exception: The wandb backend process has shutdown
+2021-02-13 00:49:56,665 INFO    MainThread:26465 [redirect.py:uninstall():223] uninstall start
+2021-02-13 00:49:56,666 INFO    MainThread:26465 [redirect.py:_stop():278] _stop: stdout
+2021-02-13 00:49:56,667 INFO    MainThread:26465 [redirect.py:_stop():284] _stop closed: stdout
+2021-02-13 00:49:56,669 INFO    stdout    :26465 [redirect.py:_pipe_relay():120] relay done saw last write: stdout
+2021-02-13 00:49:56,669 INFO    stdout    :26465 [redirect.py:_pipe_relay():136] relay done done: stdout
+2021-02-13 00:49:56,670 INFO    MainThread:26465 [redirect.py:_stop():290] _stop joined: stdout
+2021-02-13 00:49:56,670 INFO    MainThread:26465 [redirect.py:_stop():292] _stop rd closed: stdout
+2021-02-13 00:49:56,670 INFO    MainThread:26465 [redirect.py:uninstall():227] uninstall done
+2021-02-13 00:49:56,670 INFO    MainThread:26465 [redirect.py:uninstall():223] uninstall start
+2021-02-13 00:49:56,671 INFO    MainThread:26465 [redirect.py:_stop():278] _stop: stderr
+2021-02-13 00:49:56,671 INFO    stderr    :26465 [redirect.py:_pipe_relay():120] relay done saw last write: stderr
+2021-02-13 00:49:56,671 INFO    stderr    :26465 [redirect.py:_pipe_relay():136] relay done done: stderr
+2021-02-13 00:49:56,671 INFO    MainThread:26465 [redirect.py:_stop():284] _stop closed: stderr
+2021-02-13 00:49:56,672 INFO    MainThread:26465 [redirect.py:_stop():290] _stop joined: stderr
+2021-02-13 00:49:56,672 INFO    MainThread:26465 [redirect.py:_stop():292] _stop rd closed: stderr
+2021-02-13 00:49:56,672 INFO    MainThread:26465 [redirect.py:uninstall():227] uninstall done
+2021-02-13 00:49:56,673 INFO    MainThread:26465 [wandb_run.py:_restore():1179] restore
+2021-02-13 00:49:58,266 INFO    MainThread:26465 [internal.py:handle_exit():138] Internal process exited
