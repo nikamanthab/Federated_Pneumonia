@@ -34,6 +34,29 @@ def Arguments():
     labelstr = args.labels.split(',')
     labels = [s.strip() for s in labelstr]
 
+    default_vals = {"architecture" :  ["TwoLayerNet", "ResNeXt50", "ResNet18"],
+                    "aggregator"   :  ["fedavg", "codem", "geomed"],
+                    "agg_optimizer":  ["Adam", "SGD supported"]
+                    }
+
+    while(args.architecture not in default_vals["architecture"]):
+        print("Wrong entry for architecture : ", args.architecture)
+        print("Valid Entries:", default_vals["architecture"])
+        args.architecture = input("Enter Again :")
+    
+    while(args.aggregator not in default_vals["aggregator"]):
+        print("Wrong entry for aggregator : ", args.aggregator)
+        print("Valid Entries:", default_vals["aggregator"])
+        args.aggregator = input("Enter Again :")
+
+    while(args.agg_optimizer not in default_vals["agg_optimizer"]):
+        print("Wrong entry for agg_optimizer : ", args.agg_optimizer)
+        print("Valid Entries:", default_vals["agg_optimizer"])
+        args.agg_optimizer = input("Enter Again :")
+
+    
+
+
 
     cmdargs = {
         "architecture": args.architecture,

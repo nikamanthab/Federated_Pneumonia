@@ -1,0 +1,15 @@
+2021-02-15 10:46:17,750 INFO    MainThread:13048 [internal.py:wandb_internal():63] W&B internal server running at pid: 13048
+2021-02-15 10:46:18,405 INFO    WriterThread:13048 [datastore.py:open_for_write():76] open: C:\Users\kevin\OneDrive\Documents\8th sem\Federated_Pneumonia\src\aggregator\wandb\run-20210215_104615-srlbat82\run-srlbat82.wandb
+2021-02-15 10:46:18,405 DEBUG   HandlerThread:13048 [handler.py:handle_request():55] handle_request: check_version
+2021-02-15 10:46:18,407 DEBUG   SenderThread:13048 [sender.py:send():90] send: header
+2021-02-15 10:46:18,407 WARNING MainThread:13048 [internal.py:wandb_internal():117] Internal process interrupt: 1
+2021-02-15 10:46:18,407 DEBUG   SenderThread:13048 [sender.py:send():90] send: request
+2021-02-15 10:46:18,418 DEBUG   SenderThread:13048 [sender.py:send_request():99] send_request: check_version
+2021-02-15 10:46:18,421 DEBUG   Thread-8  :13048 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): pypi.org:443
+2021-02-15 10:46:18,562 WARNING MainThread:13048 [internal.py:wandb_internal():117] Internal process interrupt: 2
+2021-02-15 10:46:18,563 ERROR   MainThread:13048 [internal.py:wandb_internal():120] Internal process interrupted.
+2021-02-15 10:46:18,709 DEBUG   Thread-8  :13048 [connectionpool.py:_make_request():442] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 54248
+2021-02-15 10:46:18,834 INFO    SenderThread:13048 [sender.py:finish():642] shutting down sender
+2021-02-15 10:46:19,406 INFO    WriterThread:13048 [datastore.py:close():257] close: C:\Users\kevin\OneDrive\Documents\8th sem\Federated_Pneumonia\src\aggregator\wandb\run-20210215_104615-srlbat82\run-srlbat82.wandb
+2021-02-15 10:46:19,406 INFO    HandlerThread:13048 [handler.py:finish():271] shutting down handler
+2021-02-15 10:46:19,723 INFO    MainThread:13048 [internal.py:handle_exit():138] Internal process exited

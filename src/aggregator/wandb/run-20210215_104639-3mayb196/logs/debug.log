@@ -1,0 +1,23 @@
+2021-02-15 10:46:39,163 INFO    MainThread:19852 [wandb_setup.py:_flush():70] setting env: {}
+2021-02-15 10:46:39,164 INFO    MainThread:19852 [wandb_setup.py:_flush():70] multiprocessing start_methods=spawn
+2021-02-15 10:46:39,164 INFO    MainThread:19852 [wandb_setup.py:_flush():70] setting login settings: {}
+2021-02-15 10:46:39,164 INFO    MainThread:19852 [wandb_init.py:_log_setup():303] Logging user logs to C:\Users\kevin\OneDrive\Documents\8th sem\Federated_Pneumonia\src\aggregator\wandb\run-20210215_104639-3mayb196\logs\debug.log
+2021-02-15 10:46:39,165 INFO    MainThread:19852 [wandb_init.py:_log_setup():304] Logging internal logs to C:\Users\kevin\OneDrive\Documents\8th sem\Federated_Pneumonia\src\aggregator\wandb\run-20210215_104639-3mayb196\logs\debug-internal.log
+2021-02-15 10:46:40,988 WARNING MainThread:19852 [wandb_init.py:init():595] interrupted
+Traceback (most recent call last):
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\wandb\sdk\wandb_init.py", line 575, in init
+    run = wi.init()
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\wandb\sdk\wandb_init.py", line 401, in init
+    current_version=wandb.__version__
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\wandb\sdk\interface\interface.py", line 615, in communicate_check_version
+    result = self._communicate(rec)
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\wandb\sdk\interface\interface.py", line 447, in _communicate
+    return future.get(timeout)
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\site-packages\wandb\sdk\interface\interface.py", line 63, in get
+    is_set = self._object_ready.wait(timeout)
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\threading.py", line 552, in wait
+    signaled = self._cond.wait(timeout)
+  File "C:\Users\kevin\anaconda3\envs\fl\lib\threading.py", line 300, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt
+2021-02-15 10:46:41,020 INFO    MainThread:19852 [internal.py:handle_exit():138] Internal process exited
