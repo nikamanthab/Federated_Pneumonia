@@ -16,6 +16,7 @@ def test(args, model, test_loader, logger=None):
             output = model(data)
             test_loss += loss_fn(output, target).item()
 #             test_loss += F.nll_loss(output, target, reduction='sum').item() # sum up batch loss
+            import pdb; pdb.set_trace()
             pred = output.argmax(1, keepdim=True) # get the index of the max log-probability 
             correct += pred.eq(target.view_as(pred)).sum().item()
             total_pred += list(pred.flatten().detach().cpu().numpy())

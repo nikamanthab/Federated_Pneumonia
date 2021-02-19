@@ -90,8 +90,13 @@ def comed_aggregator(model_data, args):
         aggregated_weights.append(temp)
 
     agg_model = getModelArchitecture(args)
-    for idx, param in enumerate(agg_model.parameters()):
-        param.data = aggregated_weights[idx]
+
+    agg_state = OrderedDict()
+    for idx, key in enumerate(agg_model.state_dict().keys()):
+        agg_state[key] = aggregated_weights[idx]
+    agg_model.load_state_dict(agg_state)
+    # for idx, param in enumerate(agg_model.parameters()):
+    #     param.data = aggregated_weights[idx]
     return agg_model
 
 def g(z, node_weights, node_samples, total_no_samples, device):
