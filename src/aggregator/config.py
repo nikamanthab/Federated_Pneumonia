@@ -6,7 +6,7 @@ import argparse
 def Arguments():
     parser = argparse.ArgumentParser(description='Server module.')
     parser.add_argument('--architecture', type=str, default='TwoLayerNet', \
-        help='TwoLayerNet, ResNeXt50, ResNet18')
+        help='TwoLayerNet, ResNeXt50, ResNet18', 'VGGNet', 'AlexNet')
     parser.add_argument('--test_batch_size', type=int, default=1000)
     parser.add_argument('--agg_epochs', type=float, default=5)
     parser.add_argument('--device', type=str, default='cuda:0')
@@ -34,7 +34,7 @@ def Arguments():
     labelstr = args.labels.split(',')
     labels = [s.strip() for s in labelstr]
 
-    default_vals = {"architecture" :  ["TwoLayerNet", "ResNeXt50", "ResNet18"],
+    default_vals = {"architecture" :  ["TwoLayerNet", "ResNeXt50", "ResNet18", "VGGNet", "AlexNet"],
                     "aggregator"   :  ["fedavg", "comed", "geomed"],
                     "agg_optimizer":  ["Adam", "SGD supported"]
                     }
