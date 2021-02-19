@@ -76,14 +76,14 @@ def comed_aggregator(model_data, args):
     aggregated_weights = []
     for layer_idx in range(len(node_weights[0])):
         layer_shape = node_weights[0][layer_idx].shape
-        temp = torch.zeros(node_weights[0][layer_idx].shape)
+        temp = torch.zeros(node_weights[0][layer_idx].shape).to(args['device'])
         for node_idx in range(len(node_weights)):
             if(node_idx == 0):
                 temp = torch.flatten(node_weights[node_idx][layer_idx]).unsqueeze(1)
             else:
                 layer_flattened = torch.flatten(node_weights[node_idx][layer_idx]).unsqueeze(1)
                 temp = torch.cat((temp, layer_flattened),1)
-        temp = temp.detach().numpy()
+        temp = temp.detach().cpu().numpy()
         temp = np.median(temp,1)
         temp = torch.from_numpy(temp)
         temp = torch.reshape(temp, layer_shape)

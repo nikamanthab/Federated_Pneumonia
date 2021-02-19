@@ -6,10 +6,10 @@ import os
 def datasplit(num_nodes, input_path='../../csv/original_train.csv', output_dir='../../csv/splits/', mode="min", runtype=1):
     df = pd.read_csv(input_path)
     df = df.sample(frac=1)
-#     pneumonia = df[df['label'] == 'PNEUMONIA']
-#     normal = df[df['label'] == 'NORMAL']
-    pneumonia = df[df['label'] == 'cat']
-    normal = df[df['label'] == 'dog']
+    pneumonia = df[df['label'] == 'PNEUMONIA']
+    normal = df[df['label'] == 'NORMAL']
+    # pneumonia = df[df['label'] == 'cat']
+    # normal = df[df['label'] == 'dog']
     
     max_count = max(df['label'].value_counts()[1], df['label'].value_counts()[0])
     min_count = min(df['label'].value_counts()[1], df['label'].value_counts()[0])

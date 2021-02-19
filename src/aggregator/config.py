@@ -16,7 +16,7 @@ def Arguments():
     parser.add_argument('--image_width', type=int, default=28)
 
     parser.add_argument('--aggregator', type=str, default='fedavg', \
-        help="fedavg, codem, geomed")
+        help="fedavg, comed, geomed")
     
     parser.add_argument('--agg_iterations', type=int, default=50)
     parser.add_argument('--agg_optimizer', type=str, default='Adam',\
@@ -35,7 +35,7 @@ def Arguments():
     labels = [s.strip() for s in labelstr]
 
     default_vals = {"architecture" :  ["TwoLayerNet", "ResNeXt50", "ResNet18"],
-                    "aggregator"   :  ["fedavg", "codem", "geomed"],
+                    "aggregator"   :  ["fedavg", "comed", "geomed"],
                     "agg_optimizer":  ["Adam", "SGD supported"]
                     }
 
