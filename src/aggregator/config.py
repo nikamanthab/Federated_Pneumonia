@@ -6,7 +6,7 @@ import argparse
 def Arguments():
     parser = argparse.ArgumentParser(description='Server module.')
     parser.add_argument('--architecture', type=str, default='TwoLayerNet', \
-        help='TwoLayerNet, ResNeXt50, ResNet18', 'VGGNet', 'AlexNet')
+        help='TwoLayerNet, ResNeXt50, ResNet18, VGGNet, AlexNet')
     parser.add_argument('--test_batch_size', type=int, default=1000)
     parser.add_argument('--agg_epochs', type=float, default=5)
     parser.add_argument('--device', type=str, default='cuda:0')
