@@ -52,7 +52,7 @@ while(True):# change to aggregation epoch iteration max
         print("Train Performance:")
         test(args, local_model, train_loader, logger=None)
         print("Test Performance:")
-        test(args, load_model, test_loader, logger=None)
+        test(args, local_model, test_loader, logger=None)
         
     torch.save(local_model, model_path)
     # Send model to the aggregator
