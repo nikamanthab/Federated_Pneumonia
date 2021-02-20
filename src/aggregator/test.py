@@ -31,7 +31,7 @@ def test(args, model, test_loader, logger=None):
     test_loss /= len(test_loader.dataset)
     if(logger!=None):
         logger({"loss": test_loss, "accuracy": 100. * correct / len(test_loader.dataset)})
-    print('\nTest set: Average loss: {:.4f}, Accuracy: {}/{} ({:.0f}%)\n'.format(
+    print('\nTest set: Average loss: {:.4f}, Accuracy: {}/{} ({:.0f}%)'.format(
         test_loss, correct, len(test_loader.dataset),
         100. * correct / len(test_loader.dataset)))
-    print('Precision:'+str(precision)+'\tRecall:'+str(recall)+'\tF1:'+str(f1))
+    print('Accuracy:'+str(total_acc)+'Precision:'+str(precision)+'\tRecall:'+str(recall)+'\tF1:'+str(f1))

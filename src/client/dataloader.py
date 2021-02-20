@@ -54,6 +54,22 @@ class XDataset(Dataset):
             image = self.transform(image)
         return (image,onehot)
 
+def getTestLoader(args):
+    df_test = pd.read_csv(args['test_csv'])
+    df_test = df_test.sample(frac=1)
+    testdataset = XDataset(df=df_test, labellist=args['labels'], \
+        root_dir=os.path.join(args['data_location'],'test'), \
+        transform=transforms.Compose( \
+            [transforms.Resize(args['image_dim']), \
+            transforms.ToTensor(), \
+            transforms.Normalize((0.5,), (0.5,))] \
+            ) \
+        ) 
+    test_loader = torch.utils.data.DataLoader(
+        testdataset,
+        batch_size=args['test_batch_size'], shuffle=True)
+    return test_loader
+
 def getNumSamples(args):
     return len(pd.read_csv(args['train_csv']))
 

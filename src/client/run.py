@@ -1,7 +1,7 @@
 import config
 import json
 import os
-from dataloader import getNumSamples, getTrainLoader
+from dataloader import getNumSamples, getTrainLoader, getTestLoader
 from httpcalls import getConnection, getModel, sendModel
 from modelloader import loadModel
 import torch
@@ -34,8 +34,9 @@ while(True):# change to aggregation epoch iteration max
     # Gets model from the aggregator and stores in local system
     getModel(agg_url, model_path, local_agg_epoch)
     
-    # Creating train loader
+    # Creating train loader and test loader
     train_loader = getTrainLoader(args)
+    test_loader = getTestLoader(args)
     # Train loop
     local_model = loadModel(model_path).to(args['device'])
     
@@ -48,8 +49,11 @@ while(True):# change to aggregation epoch iteration max
                 args=args, model=local_model,      
                 train_loader=train_loader, \
                 optimizer=optimizer, epoch=epoch)                ###logger added
-    
-    test(args, local_model, train_loader, logger=None)
+        print("Train Performance:")
+        test(args, local_model, train_loader, logger=None)
+        print("Test Performance:")
+        test(args, load_model, test_loader, logger=None)
+        
     torch.save(local_model, model_path)
     # Send model to the aggregator
     sendModel(agg_url, model_path, args)

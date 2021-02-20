@@ -22,12 +22,14 @@ def getArguments():
     parser.add_argument('--agg_ip', type=str, default='localhost')
     parser.add_argument('--agg_port', type=str, default='5000')
     parser.add_argument('--train_batch_size', type=int, default=16)
+    parser.add_argument('--test_batch_size', type=int, default=16)
     parser.add_argument('--epochs', type=int, default=2)
     parser.add_argument('--lr', type=float, default=0.0001)
     parser.add_argument('--device', type=str, default='cuda:0')
     parser.add_argument('--momentum', type=float, default=0.5)
     parser.add_argument('--log_interval', type=int, default=50)
     parser.add_argument('--train_csv', type=str, default='../../csv/train_0.csv')
+    parser.add_argument('--test_csv', type=str, default='../../csv/test.csv')
     parser.add_argument('--data_location', type=str, default='../../x-ray/')
     parser.add_argument('--wandb', type=bool, default=False)
     parser.add_argument('--model_location', type=str, default='../../node_model/')
@@ -43,12 +45,14 @@ def getArguments():
         "agg_ip": args.agg_ip,
         "agg_port": args.agg_port,
         "train_batch_size": args.train_batch_size,
+        "test_batch_size": args.test_batch_size,
         "epochs": args.epochs,
         "lr": args.lr,
         "device": args.device,
         "momentum": args.momentum,
         "log_interval": args.log_interval,
         "train_csv": args.train_csv,
+        "test_csv": args.test_csv,
         "data_location": args.data_location,
         "model_location": args.model_location,
         "wandb": args.wandb,
