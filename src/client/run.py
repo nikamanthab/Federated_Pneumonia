@@ -45,10 +45,10 @@ while(True):# change to aggregation epoch iteration max
     
     optimizer = optim.Adam(local_model.parameters(), lr=args['lr'])
     for epoch in range(1, args['epochs'] + 1):
-            train.train(logger=logger ,
-                args=args, model=local_model,      
-                train_loader=train_loader, \
-                optimizer=optimizer, epoch=epoch)                ###logger added
+        train.train(logger=logger ,\
+            args=args, model=local_model,
+            train_loader=train_loader,
+            optimizer=optimizer, epoch=epoch)                ###logger added
         print("Train Performance:")
         test(args, local_model, train_loader, logger=None)
         print("Test Performance:")
