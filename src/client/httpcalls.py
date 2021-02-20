@@ -12,7 +12,7 @@ def getModel(url, path, local_agg_epoch):
                 )
         if response.json()['phase'] == 'aggregating':
             print("Waiting for aggregation...")
-            time.sleep(10)
+            time.sleep(100)
             continue
         else:
             break
@@ -24,4 +24,6 @@ def getModel(url, path, local_agg_epoch):
 
 def sendModel(url, path, args):
     res = requests.post(url+'/sendmodel', files={'file': (args['node_name']+'.pt', open(path, 'rb'))}, stream=True)
+    if res.json()['status'] == 'doaggregation':
+        final_res = requests.post(url+'/doaggregation')
     print(res.json()['status'])

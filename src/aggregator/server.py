@@ -9,6 +9,7 @@ from aggregatorloader import selectAggregator
 import log
 from checks import checkModelEqual, compare_models
 import time
+import threading
 
 from modelloader import createInitialModel
 from config import Arguments
@@ -65,32 +66,44 @@ def sendmodel():
             node['agg_epoch']+=1
         if ((node['agg_epoch']-1) == serverargs['current_agg_epoch']):
             count_done+=1
+    result = {}
     if count_done == serverargs['num_of_nodes']:
-        # Getting test loader
-        test_loader = getTestLoader(serverargs)
-        # Call aggregator
-        agg_func = selectAggregator(serverargs)
-        model_data = []
-        node_model = 0
-        for node in node_details:
-            node_model = torch.load(serverargs['aggregated_model_location']+node['node_name']+'.pt') \
-                .to(serverargs['device'])
-            # test(serverargs, node_model, test_loader, logger=logger)
-            node_tuple = (node_model, node['no_of_samples'])
-            model_data.append(node_tuple)
-        agg_model = agg_func(model_data, serverargs)
-        print("ModelCheck: ", checkModelEqual(node_model, agg_model))
-        compare_models(node_model, agg_model)
+        result = {"status": "doaggregation"}
+    else:
+        result = {"status": "model sent successfully!"}
+    return json.dumps(result)
+
+def aggregation_thread():
+    # Getting test loader
+    test_loader = getTestLoader(serverargs)
+    # Call aggregator
+    agg_func = selectAggregator(serverargs)
+    model_data = []
+    node_model = 0
+    for node in node_details:
+        node_model = torch.load(serverargs['aggregated_model_location']+node['node_name']+'.pt') \
+            .to(serverargs['device'])
+        # test(serverargs, node_model, test_loader, logger=logger)
+        node_tuple = (node_model, node['no_of_samples'])
+        model_data.append(node_tuple)
+    agg_model = agg_func(model_data, serverargs)
+    print("ModelCheck: ", checkModelEqual(node_model, agg_model))
+    compare_models(node_model, agg_model)
 #         torch.save(node_model, serverargs['aggregated_model_location']+'agg_model.pt')
-        torch.save(agg_model, serverargs['aggregated_model_location']+'agg_model.pt')
+    torch.save(agg_model, serverargs['aggregated_model_location']+'agg_model.pt')
 #         agg_model = torch.load(serverargs['aggregated_model_location']+'agg_model.pt')
 #         import pdb; pdb.set_trace()
-        print("---Aggregation Done---")
-        #testing agg_model
+    print("---Aggregation Done---")
+    #testing agg_model
 #         import pdb; pdb.set_trace()
-        test(serverargs, node_model, test_loader, logger=logger)
-        test(serverargs, agg_model, test_loader, logger=logger)
-        serverargs['current_agg_epoch']+=1
+    test(serverargs, node_model, test_loader, logger=logger)
+    test(serverargs, agg_model, test_loader, logger=logger)
+    serverargs['current_agg_epoch']+=1
+
+@app.route('/doaggregation', methods=['GET','POST'])
+def doaggregation():
+    x = threading.Thread(target=aggregation_thread, args=())
+    x.start()
     return json.dumps({"status": "model sent successfully!"})
 
 @app.route('/getmodel', methods=['GET', 'POST'])

@@ -12,6 +12,18 @@ def weights_to_array(model):
     '''
     model_weights = []
     for (key, param) in model.state_dict().items():
+    # for param in model.parameters():
+        model_weights.append(param) # check without .data
+    return model_weights
+
+def geomed_weights_to_array(model):
+    '''
+        input: pytorch model
+        output: array of tensors of model weights
+    '''
+    model_weights = []
+    # for (key, param) in model.state_dict().items():
+    for param in model.parameters():
         model_weights.append(param) # check without .data
     return model_weights
 
@@ -127,7 +139,7 @@ def optimizeGM(agg_model,  node_weights, node_samples, total_no_samples, args):
     optimizer = optim.Adam(list(agg_model.parameters())[:], lr=args["agg_optim_lr"])
     for _ in range(args["agg_iterations"]):
         optimizer.zero_grad()
-        loss = g(weights_to_array(agg_model), node_weights, node_samples, total_no_samples, args['device'])
+        loss = g(geomed_weights_to_array(agg_model), node_weights, node_samples, total_no_samples, args['device'])
         print(loss, type(loss))
         loss.backward()
         optimizer.step()
@@ -146,7 +158,7 @@ def Geometric_Median(model_data, args):
     node_weights = []
     node_samples = []
     for model,no_samples in model_data:
-        node_weights.append(weights_to_array(model))
+        node_weights.append(geomed_weights_to_array(model))
         node_samples.append(no_samples)
     # calculates the total number of samples
         total_no_samples += no_samples
