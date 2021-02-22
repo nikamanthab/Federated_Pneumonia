@@ -33,7 +33,8 @@ class XDataset(Dataset):
         if torch.is_tensor(idx):
             idx = idx.tolist()
         label = self.df.iloc[idx]['label']
-        img_name = os.path.join(self.root_dir,label,str(self.df.iloc[idx]['image']))
+        folder = self.df.iloc[idx]['folder']
+        img_name = os.path.join(self.root_dir,folder,str(self.df.iloc[idx]['image']))
         image = Image.open(img_name)
         image = PIL.ImageOps.grayscale(image)
         onehot = np.array(get_onehot(self.labellist, label))

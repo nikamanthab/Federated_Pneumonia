@@ -12,19 +12,6 @@ import PIL
 import copy
 import random
 
-# classes = {}
-# def unique_class(df):
-#     pt = 0
-#     for i in df['label'].unique():
-#         classes[i] = pt
-#         pt+=1
-
-# def get_onehot(label):
-#     if label == "PNEUMONIA":
-#         return 1
-#     else:
-#         return 0
-
 def get_onehot(labellist, label):
     return labellist.index(label)
 
@@ -46,7 +33,8 @@ class XDataset(Dataset):
         if torch.is_tensor(idx):
             idx = idx.tolist()
         label = self.df.iloc[idx]['label']
-        img_name = os.path.join(self.root_dir,label,str(self.df.iloc[idx]['image']))
+        folder = self.df.iloc[idx]['folder']
+        img_name = os.path.join(self.root_dir,folder,str(self.df.iloc[idx]['image']))
         image = Image.open(img_name)
         image = PIL.ImageOps.grayscale(image)
         onehot = np.array(get_onehot(self.labellist, label))
@@ -91,16 +79,3 @@ def getTrainLoader(args):
         traindataset,
         batch_size=args['train_batch_size'], shuffle=True)
     return train_loader
-
-def induceError(df, percentage):
-    length = len(df)
-    numrows = int(length * percentage )
-    indices = random.sample(range(0, length), numrows)
-#     print(indices)
-    for i in indices:
-        if(df.loc[i,'label']=="NORMAL"):
-            df.loc[i,'label']  = "PNEUMONIA"
-        else:
-            df.loc[i,'label'] = "NORMAL"
-    return df
-    

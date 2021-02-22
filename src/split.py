@@ -5,6 +5,7 @@ import os
 
 def datasplit(num_nodes, input_path='../../csv/original_train.csv', output_dir='../../csv/splits/', mode="min", runtype=1):
     df = pd.read_csv(input_path)
+    df['folder'] = df['label']
     df = df.sample(frac=1)
     pneumonia = df[df['label'] == 'PNEUMONIA']
     normal = df[df['label'] == 'NORMAL']
@@ -25,7 +26,7 @@ def datasplit(num_nodes, input_path='../../csv/original_train.csv', output_dir='
             node_df.to_csv(os.path.join(output_dir, 'node_'+str(i)+'_train.csv'), index=False)
         
     elif(runtype == 2):
-        indices = random.sample(range(0, num_nodes), int(num_nodes*0.3))
+        indices = random.sample(range(0, num_nodes), int(num_nodes*0.4))
         print("Corrupt nodes :", indices)
         for i in range(num_nodes):
             node_df = pd.DataFrame()
@@ -40,7 +41,7 @@ def datasplit(num_nodes, input_path='../../csv/original_train.csv', output_dir='
             node_df.to_csv(os.path.join(output_dir, 'node_'+str(i)+'_train.csv'), index=False)
     
     elif(runtype == 3):
-        indices = random.sample(range(0, num_nodes), int(num_nodes*0.3))
+        indices = random.sample(range(0, num_nodes), int(num_nodes*0.4))
         print("Corrupt nodes :",indices)
         for i in range(num_nodes):
             node_df = pd.DataFrame()
