@@ -10,6 +10,7 @@ import log
 from checks import checkModelEqual, compare_models
 import time
 import threading
+from smpc import layer_sharing
 
 from modelloader import createInitialModel
 from config import Arguments
@@ -86,6 +87,8 @@ def aggregation_thread():
         # test(serverargs, node_model, test_loader, logger=logger)
         node_tuple = (node_model, node['no_of_samples'])
         model_data.append(node_tuple)
+    if serverargs['smpc']:
+        model_data = layer_sharing(model_data, serverargs)
     agg_model = agg_func(model_data, serverargs)
     print("ModelCheck: ", checkModelEqual(node_model, agg_model))
     compare_models(node_model, agg_model)
@@ -96,7 +99,7 @@ def aggregation_thread():
     print("---Aggregation Done---")
     #testing agg_model
 #         import pdb; pdb.set_trace()
-    test(serverargs, node_model, test_loader, logger=logger)
+    # test(serverargs, node_model, test_loader, logger=logger)
     test(serverargs, agg_model, test_loader, logger=logger)
     serverargs['current_agg_epoch']+=1
 

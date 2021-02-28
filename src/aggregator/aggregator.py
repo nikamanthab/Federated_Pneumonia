@@ -49,7 +49,11 @@ def fed_avg_aggregator(model_data, args):
     for layer_idx in range(len(node_weights[0])):
         temp = torch.zeros(node_weights[0][layer_idx].shape).to(args['device'])
         for node_idx in range(len(node_weights)):
-            temp+= (node_samples[node_idx]/total_no_samples)*node_weights[node_idx][layer_idx]
+            if args["smpc"]:
+                fraction = 1
+            else:
+                fraction = (node_samples[node_idx]/total_no_samples)
+            temp+= fraction*node_weights[node_idx][layer_idx]
         aggregated_weights.append(temp)
     agg_model = getModelArchitecture(args)
     
@@ -111,7 +115,7 @@ def comed_aggregator(model_data, args):
     #     param.data = aggregated_weights[idx]
     return agg_model
 
-def g(z, node_weights, node_samples, total_no_samples, device):
+def g(z, node_weights, node_samples, total_no_samples, device, args):
     '''
         Optimizer loss function for geometric median
         Refer equation 3 in Krishna Pillutla et al., Robust Aggregation for Federated Learning
@@ -127,7 +131,10 @@ def g(z, node_weights, node_samples, total_no_samples, device):
         temp = torch.zeros(node_weights[0][layer_idx].shape).to(device)
         for node_idx in range(len(node_weights)):
             euclidean_norm = (z[layer_idx] - node_weights[node_idx][layer_idx])**2
-            weight_alpha = node_samples[node_idx]/total_no_samples
+            if args["smpc"]:
+                weight_alpha = 1
+            else:
+                weight_alpha = node_samples[node_idx]/total_no_samples
             temp = temp + (weight_alpha * euclidean_norm)
         summation = summation + sum(temp.flatten())
     return summation
@@ -139,7 +146,7 @@ def optimizeGM(agg_model,  node_weights, node_samples, total_no_samples, args):
     optimizer = optim.Adam(list(agg_model.parameters())[:], lr=args["agg_optim_lr"])
     for _ in range(args["agg_iterations"]):
         optimizer.zero_grad()
-        loss = g(geomed_weights_to_array(agg_model), node_weights, node_samples, total_no_samples, args['device'])
+        loss = g(geomed_weights_to_array(agg_model), node_weights, node_samples, total_no_samples, args['device'], args)
         print(loss, type(loss))
         loss.backward()
         optimizer.step()
