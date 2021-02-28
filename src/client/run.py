@@ -49,8 +49,8 @@ while(True):# change to aggregation epoch iteration max
             args=args, model=local_model,
             train_loader=train_loader,
             optimizer=optimizer, epoch=epoch)                ###logger added
-        # print("Train Performance:")
-        # test(args, local_model, train_loader, logger=None)
+        print("Train Performance:")
+        test(args, local_model, train_loader, logger=None)
         print("Test Performance:")
         test(args, local_model, test_loader, logger=None)
         
