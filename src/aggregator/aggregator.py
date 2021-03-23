@@ -23,7 +23,7 @@ def geomed_weights_to_array(model):
     '''
     model_weights = []
     # for (key, param) in model.state_dict().items():
-    for param in model.parameters():
+    for param in model.classifier.parameters():
         model_weights.append(param) # check without .data
     return model_weights
 
@@ -143,7 +143,7 @@ def g(z, node_weights, node_samples, total_no_samples, device, args):
 #g(weights_to_array(agg_model), [weights_to_array(model1), weights_to_array(model2)], [5, 5], 10)
 
 def optimizeGM(agg_model,  node_weights, node_samples, total_no_samples, args):
-    optimizer = optim.Adam(list(agg_model.parameters())[:], lr=args["agg_optim_lr"])
+    optimizer = optim.Adam(list(agg_model.parameters())[-1:], lr=args["agg_optim_lr"])
     for _ in range(args["agg_iterations"]):
         optimizer.zero_grad()
         loss = g(geomed_weights_to_array(agg_model), node_weights, node_samples, total_no_samples, args['device'], args)
@@ -169,7 +169,8 @@ def Geometric_Median(model_data, args):
         node_samples.append(no_samples)
     # calculates the total number of samples
         total_no_samples += no_samples
-    agg_model = getModelArchitecture(args)
+    # agg_model = getModelArchitecture(args)
+    agg_model = comed_aggregator(model_data, args)
     a = []
     for i in agg_model.parameters():
         a.append(i.clone())
