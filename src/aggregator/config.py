@@ -30,6 +30,8 @@ def Arguments():
     parser.add_argument('--aggregated_model_location', type=str, default='../../aggregated_model/')
     parser.add_argument('--labels', type=str, default='NORMAL, PNEUMONIA')
     parser.add_argument('--smpc', type=bool, default=False)
+    parser.add_argument('--modified_geomed', type=bool, default=False)
+    parser.add_argument('--train_layers', type=int, default=2)
     args = parser.parse_args()
 
     labelstr = args.labels.split(',')
@@ -79,7 +81,8 @@ def Arguments():
         "aggregated_model_location": args.aggregated_model_location,
         "labels": labels,
         "image_dim": (args.image_height, args.image_width),
-        "smpc": args.smpc
+        "smpc": args.smpc,
+        "train_layers": args.train_layers*-1
     }
 
     return cmdargs
