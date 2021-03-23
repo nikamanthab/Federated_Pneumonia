@@ -47,7 +47,7 @@ while(True):# change to aggregation epoch iteration max
     optimizer = optim.Adam(local_model.parameters(), lr=args['lr'])
     for epoch in range(1, args['epochs'] + 1):
         if args['byzantine'] == 'FAIL':
-            local_model = createRandomInitializedModel(args)
+            local_model = createRandomInitializedModel(args).to(args['device'])
         else:
             train.train(logger=logger ,\
                 args=args, model=local_model,
