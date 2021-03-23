@@ -103,6 +103,12 @@ def aggregation_thread():
     test(serverargs, agg_model, test_loader, logger=logger)
     serverargs['current_agg_epoch']+=1
 
+    serverargs['aggregator'] = 'comed'
+    agg_model = agg_func(model_data, serverargs)
+    print("---Aggregation Done---")
+    test(serverargs, agg_model, test_loader, logger=logger)
+
+
 @app.route('/doaggregation', methods=['GET','POST'])
 def doaggregation():
     x = threading.Thread(target=aggregation_thread, args=())
