@@ -34,6 +34,7 @@ def getArguments():
     parser.add_argument('--wandb', type=bool, default=False)
     parser.add_argument('--model_location', type=str, default='../../node_model/')
     parser.add_argument('--labels', type=str, default='NORMAL, PNEUMONIA')
+    parser.add_argument('--byzantine', type=str, default='NORMAL')
     args = parser.parse_args()
     # return args
 
@@ -56,6 +57,7 @@ def getArguments():
         "data_location": args.data_location,
         "model_location": args.model_location,
         "wandb": args.wandb,
-        "labels": labels
+        "labels": labels,
+        "byzantine": args.byzantine
     }
     return cmdargs
