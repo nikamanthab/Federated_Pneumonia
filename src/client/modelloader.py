@@ -22,7 +22,7 @@ def createInitialModel(serverargs):
     torch.save(model, serverargs['aggregated_model_location']+'agg_model.pt')
     return True
 
-def createRandomInitializedModel(args):
+def createRandomInitializedModel(serverargs):
     model = switcher.get(serverargs['architecture'], "architecture name mismatch - check help for architectures")
     return model()
 
