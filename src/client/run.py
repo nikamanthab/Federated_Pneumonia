@@ -3,7 +3,7 @@ import json
 import os
 from dataloader import getNumSamples, getTrainLoader, getTestLoader
 from httpcalls import getConnection, getModel, sendModel
-from modelloader import loadModel
+from modelloader import loadModel, createRandomInitializedModel
 import torch
 from torch import optim
 import train
@@ -21,6 +21,7 @@ agg_url = 'http://' + agg_url
 serverargs = getConnection(agg_url, args)
 local_agg_epoch = serverargs['current_agg_epoch']
 args['image_dim'] = serverargs['image_dim']
+args['architecture'] = serverargs['architecture']
 model_path = os.path.join(args['model_location'], args['node_name']+'.pt')
 
 # initialize wandb
@@ -46,7 +47,7 @@ while(True):# change to aggregation epoch iteration max
     optimizer = optim.Adam(local_model.parameters(), lr=args['lr'])
     for epoch in range(1, args['epochs'] + 1):
         if args['byzantine'] == 'FAIL':
-            break
+            local_model = createRandomInitializedModel(args)
         else:
             train.train(logger=logger ,\
                 args=args, model=local_model,
